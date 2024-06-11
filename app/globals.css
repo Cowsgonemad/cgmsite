@@ -2,28 +2,146 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --black: 17 17 17;
+    --pink: 232 114 192;
+    --dark-green: 2 53 60;
+    --green: 68 147 66;
+    --accent: 63 208 201;
+    --yellow: 255 223 0;
+    --dark-grey: 68 68 68;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-family: var(--font-archivo);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(var(--accent));
+  border: 1px solid #111;
+}
+
+h3 {
+  font-family: var(--font-screebie);
+}
+
+.dark-gradient {
+  background: linear-gradient(180deg, #000, #222 100%);
+}
+.pink-gradient {
+  background: linear-gradient(180deg, rgb(var(--pink)), #000 80%);
+}
+
+.bg-cow {
+  background-image: url('../public/img/bgbig.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-land {
+  background-image: url('../public/img/land.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-squares {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  animation: bg-scrolling-reverse 2s infinite;
+  animation-timing-function: linear;
+  filter: invert(1);
+}
+
+.bg-nfts {
+  background-image: url('../public/img/cows.jpg');
+  background-repeat: repeat;
+  background-size: 20%;
+}
+
+.bg-halftone {
+  background-image: url('../public/img/halftone-2.jpg');
+}
+
+.mix-dodge {
+  mix-blend-mode: color-dodge;
+}
+
+.bg-notebook {
+  background-image: url('../public/img/lined_paper.jpg');
+}
+
+.button-filter {
+  filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.3));
+}
+
+.text-shadow-dark {
+  text-shadow: 3px 3px 0 rgb(var(--dark-green));
+}
+.text-shadow-accent {
+  text-shadow: 3px 3px 0 rgb(var(--accent));
+}
+.text-shadow-pink {
+  text-shadow: 3px 3px 0 rgb(var(--pink));
+}
+
+.bshadow {
+  box-shadow: 10px 10px 0 rgb(var(--pink));
+}
+
+.bdropshadow {
+  filter: drop-shadow(12px 12px 0px rgb(var(--accent)));
+}
+
+.drop-shadow-nft {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
+}
+
+.box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+nav li .label {
+  transition: .2s;
+  opacity: 0;
+  margin-top: -5px;
+}
+
+nav li:hover .label {
+  transform: translateX(calc(-100% - 30px));
+  opacity: 1;
+}
+
+.active-label {
+  box-shadow: 16px 0 0px rgba(var(--black));
+}
+
+.feature-shadow {
+  box-shadow: 3px 3px 0 rgb(var(--pink));
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
 }
 
 @layer utilities {
