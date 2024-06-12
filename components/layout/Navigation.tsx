@@ -1,4 +1,6 @@
-import { ArrowDownIcon, ArrowUpIcon, DiscordIcon, CoinIcon, ControlIcon, HomeIcon, InstagramIcon, TikTokIcon, XIcon, GoalIcon, SendIcon, TokenIcon } from '../icons';
+import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, HomeIcon, GoalIcon, SendIcon, TokenIcon } from '../icons';
+import { NavigationLink } from './NavigationLink';
+import { SocialBar } from './SocialBar';
 
 export const Navigation = ({ 
     navigateTo, 
@@ -15,50 +17,33 @@ export const Navigation = ({
     return (
         <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 shadow-lg">
 
-            <nav className="border-b border-dark-grey flex justify-center p-4 bg-white rounded-tl-lg">
+            <nav className="border-b border-dark-grey flex justify-center p-4 bg-black rounded-tl-lg">
                 <ul>
 
-                    <li className="relative mb-2">
-                        <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10">Start</div>
-                        <button className="p-1" onClick={() => navigateTo(0)}>
-                            <HomeIcon fillVar={currentScreen === 0 ? '--accent' : '--dark-grey'} />
-                        </button>
-                    </li>
+                    <NavigationLink label="Start" marginBottom={true} navigateTo={() => navigateTo(0)}>
+                        <HomeIcon fillVar={currentScreen === 0 ? '--accent' : '--white'} />
+                    </NavigationLink>
 
-                    <li className="relative mb-2">
-                        <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10">The Coin</div>
-                        <button className="p-1" onClick={() => navigateTo(1)}>
-                            <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--dark-grey'} />
-                        </button>
-                    </li>
+                    <NavigationLink label="The Coin" marginBottom={true} navigateTo={() => navigateTo(1)}>
+                        <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--white'} />
+                    </NavigationLink>
 
-                    <li className="relative mb-2">
-                        <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10">The Game</div>
-                        <button className="p-1" onClick={() => navigateTo(2)}>
-                            <ControlIcon fillVar={currentScreen === 2 ? '--accent' : '--dark-grey'} />
-                        </button>
-                    </li>
+                    <NavigationLink label="The Game" marginBottom={true} navigateTo={() => navigateTo(2)}>
+                        <ControlIcon fillVar={currentScreen === 2 ? '--accent' : '--white'} />
+                    </NavigationLink>
 
-                    <li className="relative mb-2">
-                        <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10">The NFT</div>
-                        <button className="p-1" onClick={() => navigateTo(3)}>
-                            <TokenIcon fillVar={currentScreen === 3 ? '--accent' : '--dark-grey'} />
-                        </button>
-                    </li>
+                    <NavigationLink label="NFT" marginBottom={true} navigateTo={() => navigateTo(3)}>
+                        <TokenIcon fillVar={currentScreen === 3 ? '--accent' : '--white'} />
+                    </NavigationLink>
 
-                    <li className="relative mb-2">
-                        <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10">Roadmap</div>
-                        <button className="p-1" onClick={() => navigateTo(4)}>
-                            <GoalIcon fillVar={currentScreen === 4 ? '--accent' : '--dark-grey'} />
-                        </button>
-                    </li>
+                    <NavigationLink label="Roadmap" marginBottom={true} navigateTo={() => navigateTo(4)}>
+                        <GoalIcon fillVar={currentScreen === 4 ? '--accent' : '--white'} />
+                    </NavigationLink>
 
-                    <li className="relative">
-                        <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10">Links</div>
-                        <button className="p-1" onClick={() => navigateTo(5)}>
-                            <SendIcon fillVar={currentScreen === 5 ? '--accent' : '--dark-grey'} />
-                        </button>
-                    </li>
+                    <NavigationLink label="Subscribe" marginBottom={false} navigateTo={() => navigateTo(5)}>
+                        <SendIcon fillVar={currentScreen === 5 ? '--accent' : '--white'} />
+                    </NavigationLink>
+
                 </ul>
             </nav>
 
@@ -74,30 +59,7 @@ export const Navigation = ({
 
             </div>
 
-            <div className="flex justify-center p-4 bg-dark-green rounded-bl-xl">
-                <ul className="opacity-70 mt-2">
-                    <li>
-                        <a className="inline-block p-1">
-                            <InstagramIcon />
-                        </a>
-                    </li>
-                    <li>
-                        <a className="inline-block p-1">
-                            <DiscordIcon />
-                        </a>
-                    </li>
-                    <li>
-                        <a className="inline-block p-1">
-                            <XIcon />
-                        </a>
-                    </li>
-                    <li>
-                        <a className="inline-block p-1">
-                            <TikTokIcon />
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <SocialBar />
         </div>
     );
 };

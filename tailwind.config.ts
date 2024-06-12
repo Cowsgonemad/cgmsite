@@ -44,6 +44,10 @@ const config: Config = {
       transitionDuration: {
         '20': '.2s'
       },
+      borderWidth: {
+        '10': '10px',
+        '20': '20px'
+      },
       keyframes: {
         'soft-bounce': {
           '0%, 100%': {
@@ -72,11 +76,26 @@ const config: Config = {
           '96%': {
             'filter': 'drop-shadow(2px 4px 20px transparent)'
           }
+        },
+        'bg-size': {
+          '0,100%': {
+            'background-size': '108%'
+          },
+          '20%': {
+            'background-size': '109%'
+          },
+          '30%': {
+            'background-size': '107%'
+          },
+          '80%': {
+            'background-size': '109%'
+          }
         }
       },
       animation: {
         'soft-bounce': 'soft-bounce 3s infinite',
-        'flicker': 'flicker 2s infinite'
+        'flicker': 'flicker 2s infinite',
+        'bg-size': 'bg-size 10s infinite'
       }
     },
   },

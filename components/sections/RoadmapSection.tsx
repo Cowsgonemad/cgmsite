@@ -18,7 +18,7 @@ export const RoadmapSection = ({
                     <div className="flex items-start justify-between">
                         <div>
                             <h3 className="text-dark-grey mb-2 text-5xl tracking-wider">The Roadmap</h3>
-                            <p  className="text-dark-grey mb-12 text-lg">
+                            <p  className="text-dark-grey mb-12 text-xl">
                                 <strong className="font-extrabold">Cows Gone Map</strong> project timeline
                             </p>
                         </div>

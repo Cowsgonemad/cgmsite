@@ -31,7 +31,8 @@ export default function Home() {
   });
 
   const [coinTab, setCoinTab] = useState('coin');
-  const [gameTab, setGameTab] = useState('game');
+  const [gameTab, setGameTab] = useState('trailer');
+  const [nft, setNft] = useState('1');
   const [roadMapTranslate, setRoadMapTranslate] = useState(0);
 
   const totalSections = Object.keys(scrollState).length;
@@ -43,6 +44,7 @@ export default function Home() {
 
     const handleScroll = () => {
 
+      console.log('handle scroll');
       const height = window.innerHeight;
       const scrollTop = document.documentElement.scrollTop;
 
@@ -71,6 +73,8 @@ export default function Home() {
 
       setCurrentScreen(current);
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 
@@ -114,7 +118,7 @@ export default function Home() {
 
         <GameSection progress={scrollState.second} tab={gameTab} setTab={(tab) => setGameTab(tab)} />
 
-        <NFTSection progress={scrollState.third} />
+        <NFTSection progress={scrollState.third} nft={nft} setNft={(n) => setNft(n)} />
 
         <RoadmapSection progress={scrollState.fourth} roadProgress={roadMapTranslate} back={backRoadmap} forward={forwardRoadmap} />
 

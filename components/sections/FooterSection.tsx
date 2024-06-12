@@ -29,9 +29,9 @@ export const FooterSection = ({ progress }: { progress: number }) => {
 
                     <div className="relative">
 
-                        <input type="text" className="w-full pl-8 pr-44 py-3 rounded-5xl bg-transparent text-white text-sm border-2 border-white border-opacity-10 focus:outline-none focus:border-accent transition duration-20" placeholder="Your email" />
+                        <input type="text" className="w-full pl-8 pr-44 py-3 bg-transparent text-white text-sm border-2 border-white border-opacity-10 focus:outline-none focus:border-accent transition duration-20" placeholder="Your email" />
 
-                        <button className="absolute w-40 right-0 font-extrabold uppercase h-full rounded-r-5xl text-sm px-6 text-accent border-2 border-accent">Subscribe</button>
+                        <button className="absolute w-40 right-0 font-extrabold uppercase h-full text-sm px-6 text-accent border-2 border-accent">Subscribe</button>
                     </div>
                 </div>
 
