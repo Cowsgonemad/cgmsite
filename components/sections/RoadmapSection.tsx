@@ -33,7 +33,7 @@ export const RoadmapSection = ({
                         </div>
                     </div>
                     
-                    <div>
+                    <div className="overflow-hidden">
                         <div className="flex gap-8 w-full transition duration-20" style={contentStyle}>
 
                             <div className="card w-1/4 shrink-0 border-4 border-dark-grey bg-accent">

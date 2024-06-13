@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { HomeSection, CoinSection, GameSection, RoadmapSection, FooterSection, NFTSection } from '@/components/sections';
 import { Navigation } from '@/components/layout';
 
@@ -37,6 +37,22 @@ export default function Home() {
 
   const totalSections = Object.keys(scrollState).length;
   const viewer = useRef<HTMLElement>(null);
+
+  const navigatePrevious = useCallback(() => {
+    if (currentScreen > 0) navigateTo(currentScreen - 1);
+  }, [currentScreen]);
+
+  const navigateNext = useCallback(() => {
+    if (currentScreen < totalSections - 1) navigateTo(currentScreen + 1);
+  }, [currentScreen, totalSections]);
+
+  const backRoadmap = () => {
+    if (roadMapTranslate > 0) setRoadMapTranslate(roadMapTranslate - 10); 
+  };
+
+  const forwardRoadmap = () => {
+    if (roadMapTranslate < 50) setRoadMapTranslate(roadMapTranslate + 10); 
+  };
 
   useEffect(() => {
 
@@ -76,29 +92,21 @@ export default function Home() {
 
     handleScroll();
 
+    const handleKeyDown = (event: KeyboardEvent) => {
+      event.preventDefault();
+      if (event.key === 'ArrowUp') navigatePrevious();
+      else if (event.key === 'ArrowDown') navigateNext();
+    }
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('keydown', handleKeyDown);
     };
 
-  }, [totalSections]);
-
-  const navigatePrevious = () => {
-    if (currentScreen > 0) navigateTo(currentScreen - 1);
-  };
-
-  const navigateNext = () => {
-    if (currentScreen < totalSections - 1) navigateTo(currentScreen + 1);
-  };
-
-  const backRoadmap = () => {
-    if (roadMapTranslate > 0) setRoadMapTranslate(roadMapTranslate - 10); 
-  };
-
-  const forwardRoadmap = () => {
-    if (roadMapTranslate < 50) setRoadMapTranslate(roadMapTranslate + 10); 
-  };
+  }, [totalSections, navigateNext, navigatePrevious]);
 
   return (
 

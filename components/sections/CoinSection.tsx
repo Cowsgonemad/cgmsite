@@ -58,7 +58,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                             </li>
                         </ul>
 
-                        <div className="relative h-72 mb-32">
+                        <div className="relative h-72 mb-48">
                             <div className="transition duration-20 absolute top-0" style={{
                                 transform: tab === 'coin' ? 'translateX(0)' : 'translateX(-100%)',
                                 opacity: tab === 'coin' ? 1 : 0

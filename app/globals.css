@@ -24,8 +24,17 @@ html {
   font-family: var(--font-archivo);
 }
 
+/* body {
+  overflow: hidden;
+} */
+
 body::-webkit-scrollbar {
+  display: none;
+}
+
+/* body::-webkit-scrollbar {
   width: 12px;
+  display: none;
 }
 
 body::-webkit-scrollbar-track {
@@ -35,7 +44,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: rgb(var(--accent));
-}
+} */
 
 h3 {
   font-family: var(--font-screebie);
