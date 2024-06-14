@@ -3,7 +3,7 @@ import { DiscordIcon, InstagramIcon, TikTokIcon, XIcon } from '../icons';
 export const SocialBar = () => {
 
     return(
-        <div className="flex justify-center p-4 bg-dark-green rounded-bl-xl">
+        <div className="hidden md:flex justify-center p-4 bg-dark-green rounded-bl-xl">
             <ul className="opacity-70 mt-2">
                 <li>
                     <a className="inline-block p-1">

@@ -29,7 +29,8 @@ const config: Config = {
         'screen': '100vw'
       },
       scale: {
-        '175': '1.75'
+        '175': '1.75',
+        '200': '2'
       },
       boxShadow: {
         'button': '10px 10px'

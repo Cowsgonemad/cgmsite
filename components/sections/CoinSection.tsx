@@ -97,9 +97,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
 
                                 <div className="flex items-center gap-4">
 
-                                    <div className="bg-black bg-opacity-60 py-4 rounded-lg">
-                                        <TokenomicsChart />
-                                    </div>
+                                    <TokenomicsChart />
 
                                     <div>
                                         <p className="text-white font-thin text-xl text-justify">

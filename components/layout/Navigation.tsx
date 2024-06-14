@@ -17,7 +17,7 @@ export const Navigation = ({
     return (
         <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 shadow-lg">
 
-            <nav className="border-b border-dark-grey flex justify-center p-4 bg-black rounded-tl-lg">
+            <nav className="rounded-bl-xl md:rounded-bl-none border-b border-dark-grey flex justify-center p-4 bg-black rounded-tl-lg">
                 <ul>
 
                     <NavigationLink label="Start" marginBottom={true} navigateTo={() => navigateTo(0)}>
@@ -47,7 +47,7 @@ export const Navigation = ({
                 </ul>
             </nav>
 
-            <div className="border-b border-dark-grey flex flex-col items-center p-4 bg-white">
+            <div className="hidden md:flex border-b border-dark-grey flex-col items-center p-4 bg-white">
 
                 <button className="block mt-1 mb-2" onClick={() => navigatePrevious()}>
                     <ArrowUpIcon />

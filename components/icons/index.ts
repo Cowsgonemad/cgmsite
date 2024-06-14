@@ -3,8 +3,10 @@ export * from './ArrowUpIcon';
 export * from './ChevronLeftIcon';
 export * from './ChevronRightIcon';
 export * from './CoinIcon';
+export * from './ContractIcon';
 export * from './ControlIcon'
 export * from './DiscordIcon';
+export * from './ExpandIcon';
 export * from './GamePadIcon';
 export * from './GoalIcon';
 export * from './HealthMetricsIcon';

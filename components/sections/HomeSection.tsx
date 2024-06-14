@@ -29,7 +29,7 @@ export const HomeSection = ({
 
             <div className="size-full text-center flex items-center flex-col">
 
-                <div className="w-1/3 mt-auto">
+                <div className="w-2/3 md:w-1/3 mt-auto">
                     <div className="animate-flicker">
                         <div className="animate-soft-bounce">
                             <Logo />
@@ -37,14 +37,8 @@ export const HomeSection = ({
                     </div>
                 </div>
 
-                {/* <div className="w-1/3 mx-auto bg-black bg-opacity-80 mt-8 py-2 px-4 rounded-lg">
-                    <p className="text-white text-lg font-thin text-justify">
-                    After the meteoric event that endowed the cows of Pasture Prime with extraordinary powers, the balance of nature has been disrupted. The transformative cryptonite not only altered the cows but also the predatory wolves, leading to an uneasy truce between the cows and humans.
-                    </p>
-                </div> */}
-
                 <div className="animate-soft-bounce mt-8 mb-auto">
-                    <button className="block uppercase font-extrabold text-black px-5 py-2 focus:text-white transition duration-20 text-2xl w-80 border-4 border-black focus:border-white bg-halftone hover:translate-y-2" 
+                    <button className="block uppercase font-extrabold text-black px-5 py-2 focus:text-white transition duration-20 text-2xl w-60 md:w-80 border-4 border-black focus:border-white bg-halftone hover:translate-y-2" 
                     onClick={() => navigateToCoinScreen(1)}>
                         Discover
                     </button>

@@ -157,11 +157,13 @@ nav li:hover .label {
 
 .apexcharts-legend {
   text-align: left;
+  transform: translate(-14px, -10px);
 }
 .apexcharts-legend-text {
   color: white !important;
   font-family: var(--font-archivo) !important;
   font-size: .9rem !important;
+  font-weight: 100 !important;
 }
 
 @keyframes bg-scrolling-reverse {
