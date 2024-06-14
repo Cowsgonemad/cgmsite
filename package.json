@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "firebase hosting:channel:deploy temp"
+    "deploy:v1": "firebase hosting:channel:deploy temp",
+    "deploy:v2": "firebase hosting:channel:deploy hero-split"
   },
   "dependencies": {
     "apexcharts": "^3.49.1",
