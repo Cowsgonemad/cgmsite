@@ -93,6 +93,18 @@ h3 {
   transition: .2s;
 }
 
+.bg-hero {
+  background-image: url('../public/img/hero.jpg');
+  background-size: cover;
+  background-position: top;
+}
+.bg-hero-draft {
+  background-image: url('../public/img/hero-draft.jpg');
+  background-size: cover;
+  background-position: top;
+  mask-image: linear-gradient(to left, white 48%, transparent 52%);
+}
+
 .mix-dodge {
   mix-blend-mode: color-dodge;
 }
@@ -118,17 +130,17 @@ h3 {
 .bshadow {
   box-shadow: 10px 10px 0 rgb(var(--pink));
 }
-
 .bdropshadow {
   filter: drop-shadow(12px 12px 0px rgb(var(--accent)));
 }
-
 .drop-shadow-nft {
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
 }
-
 .box-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.arrow-drop {
+  filter: drop-shadow(-5px 10px 0px black);
 }
 
 .vertical {

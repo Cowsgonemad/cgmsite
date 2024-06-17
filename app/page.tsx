@@ -120,7 +120,7 @@ export default function Home() {
     
       <main ref={viewer} style={{ height: `${totalSections}00vh` }}>
 
-        <HomeSection navigateToCoinScreen={(screen) => navigateTo(screen)} />
+        <HomeSection navigateTo={(screen) => navigateTo(screen)} />
 
         <CoinSection progress={scrollState.first} tab={coinTab} setTab={(tab) => setCoinTab(tab)} />
 
