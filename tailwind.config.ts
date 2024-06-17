@@ -24,6 +24,7 @@ const config: Config = {
       },
       fontFamily: {
         screebie: ['var(--font-screebie)'],
+        outfit: ['var(--font-outfit)']
       },
       maxWidth: {
         'screen': '100vw'

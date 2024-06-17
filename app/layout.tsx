@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
+import { Outfit } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const archivo = Archivo({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: '--font-archivo'
+  variable: '--font-outfit'
 });
 
 const screebie = localFont({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${screebie.variable} ${archivo.variable}`}>
+    <html lang="en" className={`${screebie.variable} ${outfit.variable}`}>
       <body>{children}</body>
     </html>
   );

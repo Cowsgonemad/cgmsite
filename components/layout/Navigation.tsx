@@ -15,39 +15,39 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 shadow-lg">
+        <div className="fixed left-1/2 bottom-4 -translate-x-1/2 z-50 shadow-lg">
 
-            <nav className="rounded-bl-xl md:rounded-bl-none border-b border-dark-grey flex justify-center p-4 bg-black rounded-tl-lg">
-                <ul>
+            <nav className="p-4 bg-dark-green rounded-lg">
+                <ul className="flex gap-4">
 
-                    <NavigationLink label="Start" marginBottom={true} navigateTo={() => navigateTo(0)}>
+                    <NavigationLink label="Start" navigateTo={() => navigateTo(0)}>
                         <HomeIcon fillVar={currentScreen === 0 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="The Coin" marginBottom={true} navigateTo={() => navigateTo(1)}>
+                    <NavigationLink label="The Coin" navigateTo={() => navigateTo(1)}>
                         <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="The Game" marginBottom={true} navigateTo={() => navigateTo(2)}>
+                    <NavigationLink label="The Game" navigateTo={() => navigateTo(2)}>
                         <ControlIcon fillVar={currentScreen === 2 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="NFT" marginBottom={true} navigateTo={() => navigateTo(3)}>
+                    <NavigationLink label="NFT" navigateTo={() => navigateTo(3)}>
                         <TokenIcon fillVar={currentScreen === 3 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="Roadmap" marginBottom={true} navigateTo={() => navigateTo(4)}>
+                    <NavigationLink label="Roadmap" navigateTo={() => navigateTo(4)}>
                         <GoalIcon fillVar={currentScreen === 4 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="Subscribe" marginBottom={false} navigateTo={() => navigateTo(5)}>
+                    <NavigationLink label="Subscribe" navigateTo={() => navigateTo(5)}>
                         <SendIcon fillVar={currentScreen === 5 ? '--accent' : '--white'} />
                     </NavigationLink>
 
                 </ul>
             </nav>
 
-            <div className="hidden md:flex border-b border-dark-grey flex-col items-center p-4 bg-white">
+            {/* <div className="hidden md:flex border-b border-dark-grey flex-col items-center p-4 bg-white rounded-bl-xl">
 
                 <button className="block mt-1 mb-2" onClick={() => navigatePrevious()}>
                     <ArrowUpIcon />
@@ -57,9 +57,9 @@ export const Navigation = ({
                     <ArrowDownIcon />
                 </button>
 
-            </div>
+            </div> */}
 
-            <SocialBar />
+            {/* <SocialBar /> */}
         </div>
     );
 };

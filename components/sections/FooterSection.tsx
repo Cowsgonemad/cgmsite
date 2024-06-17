@@ -21,7 +21,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                         </div>
                     </div>
 
-                    <p className="text-white text-justify w-full text-md opacity-40 font-thin">
+                    <p className="text-white text-justify w-full text-md opacity-40 font-extralight">
                         The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (MooMoo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
                     </p>
                 </div>
@@ -38,7 +38,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                 <hr className="border-t border-white opacity-10 w-full" />
 
                 <div className="max-w-screen-lg opacity-40 py-4">
-                    <p className="text-white font-thin text-sm">Cows Gone Mad &copy; All rights Reserved</p>
+                    <p className="text-white font-extralight text-sm">Cows Gone Mad &copy; All rights Reserved</p>
                 </div>
             </div>
 

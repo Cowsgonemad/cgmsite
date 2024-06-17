@@ -12,7 +12,7 @@ export const RoadmapSection = ({
 
     return(
         <Screen containerClasses="bg-halftone" containerStyle={containerStyle}>
-            <div className="max-w-screen-lg mx-auto px-4 h-full flex items-center">
+            <div className="max-w-screen-xl mx-auto px-4 h-full flex items-center">
                 <div>
 
                     <div className="flex items-start justify-between">

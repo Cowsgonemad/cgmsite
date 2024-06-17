@@ -68,7 +68,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                                     <span><span className="text-pink">The</span> Moo Moo <span className="text-pink">Coin</span></span>
                                 </h3>
 
-                                <p className="text-white font-thin text-xl text-justify">
+                                <p className="text-white font-extralight text-xl text-justify">
                                 <strong className="font-extrabold">The MooMoo token</strong> is an integral part of the <strong className="font-extrabold">Cows Gone Mad</strong> NFT collection and its accompanying video game, <strong className="font-extrabold">Cows Gone Mad: Battle for Pasture Prime.</strong> Designed on the Solana blockchain for its scalability and low transaction fees, MooMoo Solana tokens function as the primary in-game currency. These tokens link the digital art world with interactive gaming, allowing NFT holders to leverage their assets within the game environment and beyond.
                                 </p>
                             </div>
@@ -81,7 +81,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                                     <span><span className="text-pink">The</span> Moo Moo <span className="text-pink">Tokens</span></span>
                                 </h3>
 
-                                <p className="text-white font-thin text-xl text-justify">
+                                <p className="text-white font-extralight text-xl text-justify">
                                 <strong className="font-extrabold">The MooMoo token</strong> is the lifeblood of the <strong className="font-extrabold">Cows Gone Mad</strong> ecosystem, designed to facilitate seamless transactions, incentivise community engagement, and drive the project&apos;s overall growth and sustainability. Initially, its primary utility lies within the blockchain-based video game <strong className="font-extrabold">Cows Gone Mad: Battle for Pasture Prime</strong>, where it serves as the main currency for purchasing in-game items, unlocking exclusive content, and participating in special events.
                                 </p>
                             </div>
@@ -100,7 +100,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                                     <TokenomicsChart />
 
                                     <div>
-                                        <p className="text-white font-thin text-xl text-justify">
+                                        <p className="text-white font-extralight text-xl text-justify">
                                         The total supply of <strong className="font-extrabold">MooMoo tokens</strong> is capped at 1 billion tokens. In order to manage scarcity and value, and provide liquidity for game operations and market activities, the tokens are distributed for various purposes.
                                         </p>
                                     </div>
@@ -117,7 +117,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                                     <span><span className="text-pink">The</span> Goals</span>
                                 </h3>
 
-                                <p className="text-white font-thin text-xl text-justify mb-4">
+                                <p className="text-white font-extralight text-xl text-justify mb-4">
                                 Beyond the game, the MooMoo token supports broader goals, including funding the video game’s development and backing the <strong className="font-extrabold">MetaHealth Online Platform</strong>, aiming to revolutionize healthcare access with blockchain-based security and efficiency. 
                                 </p>
 

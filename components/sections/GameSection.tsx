@@ -29,7 +29,7 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
                                     </video>
                                 </div>
 
-                                {/* <p className="text-white font-thin text-xl my-8">
+                                {/* <p className="text-white font-extralight text-xl my-8">
                                 Set in a post-meteoric world where cows, humans, and wolves vie for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
                                 </p> */}
                             </div>
@@ -44,9 +44,9 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
 
                                 <div className="w-full text-justify">
                                     {/* <h3 className="text-white mb-4 text-5xl tracking-wider">The Battle Of Pasture Prime</h3> */}
-                                    <h5 className="font-thin text-2xl text-accent mb-4">The New Blockchain Adventure</h5>
-                                    <p className="text-white font-thin text-xl"><strong className="font-extrabold">Cows Gone Mad: Battle for Pasture Prime</strong> is a blockchain based survival and quest-type video game set in a world where cows, humans, and wolves vie for dominance.</p>
-                                    <p className="text-white font-thin text-xl mt-4">
+                                    <h5 className="font-extralight text-2xl text-accent mb-4">The New Blockchain Adventure</h5>
+                                    <p className="text-white font-extralight text-xl"><strong className="font-extrabold">Cows Gone Mad: Battle for Pasture Prime</strong> is a blockchain based survival and quest-type video game set in a world where cows, humans, and wolves vie for dominance.</p>
+                                    <p className="text-white font-extralight text-xl mt-4">
                                     The purpose of <strong className="font-extrabold">Cows Gone Mad: Battle for Pasture Prime</strong> is to offer a deeply engaging, multi-layered gaming experience that differentiates itself from other survival and strategy games through its integration of blockchain technology. This not only ensures transparency in transactions and player interactions but also allows for a decentralised governance model where players have significant control over the game’s evolution. The game’s unique premise of an uneasy alliance between different species after a world-altering event provides a fresh narrative backdrop that is both intriguing and ripe for exploration.
                                     </p>
                                 </div>
@@ -62,11 +62,11 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
                                 </div>
 
                                 <div className="w-full text-justify">
-                                    <p className="text-white font-thin text-xl mb-4">
+                                    <p className="text-white font-extralight text-xl mb-4">
                                     Set in a post-meteoric world where cows, humans, and wolves vie for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
                                     </p>
 
-                                    <h5 className="font-thin text-2xl text-accent mb-4">Key Features</h5>
+                                    <h5 className="font-extralight text-2xl text-accent mb-4">Key Features</h5>
                                     
                                     <ul className="text-white uppercase font-bold text-sm grid grid-cols-2 gap-4">
                                         <li className="border-2 border-accent px-4 py-3 feature-shadow">Faction Selection</li>
