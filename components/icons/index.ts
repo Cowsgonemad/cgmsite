@@ -7,6 +7,7 @@ export * from './ContractIcon';
 export * from './ControlIcon'
 export * from './DiscordIcon';
 export * from './ExpandIcon';
+export * from './FacebookIcon';
 export * from './GamePadIcon';
 export * from './GoalIcon';
 export * from './HealthMetricsIcon';
@@ -16,6 +17,9 @@ export * from './LinkIcon';
 export * from './RoadIcon';
 export * from './SavingsIcon';
 export * from './SendIcon';
+export * from './SubscribeArrowIcon';
+export * from './TelegramIcon';
 export * from './TikTokIcon';
 export * from './TokenIcon';
+export * from './UbreIcon';
 export * from './XIcon';

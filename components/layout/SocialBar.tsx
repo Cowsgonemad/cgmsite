@@ -1,31 +1,34 @@
-import { DiscordIcon, InstagramIcon, TikTokIcon, XIcon } from '../icons';
+import { DiscordIcon, InstagramIcon, TelegramIcon, UbreIcon, XIcon } from '../icons';
 
 export const SocialBar = () => {
 
     return(
-        <div className="hidden md:flex justify-center p-4 bg-dark-green rounded-bl-xl">
-            <ul className="opacity-70 mt-2">
-                <li>
-                    <a className="inline-block p-1">
-                        <InstagramIcon />
-                    </a>
-                </li>
-                <li>
-                    <a className="inline-block p-1">
-                        <DiscordIcon />
-                    </a>
-                </li>
-                <li>
-                    <a className="inline-block p-1">
-                        <XIcon />
-                    </a>
-                </li>
-                <li>
-                    <a className="inline-block p-1">
-                        <TikTokIcon />
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <ul className="opacity-50 flex gap-6 mt-3 mb-6 justify-center">
+            <li>
+                <a className="inline-block p-1">
+                    <XIcon />
+                </a>
+            </li>
+            <li>
+                <a className="inline-block p-1">
+                    <TelegramIcon />
+                </a>
+            </li>
+            <li>
+                <a className="inline-block p-1">
+                    <UbreIcon />
+                </a>
+            </li>
+            <li>
+                <a className="inline-block p-1">
+                    <InstagramIcon />
+                </a>
+            </li>
+            <li>
+                <a className="inline-block p-1">
+                    <DiscordIcon />
+                </a>
+            </li>
+        </ul>
     );
 };

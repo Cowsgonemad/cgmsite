@@ -10,42 +10,7 @@ export const HomeSection = ({
     navigateTo: (screen: number) => void,
 }) => {
 
-    const [overlay, setOverlay] = useState('full');
     const [translate, setTranslate] = useState('none');
-
-    const getPos = () => {
-        let classes = 'size-full absolute right-0 top-0 bg-black bg-opacity-80 transition duration-20';
-        if (overlay === 'left') classes += ' translate-x-1/2';
-        else if (overlay === 'right') classes += ' -translate-x-1/2';
-        return classes;
-    };
-
-    const pos = getPos();
-
-    const goRight = () => {
-        setTranslate('right');
-        setTimeout(() => {
-            navigateTo(2);
-            setTimeout(() => {
-                reset();
-            }, 500);
-        }, 100);
-    };
-
-    const goLeft = () => {
-        setTranslate('left');
-        setTimeout(() => {
-            navigateTo(1);
-            setTimeout(() => {
-                reset();
-            }, 500);
-        }, 100);
-    };
-
-    const reset = () => {
-        setOverlay('full');
-        setTranslate('none');
-    };
 
     const getTransitionProperty = (): string => {
         if (translate === 'left') {
@@ -111,7 +76,7 @@ export const HomeSection = ({
                 style={{opacity: translate === 'left' || translate === 'none' ? '1' : '0'}}>
 
                     <button className="relative text-white hover:text-accent hover:translate-x-20 transition duration-20"
-                    onMouseEnter={() => setTranslate('left')} onMouseLeave={() => setTranslate('none')}>
+                    onMouseEnter={() => setTranslate('left')} onMouseLeave={() => setTranslate('none')} onClick={() => navigateTo(1)}>
                         <svg className="absolute -z-10" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0h300v54.855L234.855 120H0V0ZM241.926 120h20.929L300 82.855V61.926L241.926 120ZM269.926 120 300 89.926V120h-30.074Z" fill="rgb(var(--black))"/>
                         </svg>
@@ -145,7 +110,7 @@ export const HomeSection = ({
                 style={{opacity: translate === 'right' || translate === 'none' ? '1' : '0'}}>
 
                     <button className="relative text-white hover:text-accent hover:-translate-x-20 transition duration-20"
-                    onMouseEnter={() => setTranslate('right')} onMouseLeave={() => setTranslate('none')}>
+                    onMouseEnter={() => setTranslate('right')} onMouseLeave={() => setTranslate('none')} onClick={() => navigateTo(2)}>
                         <svg className="absolute -z-10" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M300 0H0v54.855L65.145 120H300V0ZM58.074 120h-20.93L0 82.855V61.926L58.074 120ZM30.074 120 0 89.926V120h30.074Z" fill="rgb(var(--black))"/>
                         </svg>

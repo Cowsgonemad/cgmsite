@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Screen } from '../layout';
-import { Waves } from '../ui';
+import { Logo, Waves } from '../ui';
 
 export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: string, setTab: (tab: string) => void }) => {
 
@@ -8,8 +8,8 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
     const contentStyle = { transform: `translateX(-${100 - progress}px)` };
     const activeTab = 'absolute size-full flex gap-10 p-10 opacity-100 translate-x-0 transition duration-20';
     const inactiveTab = 'absolute size-full flex gap-10 p-10 opacity-0 transition -translate-x-full duration-20';
-    const activeLabel = 'bg-black text-accent py-6 transition duration-20';
-    const inactiveLabel = 'bg-dark-grey py-4 transition duration-20 text-white hover:text-accent hover:border-accent';
+    const activeLabel = 'text-accent transition duration-20 relative w-60 h-16 flex items-center justify-end tab-drop';
+    const inactiveLabel = 'transition duration-20 text-white hover:text-accent hover:border-accent relative w-60 h-16 flex items-center justify-end tab-drop-dark';
 
     return(
         <Screen containerClasses="" containerStyle={containerStyle}>
@@ -17,21 +17,30 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
 
                 <div className="transition duration-20 size-full" style={contentStyle}>
 
-                    <div className="xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm w-full mx-auto h-full flex relative">
+                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto h-full flex relative">
 
                         <div className={tab === 'trailer' ? activeTab : inactiveTab}>
 
-                            <div className="w-full my-auto">
-                                <div className="-mx-10">
+                            <div className="w-full my-auto flex gap-8">
+
+                                <div className="w-1/4">
+
+                                    <Logo />
+
+                                    <h5 className="font-extralight text-2xl text-accent my-4">The New Blockchain Adventure</h5>
+
+                                    <p className="text-white font-extralight text-xl text-justify">
+                                    Set in a post-meteoric world where cows, humans, and wolves vie for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
+                                    </p>
+                                </div>
+
+                                <div className="w-3/4">
                                     <video width="100%" height="500" controls>
                                         <source src="/video/sample.mp4" />
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
 
-                                {/* <p className="text-white font-extralight text-xl my-8">
-                                Set in a post-meteoric world where cows, humans, and wolves vie for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
-                                </p> */}
                             </div>
                         </div>
 
@@ -81,18 +90,27 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
                         </div>
 
 
-                        <div className="absolute right-0 h-full game-tab flex flex-col translate-x-full justify-center">
+                        <div className="absolute bottom-0 right-0 flex gap-4">
 
                             <button className={tab === 'trailer' ? activeLabel : inactiveLabel} onClick={() => setTab('trailer')}>
-                                <h4 className="uppercase font-bold text-3xl vertical">Trailer</h4>
+                                <svg viewBox="0 0 306 84" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0" width="100%">
+                                    <path d="M0 84h306V0H86L0 84Z" fill="rgb(var(--black))"/>
+                                </svg>
+                                <h4 className="uppercase font-bold text-3xl relative mr-4">Trailer</h4>
                             </button>
 
                             <button className={tab === 'game' ? activeLabel : inactiveLabel} onClick={() => setTab('game')}>
-                                <h4 className="uppercase font-bold text-3xl vertical">The Game</h4>
+                                <svg viewBox="0 0 306 84" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0" width="100%">
+                                    <path d="M0 84h306V0H86L0 84Z" fill="rgb(var(--black))"/>
+                                </svg>
+                                <h4 className="uppercase font-bold text-3xl relative mr-4">The Game</h4>
                             </button>
 
                             <button className={tab === 'feat' ? activeLabel : inactiveLabel} onClick={() => setTab('feat')}>
-                                <h4 className="uppercase font-bold text-3xl vertical">Features</h4>
+                                <svg viewBox="0 0 306 84" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0" width="100%">
+                                    <path d="M0 84h306V0H86L0 84Z" fill="rgb(var(--black))"/>
+                                </svg>
+                                <h4 className="uppercase font-bold text-3xl relative mr-4">Features</h4>
                             </button>
                         </div>
                         

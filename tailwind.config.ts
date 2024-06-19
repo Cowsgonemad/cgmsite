@@ -17,6 +17,7 @@ const config: Config = {
         'black': 'rgba(var(--black) / <alpha-value>)',
         'pink': 'rgba(var(--pink) / <alpha-value>)',
         'dark-green': 'rgba(var(--dark-green) / <alpha-value>)',
+        'dark-green-light': 'rgba(var(--dark-green-light) / <alpha-value>)',
         'green': 'rgba(var(--green) / <alpha-value>)',
         'accent': 'rgba(var(--accent) / <alpha-value>)',
         'yellow': 'rgba(var(--yellow) / <alpha-value>)',
