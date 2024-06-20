@@ -13,6 +13,11 @@ const screebie = localFont({
   variable: '--font-screebie'
 });
 
+const jester = localFont({
+  src: 'fonts/jester.ttf',
+  variable: '--font-jester'
+});
+
 export const metadata: Metadata = {
   title: "Cows Gone Mad",
   description: "Landing Page Prototype",
@@ -24,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${screebie.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${screebie.variable} ${outfit.variable} ${jester.variable}`}>
       <body>{children}</body>
     </html>
   );

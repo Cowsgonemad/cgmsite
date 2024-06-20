@@ -25,27 +25,10 @@ html {
   font-family: var(--font-outfit);
 }
 
-/* body {
-  overflow: hidden;
-} */
-
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.invisible-scroller::-webkit-scrollbar {
   display: none;
 }
-
-/* body::-webkit-scrollbar {
-  width: 12px;
-  display: none;
-}
-
-body::-webkit-scrollbar-track {
-  background: rgb(var(--black));
-  border-left: 1px solid white;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: rgb(var(--accent));
-} */
 
 h3 {
   font-family: var(--font-screebie);
@@ -112,6 +95,13 @@ h3 {
   background-position: center;
 }
 
+.bg-print {
+  background-image: url('../public/img/bg-print.svg');
+  background-size: 100%;
+  background-position: center;
+  transition: .2s;
+}
+
 .mix-dodge {
   mix-blend-mode: color-dodge;
 }
@@ -154,6 +144,9 @@ h3 {
 }
 .tab-drop-dark {
   filter: drop-shadow(-10px 0px 0px rgb(var(--dark-green)));
+}
+.title-drop-shadow {
+  text-shadow: -5px 5px rgb(var(--black));
 }
 
 /* .vertical {

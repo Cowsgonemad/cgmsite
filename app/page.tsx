@@ -128,7 +128,7 @@ export default function Home() {
 
         <NFTSection progress={scrollState.third} nft={nft} setNft={(n) => setNft(n)} />
 
-        <RoadmapSection progress={scrollState.fourth} roadProgress={roadMapTranslate} back={backRoadmap} forward={forwardRoadmap} />
+        <RoadmapSection progress={scrollState.fourth} />
 
         <FooterSection progress={scrollState.fifth} />
 

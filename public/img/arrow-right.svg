@@ -1,8 +1,0 @@
-<svg width="233" height="114" viewBox="0 0 233 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <pattern id="b" patternUnits="userSpaceOnUse" width="400" height="400">
-            <image href="/img/halftone.png" x="0" y="0" width="400" height="400" />
-        </pattern>
-    </defs>
-    <path fill="url(#b)" d="M0 107.5L32.5 37L132 41V0L233 53.5L132 113.5V73.5L0 107.5Z"/>
-</svg>

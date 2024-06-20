@@ -13,7 +13,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
 
             <div className="bg-land h-60 shrink-0"></div>
 
-            <div className="flex w-full max-w-screen-md justify-center items-center m-auto">
+            <div className="flex w-full max-w-screen-md justify-center items-center mx-auto mt-auto">
                 <div className="w-1/3 p-14">
                     <MooMooLogo />
                 </div>
@@ -42,13 +42,13 @@ export const FooterSection = ({ progress }: { progress: number }) => {
 
                     <p className="text-dark-green-light mt-16 text-sm mb-4">
                         <a href="">TERMS OF SERVICE</a>
-                        <div className="inline-block rounded-full w-1 h-1 bg-dark-green-light my-1 mx-2"></div>
+                        <span className="inline-block rounded-full w-1 h-1 bg-dark-green-light my-1 mx-2"></span>
                         <a href="">PRIVACY POLICY</a>
                     </p>
                     
                 </div>
 
-                <div className="w-1/3 text-center">
+                <div className="w-1/3 flex justify-center">
                     <FooterCow />
                 </div>
 

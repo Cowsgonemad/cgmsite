@@ -25,7 +25,8 @@ const config: Config = {
       },
       fontFamily: {
         screebie: ['var(--font-screebie)'],
-        outfit: ['var(--font-outfit)']
+        outfit: ['var(--font-outfit)'],
+        jester: ['var(--font-jester)']
       },
       maxWidth: {
         'screen': '100vw'
@@ -82,16 +83,16 @@ const config: Config = {
         },
         'bg-size': {
           '0,100%': {
-            'background-size': '108%'
+            'background-size': '125%'
           },
           '20%': {
-            'background-size': '109%'
+            'background-size': '140%'
           },
           '30%': {
-            'background-size': '107%'
+            'background-size': '127%'
           },
           '80%': {
-            'background-size': '109%'
+            'background-size': '120%'
           }
         }
       },
