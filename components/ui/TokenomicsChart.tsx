@@ -14,30 +14,40 @@ export const TokenomicsChart = () => {
         theme: {
             monochrome: {
                 enabled: true,
-                color: '#02353c',
-                shadeTo: 'light',
-                shadeIntensity: 0.45
+                color: '#7feae2',
+                shadeTo: 'dark',
+                shadeIntensity: 0.65
             }
         },
         stroke: {
-            show: false
+            width: 5,
+            colors: ['#02353c'],
+            lineCap: 'round'
         },
+        dataLabels: {
+            enabled: false
+        },
+        tooltip: {
+            y: {
+                formatter: (val) => `${val}%`
+            }
+        }
     };
 
     const series = [10, 15, 5, 10, 10, 50];
 
     return(
-        <div className={`bg-black py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200  bg-opacity-100'} ${!expand && 'bg-opacity-60'}`}>
+        <div className={`bg-white py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200  bg-opacity-100'} ${!expand && 'bg-opacity-60'}`}>
 
-            <ApexChart type="pie" options={options} series={series} height={160} width={400} />
+            <ApexChart type="pie" options={options} series={series} height={190} width={400} />
 
-            <div className="absolute top-2 left-2 opacity-70 hover:opacity-100 transition duration-20">
+            <div className="absolute -bottom-2 right-4 opacity-70 hover:opacity-100 transition duration-20">
                 {!expand && <button onClick={() => setExpand(true)}>
-                    <ExpandIcon fillVar="--white" />
+                    <ExpandIcon fillVar="--black" />
                 </button>}
                 
                 {expand && <button onClick={() => setExpand(false)}>
-                    <ContractIcon fillVar="--white" />
+                    <ContractIcon fillVar="--black" />
                 </button>}
             </div>
         </div>

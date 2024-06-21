@@ -102,6 +102,13 @@ h3 {
   transition: .2s;
 }
 
+.bg-coin {
+  background-image: url('../public/img/bg-coin.svg');
+  background-size: 100%;
+  background-position: center;
+  transition: .2s;
+}
+
 .mix-dodge {
   mix-blend-mode: color-dodge;
 }
@@ -146,7 +153,7 @@ h3 {
   filter: drop-shadow(-10px 0px 0px rgb(var(--dark-green)));
 }
 .title-drop-shadow {
-  text-shadow: -5px 5px rgb(var(--black));
+  text-shadow: -8px 8px rgb(var(--black));
 }
 
 /* .vertical {
@@ -178,12 +185,14 @@ nav li:hover .label {
 .apexcharts-legend {
   text-align: left;
   transform: translate(-14px, -10px);
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
 }
 .apexcharts-legend-text {
-  color: white !important;
+  color: rgb(var(--black)) !important;
   font-family: var(--font-outfit) !important;
   font-size: .9rem !important;
-  font-weight: 100 !important;
+  font-weight: 200 !important;
 }
 
 .link-list {

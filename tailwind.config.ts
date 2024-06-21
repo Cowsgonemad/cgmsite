@@ -81,6 +81,26 @@ const config: Config = {
             'filter': 'drop-shadow(2px 4px 20px transparent)'
           }
         },
+        'opacity-flicker': {
+          '0%, 100%': {
+            'opacity': '1'
+          },
+          '20%': {
+            'opacity': '.6'
+          },
+          '82%': {
+            'opacity': '1'
+          },
+          '86%': {
+            'opacity': '.6'
+          },
+          '88%': {
+            'opacity': '1'
+          },
+          '96%': {
+            'opacity': '.8'
+          }
+        },
         'bg-size': {
           '0,100%': {
             'background-size': '125%'
@@ -94,12 +114,33 @@ const config: Config = {
           '80%': {
             'background-size': '120%'
           }
-        }
+        },
+        'coin-float': {
+          '0%': {
+            'opacity': '0',
+            'top': '80%',
+          },
+          '5%': {
+            'opacity': '1'
+          },
+          '95%': {
+            'top': '5%',
+            'opacity': '1'
+          },
+          '100%': {
+            'top': '0%',
+            'opacity': '0'
+          }
+        },
       },
       animation: {
         'soft-bounce': 'soft-bounce 3s infinite',
         'flicker': 'flicker 2s infinite',
-        'bg-size': 'bg-size 10s infinite'
+        'opacity-flicker': 'opacity-flicker 2s infinite',
+        'bg-size': 'bg-size 10s infinite',
+        'coin-float': 'coin-float 4s infinite',
+        'coin-float-2': 'coin-float 4s infinite .5s',
+        'coin-float-3': 'coin-float 4s infinite 1s'
       }
     },
   },

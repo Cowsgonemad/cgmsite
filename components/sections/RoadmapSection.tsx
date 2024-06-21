@@ -39,7 +39,7 @@ export const RoadmapSection = ({
             <div className="w-full xl:max-w-screen-2xl h-full flex flex-col justify-center">
 
                 <div className="w-full text-center mt-auto">
-                    <h3 className="text-pink text-8xl">
+                    <h3 className="text-pink text-8xl title-drop-shadow">
                         Road
                         <span className="text-white text-6xl font-jester block -mt-6">MAP</span>
                     </h3>
