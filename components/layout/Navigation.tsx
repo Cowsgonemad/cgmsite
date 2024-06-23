@@ -15,9 +15,9 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed left-1/2 top-0 -translate-x-1/2 z-50 shadow-lg">
+        <div className="fixed left-1/2 top-2 -translate-x-1/2 z-50 shadow-lg">
 
-            <nav className="py-2 px-4 bg-dark-green rounded-b-lg">
+            <nav className="py-2 px-4 bg-dark-green rounded-lg">
                 <ul className="flex gap-4">
 
                     <NavigationLink label="Start" navigateTo={() => navigateTo(0)}>
