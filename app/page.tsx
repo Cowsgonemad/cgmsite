@@ -32,8 +32,8 @@ export default function Home() {
 
   const [coinTab, setCoinTab] = useState('coin');
   const [gameTab, setGameTab] = useState('trailer');
+  const [nftTab, setNftTab] = useState(0);
   const [nft, setNft] = useState('1');
-  const [roadMapTranslate, setRoadMapTranslate] = useState(0);
 
   const totalSections = Object.keys(scrollState).length;
   const viewer = useRef<HTMLElement>(null);
@@ -45,14 +45,6 @@ export default function Home() {
   const navigateNext = useCallback(() => {
     if (currentScreen < totalSections - 1) navigateTo(currentScreen + 1);
   }, [currentScreen, totalSections]);
-
-  const backRoadmap = () => {
-    if (roadMapTranslate > 0) setRoadMapTranslate(roadMapTranslate - 10); 
-  };
-
-  const forwardRoadmap = () => {
-    if (roadMapTranslate < 50) setRoadMapTranslate(roadMapTranslate + 10); 
-  };
 
   useEffect(() => {
 
@@ -126,7 +118,7 @@ export default function Home() {
 
         <GameSection progress={scrollState.second} tab={gameTab} setTab={(tab) => setGameTab(tab)} />
 
-        <NFTSection progress={scrollState.third} nft={nft} setNft={(n) => setNft(n)} />
+        <NFTSection progress={scrollState.third} nft={nft} setNft={(n) => setNft(n)} tab={nftTab} setTab={(n) => setNftTab(n)} />
 
         <RoadmapSection progress={scrollState.fourth} />
 

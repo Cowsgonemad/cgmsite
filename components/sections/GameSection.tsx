@@ -8,8 +8,6 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
     const contentStyle = { transform: `translateX(-${100 - progress}px)` };
     const activeTab = 'absolute size-full flex gap-10 opacity-100 translate-x-0 transition duration-20';
     const inactiveTab = 'absolute size-full flex gap-10 opacity-0 transition -translate-x-full duration-20';
-    const activeLabel = 'text-accent transition duration-20 relative w-60 h-16 flex items-center justify-end tab-drop';
-    const inactiveLabel = 'transition duration-20 text-white hover:text-accent hover:border-accent relative w-60 h-16 flex items-center justify-end tab-drop-dark';
 
     return(
         <Screen containerClasses="" containerStyle={containerStyle}>
