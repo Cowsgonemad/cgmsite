@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import { Screen } from '../layout';
-import { FeatureButton, Logo, TabButton } from '../ui';
+import { Screen } from '../../layout';
+import { FeatureButton, Logo, TabButton } from '../../ui';
 
 export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: string, setTab: (tab: string) => void }) => {
 

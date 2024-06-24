@@ -1,10 +1,8 @@
-'use client';
-
-import { Logo } from '../ui';
-import { Screen } from '../layout';
+import { Logo } from '../../ui';
+import { Screen } from '../../layout';
 import { useState } from 'react';
 
-export const HomeSection = ({ 
+export const HeroSection = ({ 
     navigateTo,
 }: { 
     navigateTo: (screen: number) => void,

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { Screen } from '../layout';
-import { Arrows, NFTCollectionTitle } from '../ui';
-import { TextBlob } from '../ui/TextBlob';
+import { Screen } from '../../layout';
+import { Arrows, NFTCollectionTitle } from '../../ui';
+import { TextBlob } from '../../ui/TextBlob';
 
 export const NFTSection = ({ 
     progress, 

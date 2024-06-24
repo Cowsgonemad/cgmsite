@@ -1,7 +1,7 @@
 'use client'
 
 import dynamic from "next/dynamic";
-import { ContractIcon, ExpandIcon } from '../icons';
+import { ContractIcon, ExpandIcon } from '../../icons';
 import { useState } from 'react';
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 

@@ -1,6 +1,6 @@
-import { SubscribeArrowIcon } from '../icons';
-import { SocialBar } from '../layout';
-import { CGMLogo, FooterCow, FooterInput, Logo, MooMooLogo, RefLogo } from '../ui';
+import { SubscribeArrowIcon } from '../../icons';
+import { SocialBar } from '../../layout';
+import { CGMLogo, FooterCow, FooterInput, Logo, MooMooLogo, RefLogo } from '../../ui';
 
 export const FooterSection = ({ progress }: { progress: number }) => {
 

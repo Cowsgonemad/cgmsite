@@ -1,6 +1,6 @@
 export const MooMooCoinLogo = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356.24 228.19" width="240px">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356.24 228.19" className="w-40 2xl:w-60">
             <title>MOO MOO LOGO</title>
             <g id="Capa_2" data-name="Capa 2">
                 <g id="Capa_1-2" data-name="Capa 1">

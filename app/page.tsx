@@ -1,8 +1,14 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { HomeSection, CoinSection, GameSection, RoadmapSection, FooterSection, NFTSection } from '@/components/sections';
+
 import { Navigation } from '@/components/layout';
+import { HeroSection } from '@/components/sections/hero';
+import { CoinSection } from '@/components/sections/coin';
+import { GameSection } from '@/components/sections/game';
+import { NFTSection } from '@/components/sections/nft';
+import { RoadmapSection } from '@/components/sections/roadmap';
+import { FooterSection } from '@/components/sections/footer';
 
 const calculatePercentage = (currentScreen: number, screen: number, currentPercentage: number): number => {
   if (currentScreen === screen) { return currentPercentage; }
@@ -112,7 +118,7 @@ export default function Home() {
     
       <main ref={viewer} style={{ height: `${totalSections}00vh` }}>
 
-        <HomeSection navigateTo={(screen) => navigateTo(screen)} />
+        <HeroSection navigateTo={(screen) => navigateTo(screen)} />
 
         <CoinSection progress={scrollState.first} tab={coinTab} setTab={(tab) => setCoinTab(tab)} />
 

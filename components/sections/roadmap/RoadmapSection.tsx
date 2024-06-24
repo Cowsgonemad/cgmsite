@@ -1,6 +1,6 @@
 import { useRef } from 'react';
-import { Screen } from '../layout';
-import { Arrows, RoadmapBg1, RoadmapBg2 } from '../ui';
+import { Screen } from '../../layout';
+import { Arrows, RoadmapBg1, RoadmapBg2 } from '../../ui';
 
 export const RoadmapSection = ({ 
     progress
