@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '1/5': '20%',
+        '1/10': '10%',
+        '3/20': '15%',
+        '1/20': '5%'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

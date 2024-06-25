@@ -1,6 +1,5 @@
 import { SubscribeArrowIcon } from '../../icons';
-import { SocialBar } from '../../layout';
-import { CGMLogo, FooterCow, FooterInput, Logo, MooMooLogo, RefLogo } from '../../ui';
+import { CGMLogo, FooterCow, MooMooLogo, RefLogo, SocialBar } from '.';
 
 export const FooterSection = ({ progress }: { progress: number }) => {
 
@@ -9,20 +8,18 @@ export const FooterSection = ({ progress }: { progress: number }) => {
     return (
         <footer className="h-screen max-h-screen w-full fixed overflow-hidden bg-footer flex flex-col border-t-4 border-black" style={containerStyle}>
 
-            {/* <div className="bg-halftone absolute size-full opacity-20 -z-10 mix-dodge"></div> */}
+            <div className="bg-land h-28 xl:h-60 shrink-0"></div>
 
-            <div className="bg-land h-60 shrink-0"></div>
-
-            <div className="flex w-full max-w-screen-md justify-center items-center mx-auto mt-auto">
-                <div className="w-1/3 p-14">
+            <div className="flex w-full max-w-screen-md justify-center items-center mx-auto mt-auto gap-2 lg:gap-8">
+                <div className="w-1/6">
                     <MooMooLogo />
                 </div>
                 
-                <div className="w-1/3">
+                <div className="w-1/4 pt-8 lg:pt-12">
                     <CGMLogo />
                 </div>
 
-                <div className="w-1/3 p-8">
+                <div className="w-1/5">
                     <RefLogo />
                 </div>
             </div>
@@ -79,28 +76,6 @@ export const FooterSection = ({ progress }: { progress: number }) => {
 
                     <SocialBar />
                 </div>
-
-                {/* <div className="max-w-prose w-full mt-auto mb-8 flex items-center gap-8">
-
-                    <div className="grayscale opacity-10">
-                        <div className="w-48">
-                            <Logo />
-                        </div>
-                    </div>
-
-                    <p className="text-white text-justify w-full text-md opacity-40 font-extralight">
-                        The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (MooMoo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
-                    </p>
-                </div>
-                <div className="max-w-prose w-full mb-auto">
-
-                    <div className="relative">
-
-                        <input type="text" className="w-full pl-8 pr-44 py-3 bg-transparent text-white text-sm border-2 border-white border-opacity-10 focus:outline-none focus:border-accent transition duration-20" placeholder="Your email" />
-
-                        <button className="absolute w-40 right-0 font-extrabold uppercase h-full text-sm px-6 text-accent border-2 border-accent">Subscribe</button>
-                    </div>
-                </div> */}
 
             </div>
 

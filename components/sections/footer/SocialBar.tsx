@@ -1,4 +1,4 @@
-import { DiscordIcon, InstagramIcon, TelegramIcon, UbreIcon, XIcon } from '../icons';
+import { DiscordIcon, InstagramIcon, TelegramIcon, UbreIcon, XIcon } from '../../icons';
 
 export const SocialBar = () => {
 
