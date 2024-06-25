@@ -30,6 +30,12 @@ body::-webkit-scrollbar,
   display: none;
 }
 
+@media(max-width: 768px) {
+  #viewer {
+    height: unset !important;
+  }
+}
+
 h3 {
   font-family: var(--font-screebie);
 }
