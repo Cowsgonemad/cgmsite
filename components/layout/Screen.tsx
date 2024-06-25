@@ -5,7 +5,7 @@ export const Screen = ({
 }>) => {
 
   return(
-    <article id={id} className={`h-screen w-full md:max-h-screen md:fixed md:overflow-hidden transition duration-75 ${containerClasses}`} style={containerStyle}>
+    <article id={id} className={`min-h-screen lg:h-screen w-full md:max-h-screen md:fixed md:overflow-hidden transition duration-75 ${containerClasses}`} style={containerStyle}>
       {children}
     </article>
   );

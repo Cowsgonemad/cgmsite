@@ -5,7 +5,7 @@ export const FeatureButton = ({ label, onClick }: { label: string, onClick: () =
     const [gradient, setGradient] = useState<'active' | 'inactive'>('inactive');
 
     return(
-        <button className="relative flex items-center justify-center w-full h-20 font-normal uppercase text-white"
+        <button className="relative flex items-center justify-center w-full h-20"
         onClick={onClick} onMouseEnter={() => setGradient('active')} onMouseLeave={() => setGradient('inactive')}>
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 269 124.38" width="100%"  className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0" preserveAspectRatio="none">
@@ -95,7 +95,7 @@ export const FeatureButton = ({ label, onClick }: { label: string, onClick: () =
                     </g>
                 </g>
             </svg>
-            <span className="z-10">{label}</span>
+            <span className="z-10 text-sm font-normal uppercase text-white">{label}</span>
         </button>
     );
 };
