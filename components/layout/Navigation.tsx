@@ -1,6 +1,5 @@
 import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, HomeIcon, GoalIcon, SendIcon, TokenIcon } from '../icons';
 import { NavigationLink } from './NavigationLink';
-import { SocialBar } from './SocialBar';
 
 export const Navigation = ({ 
     navigateTo, 

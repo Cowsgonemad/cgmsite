@@ -1,11 +1,11 @@
 export const Screen = ({ 
-  children, containerClasses, containerStyle 
+  id, children, containerClasses, containerStyle 
 }: Readonly<{ 
-  children: React.ReactNode; containerClasses: string; containerStyle: { [key: string]: string }
+  id: string, children: React.ReactNode; containerClasses: string; containerStyle: { [key: string]: string }
 }>) => {
 
   return(
-    <article className={`h-screen max-h-screen w-full fixed overflow-hidden transition duration-75 ${containerClasses}`} style={containerStyle}>
+    <article id={id} className={`h-screen max-h-screen w-full md:fixed md:overflow-hidden transition duration-75 ${containerClasses}`} style={containerStyle}>
       {children}
     </article>
   );

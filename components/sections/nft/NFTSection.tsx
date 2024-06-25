@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Screen } from '../../layout';
-import { Arrows, NFTCollectionTitle } from '../../ui';
+import { Arrows, NFTCollectionTitle, SectionTitle } from '../../ui';
 import { TextBlob } from '../../ui/TextBlob';
 
 export const NFTSection = ({ 
@@ -36,7 +36,7 @@ export const NFTSection = ({
     };
     
     return(
-        <Screen containerClasses="bg-print animate-bg-size" containerStyle={containerStyle}>
+        <Screen id="the-nft" containerClasses="bg-print animate-bg-size" containerStyle={containerStyle}>
            
             <div className="size-full flex justify-center transition duration-20 relative" style={contentStyle}>
                 
@@ -72,14 +72,10 @@ export const NFTSection = ({
                 <div className={tab === 1 ? activeTab : inactiveTab}>
                     <div className="text-white text-xl text-justify font-extralight my-auto">
 
-                        <div className="w-full text-center mb-16">
-                            <h3 className="text-pink text-8xl title-drop-shadow">
-                                Lorem
-                                <span className="text-white text-6xl font-jester block -mt-6">IPSUM</span>
-                            </h3>
-                        </div>
+                        <SectionTitle firstLine="Lorem" secondLine="IPSUM" />
 
-                        <div className="bg-black-blob px-28 py-16 pb-60 relative">
+
+                        <div className="bg-black-blob mt-16 px-28 py-16 pb-60 relative">
 
                             <div className="absolute w-[130%] -z-10 left-1/2 -top-24 -translate-x-1/2">
                                 <img src="/img/extra-blob.svg" />

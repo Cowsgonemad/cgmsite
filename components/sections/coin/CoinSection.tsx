@@ -8,7 +8,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
     const waveStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
     
     return(
-        <Screen containerClasses="flex flex-col items-center justify-center bg-white" containerStyle={containerStyle}>
+        <Screen id="the-coin" containerClasses="flex flex-col items-center justify-center bg-white" containerStyle={containerStyle}>
 
             <div className="absolute size-full bg-coin animate-bg-size -z-10"></div>
 

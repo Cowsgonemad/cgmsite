@@ -33,7 +33,7 @@ export const RoadmapSection = ({
     };
 
     return(
-        <Screen containerClasses="bg-print animate-bg-size flex items-center justify-center" containerStyle={containerStyle}>
+        <Screen id="roadmap" containerClasses="bg-print animate-bg-size flex items-center justify-center" containerStyle={containerStyle}>
 
             <Arrows prev={prev} next={next} />
 

@@ -21,7 +21,7 @@ export const HeroSection = ({
     };
 
     return(
-        <Screen containerClasses="flex" containerStyle={{}}>
+        <Screen id="hero" containerClasses="flex" containerStyle={{}}>
 
             <div className="h-full w-[300%]">
 

@@ -6,11 +6,12 @@ export const FooterSection = ({ progress }: { progress: number }) => {
     const containerStyle = { top: `${100 - progress}%` };
 
     return (
-        <footer className="h-screen max-h-screen w-full fixed overflow-hidden bg-footer flex flex-col border-t-4 border-black" style={containerStyle}>
+        <footer id="footer" className="md:h-screen w-full md:fixed md:overflow-hidden bg-footer border-t-4 border-black flex flex-col" 
+        style={containerStyle}>
 
-            <div className="bg-land h-28 xl:h-60 shrink-0"></div>
+            <div className="bg-land h-28 2xl:h-52 shrink-0 hidden md:block"></div>
 
-            <div className="flex w-full max-w-screen-md justify-center items-center mx-auto mt-auto gap-2 lg:gap-8">
+            <div className="flex w-full max-w-screen-md justify-center items-center mx-auto md:mt-auto gap-4 lg:gap-8 mb-4 pt-8 md:pt-0">
                 <div className="w-1/6">
                     <MooMooLogo />
                 </div>
@@ -24,9 +25,9 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                 </div>
             </div>
 
-            <div className="flex items-end px-16 w-full justify-between">
+            <div className="flex flex-col md:flex-row lg:flex items-center md:items-end md:px-16 px-4 w-full justify-between mt-4">
 
-                <div className="w-1/3 text-white">
+                <div className="md:w-1/2 lg:w-2/5 text-white order-2 md:order-1 mr-auto md:mr-0">
 
                     <ul className="link-list pl-4">
                         <li className="mb-4">
@@ -37,7 +38,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                         </li>
                     </ul>
 
-                    <p className="text-dark-green-light mt-16 text-sm mb-4">
+                    <p className="text-dark-green-light 2xl:mt-16 mt-4 text-sm mb-4">
                         <a href="">TERMS OF SERVICE</a>
                         <span className="inline-block rounded-full w-1 h-1 bg-dark-green-light my-1 mx-2"></span>
                         <a href="">PRIVACY POLICY</a>
@@ -45,11 +46,11 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                     
                 </div>
 
-                <div className="w-1/3 flex justify-center">
+                <div className="w-1/5 justify-center order-3 md:order-2 hidden lg:flex">
                     <FooterCow />
                 </div>
 
-                <div className="w-1/3 pl-32">
+                <div className="md:w-1/2 lg:w-2/5 2xl:pl-40 order-1 md:order-3 mb-4 md:mb-0">
                     <p className="text-white text-justify w-full text-md opacity-40 font-extralight mb-8">
                         The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (MooMoo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
                     </p>
@@ -79,7 +80,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
 
             </div>
 
-            <div className="w-full bg-dark-green-light">
+            <div className="w-full bg-dark-green-light mt-auto md:mt-0">
                 <div className="max-w-screen-lg opacity-40 py-2 text-center mx-auto">
                     <p className="text-white font-extralight text-sm">Cows Gone Mad &copy; All rights Reserved</p>
                 </div>

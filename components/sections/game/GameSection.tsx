@@ -9,7 +9,7 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
     const inactiveTab = 'absolute size-full flex gap-10 opacity-0 transition -translate-x-full duration-20';
 
     return(
-        <Screen containerClasses="" containerStyle={containerStyle}>
+        <Screen id="the-game" containerClasses="" containerStyle={containerStyle}>
             <div className="size-full bg-land flex items-center justify-center">
 
                 <div className="transition duration-20 size-full" style={contentStyle}>

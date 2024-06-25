@@ -10,6 +10,8 @@ import { NFTSection } from '@/components/sections/nft';
 import { RoadmapSection } from '@/components/sections/roadmap';
 import { FooterSection } from '@/components/sections/footer';
 
+const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'footer'];
+
 const calculatePercentage = (currentScreen: number, screen: number, currentPercentage: number): number => {
   if (currentScreen === screen) { return currentPercentage; }
   if (currentScreen < screen) { return 0; }
@@ -17,10 +19,23 @@ const calculatePercentage = (currentScreen: number, screen: number, currentPerce
 };
 
 const navigateTo = (screen: number) => {
-  window.scrollTo({
-    top: window.innerHeight * screen, 
-    // behavior: 'smooth',
-  });
+
+  const clientWidth = document.documentElement.clientWidth;
+  console.log(clientWidth);
+
+  if (clientWidth > 768) {
+    window.scrollTo({ top: window.innerHeight * screen });
+  } else {
+    const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
+    element?.scrollIntoView();
+  }
+
+  // const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
+  // console.log(ids[screen]);
+  // console.log(element?.offsetTop);
+  // window.scrollTo({ top: window.innerHeight * screen });
+  // window.scrollTo({ top: element?.offsetTop });
+  // element?.scrollIntoView();
 }
 
 export default function Home() {
@@ -43,6 +58,7 @@ export default function Home() {
 
   const totalSections = Object.keys(scrollState).length;
   const viewer = useRef<HTMLElement>(null);
+  const viewerHeightClass = `md:h-[${totalSections}00vh]`;
 
   const navigatePrevious = useCallback(() => {
     if (currentScreen > 0) navigateTo(currentScreen - 1);
@@ -116,7 +132,7 @@ export default function Home() {
       navigateNext={navigateNext}
       currentScreen={currentScreen} />
     
-      <main ref={viewer} style={{ height: `${totalSections}00vh` }}>
+      <main ref={viewer} className={viewerHeightClass}>
 
         <HeroSection navigateTo={(screen) => navigateTo(screen)} />
 
