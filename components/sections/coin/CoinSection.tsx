@@ -36,7 +36,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                         </li>
                     </ul>
 
-                    <div className="relative h-72 my-4">
+                    <div className="relative h-72 mt-10 mb-4">
 
                         <CoinTabCoin isActive={tab === 'coin'} />
                         <CoinTabUtil isActive={tab === 'util'} />

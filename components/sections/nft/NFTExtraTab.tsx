@@ -7,7 +7,7 @@ export const NFTExtraTab = ({ isActive }: { isActive: boolean }) => {
         <NFTTab isActive={isActive}>
             <div className="text-white 2xl:text-xl text-justify font-extralight mt-auto lg:mb-auto">
 
-                <SectionTitle firstLine="Lorem" secondLine="IPSUM" />
+                <SectionTitle firstLine="Lorem" secondLine="Ipsum" />
 
                 <div className="bg-black-blob mt-16 lg:px-3/20 lg:py-16 pb-12 2xl:pb-60 relative">
 

@@ -17,7 +17,7 @@
         <path d="M38.88 81.41L38.88 52.3L49.28 39.01L201.59 39.01L201.59 72.94L199.36 75.79L162.51 75.79L158.12 81.41L38.88 81.41Z" fill="white"/>
     </mask>
     <g mask="url(#mask0_47_67)">
-        <g opacity="0.6">
+        <g opacity="0.2">
             <g style="mix-blend-mode:overlay">
                 <path d="M44.08 -20.87L44.08 92.49" stroke="white" stroke-width="0.16" stroke-miterlimit="10"/>
                 <path d="M50.7 -20.87L50.7 92.49" stroke="white" stroke-width="0.16" stroke-miterlimit="10"/>

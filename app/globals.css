@@ -59,28 +59,8 @@ h3 {
   background-size: cover;
 }
 
-.bg-squares {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
-  animation: bg-scrolling-reverse 2s infinite;
-  animation-timing-function: linear;
-  filter: invert(1);
-}
-
-.bg-nfts {
-  background-image: url('../public/img/cows.jpg');
-  background-repeat: repeat;
-  background-size: 20%;
-}
-
 .bg-halftone {
   background-image: url('../public/img/halftone-2.jpg');
-}
-
-.bg-blobs {
-  background-image: url('../public/img/blobs.svg');
-  background-size: 100%;
-  background-position: center;
-  transition: .2s;
 }
 
 .bg-hero {
@@ -102,10 +82,19 @@ h3 {
 }
 
 .bg-print {
-  background-image: url('../public/img/bg-print.svg');
+  background-image: url('../public/img/manchas.svg');
   background-size: 100%;
   background-position: center;
   transition: .2s;
+}
+.bg-halftone {
+  background-image: url('../public/img/halftone-2.jpg');
+}
+.bg-roadmap {
+  background-image: url('../public/img/roadmap-bg.svg');
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg-coin {
@@ -159,7 +148,12 @@ h3 {
   filter: drop-shadow(-10px 0px 0px rgb(var(--dark-green)));
 }
 .title-drop-shadow {
-  text-shadow: -8px 8px rgb(var(--black));
+  text-shadow: -5px 5px rgba(0,0,0,0.8);
+}
+.outline-drop {
+  text-shadow: -5px 5px rgba(0,0,0,0.8);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #222;
 }
 
 /* .vertical {
@@ -167,7 +161,7 @@ h3 {
   text-orientation: mixed;
 } */
 
-nav li .label {
+/* nav li .label {
   transition: .2s;
   opacity: 0;
   left: 50%;
@@ -178,7 +172,7 @@ nav li .label {
 nav li:hover .label {
   transform: translate(-50%, 20px);
   opacity: 1;
-}
+} */
 
 .active-label {
   box-shadow: 16px 0 0px rgba(var(--black));

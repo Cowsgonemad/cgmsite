@@ -11,11 +11,11 @@ export const GameSection = ({ progress, tab, setTab }: { progress: number, tab: 
 
     return(
         <Screen id="the-game" containerClasses="" containerStyle={containerStyle}>
-            <div className="size-full bg-land flex flex-col items-center justify-center p-4 gap-8">
+            <div className="lg:size-full bg-land flex flex-col items-center justify-center p-4 gap-8 relative">
 
                 <div className="bg-black bg-opacity-80 size-full absolute right-0 top-0"></div>
 
-                <div className="transition duration-20 size-full flex items-center" style={contentStyle}>
+                <div className="transition duration-20 size-full flex items-center min-h-4/5" style={contentStyle}>
 
                     <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto h-full 2xl:h-4/5 relative">
 

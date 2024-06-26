@@ -52,7 +52,7 @@ export const FeatureButton = ({ label, onClick }: { label: string, onClick: () =
                             <polygon fill={`url(#${gradient})`} points="250.92 51.2 250.92 32.27 181.92 32.27 180.46 33.73 155.5 33.73 154.04 32.27 142.92 32.27 140.37 29.72 96.75 29.72 94.2 32.27 33.55 32.27 15.1 50.72 15.1 70.89 16.62 72.42 16.62 85.9 15.1 87.43 15.1 92.11 82.93 92.11 84.2 90.83 127.83 90.83 129.1 92.11 232.46 92.11 250.92 73.65 250.92 67.73 249.39 66.2 249.39 52.73 250.92 51.2"/>
                             <polygon fill="#0f0025" points="34.53 34.63 17.46 51.7 17.46 89.74 231.48 89.74 248.55 72.67 248.55 34.63 34.53 34.63"/>
                             <g clipPath="url(#clip-path)">
-                                <g opacity="0.6">
+                                <g opacity="0.2">
                                     <g style={{ mixBlendMode: 'overlay' }}>
                                         <line fill="none" stroke="#FFFFFF" strokeWidth="0.19px" strokeMiterlimit={10} x1="26.2" x2="26.2" y2="124.38"/>
                                         <line fill="none" stroke="#FFFFFF" strokeWidth="0.19px" strokeMiterlimit={10} x1="38.07" x2="38.07" y2="124.38"/>

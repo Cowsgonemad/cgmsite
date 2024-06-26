@@ -8,9 +8,11 @@ export const NavigationLink = ({
 
     return(
         <li className="relative">
-            <div className="label absolute bg-white rounded-md font-extrabold uppercase text-dark-grey whitespace-nowrap py-3 px-4 text-sm -z-10 border border-dark-grey">{label}</div>
-            <button className="p-1" onClick={() => navigateTo()}>
+            <button className="p-1 flex items-center" onClick={() => navigateTo()}>
                 {children}
+                <span className="absolute md:static font-extrabold uppercase whitespace-nowrap text-xs text-white -z-10 ml-2">
+                    {label}
+                </span>
             </button>
         </li>
     );

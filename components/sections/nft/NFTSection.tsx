@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Screen } from '../../layout';
 import { Arrows, SectionTitle } from '../../ui';
-import { NFTCollectionTitle, NFTExtraTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
+import { NFTCollectionTitle, NFTExtraTab, NFTGoalsTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
 
 export const NFTSection = ({ 
     progress, 
@@ -22,24 +22,26 @@ export const NFTSection = ({
     const activeImage = 'opacity-100 translate-y-0 transition duration-20 hover:opacity-100 cursor-pointer';
     const inactiveImage = 'opacity-40 translate-y-12 transition duration-20 hover:opacity-100 cursor-pointer';
 
-
     const next = (): void => {
         const num = Number(tab);
-        if (num >= 1) setTab(0);
+        if (num >= 2) setTab(0);
         else setTab((num + 1));
     };
     const prev = (): void => {
         const num = Number(tab);
-        if (num <= 0) setTab(1);
+        if (num <= 0) setTab(2);
         else setTab((num - 1));
     };
     
     return(
-        <Screen id="the-nft" containerClasses="bg-print animate-bg-size" containerStyle={containerStyle}>
+        <Screen id="the-nft" containerClasses="bg-[#272728]" containerStyle={containerStyle}>
+
+            <div className="absolute size-full bg-print animate-bg-size"></div>
            
             <div className="size-full max-w-[90%] flex justify-center mx-auto transition duration-20 relative" style={contentStyle}>
                 <NFTIllustrationsTab isActive={tab == 0} nft={nft} />
-                <NFTExtraTab isActive={tab === 1} />
+                <NFTGoalsTab isActive={tab == 1} />
+                <NFTExtraTab isActive={tab === 2} />
             </div>
 
             <Arrows prev={prev} next={next} />

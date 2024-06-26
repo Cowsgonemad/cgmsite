@@ -6,17 +6,17 @@ export const FooterSection = ({ progress }: { progress: number }) => {
     const containerStyle = { top: `${100 - progress}%` };
 
     return (
-        <footer id="footer" className="md:h-screen w-full md:fixed md:overflow-hidden bg-footer border-t-4 border-black flex flex-col" 
+        <footer id="footer" className="md:h-screen w-full md:fixed md:overflow-hidden bg-footer border-t-4 border-black flex flex-col pt-14" 
         style={containerStyle}>
 
-            <div className="bg-land h-28 2xl:h-52 shrink-0 hidden md:block"></div>
+            {/* <div className="bg-land h-28 2xl:h-52 shrink-0 hidden md:block"></div> */}
 
             <div className="flex w-full max-w-screen-md justify-center items-center mx-auto md:mt-auto gap-4 lg:gap-8 mb-4 pt-8 md:pt-0">
                 <div className="w-1/6">
                     <MooMooLogo />
                 </div>
                 
-                <div className="w-1/4 pt-8 lg:pt-12">
+                <div className="w-1/4">
                     <CGMLogo />
                 </div>
 

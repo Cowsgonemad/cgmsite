@@ -1,4 +1,5 @@
-import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, HomeIcon, GoalIcon, SendIcon, TokenIcon } from '../icons';
+import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, HomeIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, UbreIcon, InstagramIcon, DiscordIcon } from '../icons';
+import { SocialBar } from '../sections/footer';
 import { NavigationLink } from './NavigationLink';
 
 export const Navigation = ({ 
@@ -14,14 +15,12 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed left-1/2 top-2 -translate-x-1/2 z-50 shadow-lg">
+        <div className="fixed top-0 w-full z-50 bg-dark-green shadow-lg flex justify-between items-center px-4 h-14">
 
-            <nav className="py-2 px-4 bg-dark-green rounded-lg">
-                <ul className="flex gap-4">
+            <h1 className="text-white font-screebie opacity-60 cursor-pointer" onClick={() => navigateTo(0)}>COWS GONE MAD</h1>
 
-                    <NavigationLink label="Start" navigateTo={() => navigateTo(0)}>
-                        <HomeIcon fillVar={currentScreen === 0 ? '--accent' : '--white'} />
-                    </NavigationLink>
+            <nav className="">
+                <ul className="flex justify-center gap-8">
 
                     <NavigationLink label="The Coin" navigateTo={() => navigateTo(1)}>
                         <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--white'} />
@@ -46,19 +45,28 @@ export const Navigation = ({
                 </ul>
             </nav>
 
-            {/* <div className="hidden md:flex border-b border-dark-grey flex-col items-center p-4 bg-white rounded-bl-xl">
-
-                <button className="block mt-1 mb-2" onClick={() => navigatePrevious()}>
-                    <ArrowUpIcon />
-                </button>
-
-                <button className="block" onClick={() => navigateNext()}>
-                    <ArrowDownIcon />
-                </button>
-
-            </div> */}
-
-            {/* <SocialBar /> */}
+            <ul className="opacity-50 gap-2 items-center justify-center hidden lg:flex">
+                <li className="flex">
+                    <a className="inline-block p-1">
+                        <XIcon size={20} />
+                    </a>
+                </li>
+                <li className="flex">
+                    <a className="inline-block p-1">
+                        <TelegramIcon size={20} />
+                    </a>
+                </li>
+                <li className="flex">
+                    <a className="inline-block p-1">
+                        <InstagramIcon size={20} />
+                    </a>
+                </li>
+                <li className="flex">
+                    <a className="inline-block p-1">
+                        <DiscordIcon size={20} />
+                    </a>
+                </li>
+            </ul>
         </div>
     );
 };
