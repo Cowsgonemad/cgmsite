@@ -23,13 +23,16 @@ const navigateTo = (screen: number) => {
   const clientWidth = document.documentElement.clientWidth;
   console.log(clientWidth);
 
-  if (clientWidth > 768) {
-    window.scrollTo({ top: window.innerHeight * screen });
-    console.log('scroll to', window.innerHeight * screen);
-  } else {
-    const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
-    element?.scrollIntoView();
-  }
+  const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
+  element?.scrollIntoView({ behavior: 'smooth' });
+
+  // if (clientWidth > 768) {
+  //   window.scrollTo({ top: window.innerHeight * screen, behavior: 'smooth' });
+  //   console.log('scroll to', window.innerHeight * screen);
+  // } else {
+  //   const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
+  //   element?.scrollIntoView({ behavior: 'smooth' });
+  // }
 
   // const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
   // console.log(ids[screen]);
@@ -130,9 +133,9 @@ export default function Home() {
       navigateTo={(screen) => navigateTo(screen)} 
       navigatePrevious={navigatePrevious}
       navigateNext={navigateNext}
-      currentScreen={currentScreen} />
+      currentScreen={0} />
     
-      <main id="viewer" ref={viewer} style={{ height: `${totalSections}00vh`}}>
+      <main id="viewer" ref={viewer}>
 
         <HeroSection navigateTo={(screen) => navigateTo(screen)} />
 

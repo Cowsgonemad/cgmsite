@@ -12,17 +12,17 @@ export const NFTIllustrationsTab = ({ isActive, nft }: { isActive: boolean, nft:
                 </div>
             </div>
 
-            <div className="flex flex-col lg:w-1/2 my-auto lg:-translate-x-16 xl:pb-16 2xl:pb-32">
+            <div className="flex flex-col lg:w-1/2 xl:my-auto lg:-translate-x-8 xl:pb-16 2xl:pb-32">
             
-                <div className="text-white 2xl:text-xl text-justify font-extralight">
+                <div className="text-white text-lg 2xl:text-xl text-justify font-extralight">
 
-                    <div className="w-1/3 lg:w-2/3 lg:pr-20 xl:pr-40 mb-0 2xl:mb-8 2xl:w-auto">
+                    <div className="w-1/3 lg:w-2/3 lg:pr-20 xl:pr-40 mb-16 2xl:mb-4 2xl:w-auto mx-auto xl:mx-0">
                         <NFTCollectionTitle />
                     </div>
 
-                    <div className="bg-black-blob xl:px-1/5 pt-1/10 relative">
+                    <div className="bg-black-blob xl:px-1/5 pt-1/20 relative">
 
-                        <div className="absolute w-[200%] xl:w-[130%] -z-10 -left-2/3 xl:-left-28 -top-40 lg:-top-24">
+                        <div className="absolute w-[200%] xl:w-[130%] -z-10 -left-2/3 xl:-left-28 -top-40 xl:-top-24 hidden xl:block">
                             <TextBlob />
                         </div>
                         

@@ -34,18 +34,18 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
 
                 <div className="flex mt-auto mb-8 items-center justify-center gap-8">
 
-                    <button className="active:opacity-50" onClick={prev}>
+                    <button className="active:opacity-50 hidden lg:block" onClick={prev}>
                         <img src="/img/nft-prev.svg" className="w-12" alt="Previous" />
                     </button>
                     
-                    <SectionTitle classes="text-center mt-auto" firstLine="Road" secondLine="MAP" />
+                    <SectionTitle classes="text-center 2xl:mt-auto" firstLine="Road" secondLine="MAP" />
 
-                    <button className="active:opacity-50" onClick={next}>
+                    <button className="active:opacity-50 hidden lg:block" onClick={next}>
                         <img src="/img/nft-next.svg" className="w-12" alt="Next" />
                     </button>
                 </div>
                 
-                <div ref={scroller} className="invisible-scroller w-full h-2/3 flex overflow-scroll">
+                <div ref={scroller} className="invisible-scroller w-full h-2/3 flex overflow-x-scroll overflow-y-hidden">
 
                     <NFTGoalElement type="odd" percentage={100}>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>

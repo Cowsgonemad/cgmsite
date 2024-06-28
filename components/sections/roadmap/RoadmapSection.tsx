@@ -34,41 +34,43 @@ export const RoadmapSection = ({
     };
 
     return(
-        <Screen id="roadmap" containerClasses="flex flex-col items-center justify-center bg-halftone" containerStyle={containerStyle}>
+        <Screen id="roadmap" containerClasses="bg-halftone" containerStyle={{}}>
 
-            <div className="absolute top-0 left-0 size-full bg-roadmap -z-10"></div>
+            <div className="size-full flex flex-col items-center justify-center relative pt-28 pb-14 px-2">
 
+                <div className="absolute top-0 left-0 size-full bg-roadmap"></div>
 
-            <div className="flex mt-auto items-center justify-center gap-8">
+                <div className="flex mt-auto items-center justify-center gap-8 relative">
 
-                <button className="active:opacity-50" onClick={prev}>
-                    <img src="/img/nft-prev.svg" className="w-12" alt="Previous" />
-                </button>
-                
-                <SectionTitle classes="text-center mt-auto" firstLine="Road" secondLine="MAP" />
+                    <button className="active:opacity-50" onClick={prev}>
+                        <img src="/img/nft-prev.svg" className="w-12" alt="Previous" />
+                    </button>
+                    
+                    <SectionTitle classes="text-center mt-auto" firstLine="Road" secondLine="MAP" />
 
-                <button className="active:opacity-50" onClick={next}>
-                    <img src="/img/nft-next.svg" className="w-12" alt="Next" />
-                </button>
+                    <button className="active:opacity-50" onClick={next}>
+                        <img src="/img/nft-next.svg" className="w-12" alt="Next" />
+                    </button>
+                </div>
+
+                <div ref={scroller} className="invisible-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-scroll mt-8 mb-auto gap-8 relative">
+
+                    <RoadmapElement percentage={20}>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    </RoadmapElement>
+                    <RoadmapElement percentage={40}>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    </RoadmapElement>
+                    <RoadmapElement percentage={60}>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    </RoadmapElement>
+                    <RoadmapElement percentage={100}>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    </RoadmapElement>
+
+                </div>
             </div>
-
-            <div ref={scroller} className="invisible-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-scroll mt-8 mb-auto gap-8">
-
-                <RoadmapElement percentage={20}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
-                </RoadmapElement>
-                <RoadmapElement percentage={40}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
-                </RoadmapElement>
-                <RoadmapElement percentage={60}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
-                </RoadmapElement>
-                <RoadmapElement percentage={100}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
-                </RoadmapElement>
-
-            </div>
-
+            
         </Screen>
     );
 };

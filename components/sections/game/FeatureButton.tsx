@@ -95,7 +95,7 @@ export const FeatureButton = ({ label, onClick }: { label: string, onClick: () =
                     </g>
                 </g>
             </svg>
-            <span className="z-10 text-sm font-normal uppercase text-white">{label}</span>
+            <span className="z-10 text-xs lg:text-sm font-normal uppercase text-white">{label}</span>
         </button>
     );
 };

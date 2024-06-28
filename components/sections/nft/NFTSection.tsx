@@ -34,35 +34,40 @@ export const NFTSection = ({
     };
     
     return(
-        <Screen id="the-nft" containerClasses="bg-[#272728]" containerStyle={containerStyle}>
+        <Screen id="the-nft" containerClasses="bg-[#272728]" containerStyle={{}}>
 
-            <div className="absolute size-full bg-print animate-bg-size"></div>
-           
-            <div className="size-full max-w-[90%] flex justify-center mx-auto transition duration-20 relative" style={contentStyle}>
-                <NFTIllustrationsTab isActive={tab == 0} nft={nft} />
-                <NFTGoalsTab isActive={tab == 1} />
-                <NFTExtraTab isActive={tab === 2} />
+            <div className="size-full relative pt-28 flex px-2">
+
+                <div className="absolute size-full bg-print animate-bg-size top-0 left-0"></div>
+                
+                <div className="size-full lg:max-w-[90%] flex justify-center mx-auto h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
+                    <Arrows prev={prev} next={next} />
+
+                    <NFTIllustrationsTab isActive={tab == 0} nft={nft} />
+                    <NFTGoalsTab isActive={tab == 1} />
+                    <NFTExtraTab isActive={tab === 2} />
+
+                    {tab === 0 && 
+                    <ul className="absolute bottom-0 right-20 items-end gap-2 hidden lg:flex">
+                        <li className={nft === '1' ? activeImage : inactiveImage} onClick={() => setNft('1')}>
+                            <Image src="/img/VACA1.svg" width="100" height="100" alt="NFT name" />
+                        </li>
+
+                        <li className={nft === '2' ? activeImage : inactiveImage} onClick={() => setNft('2')}>
+                            <Image src="/img/VACA2.svg" width="100" height="100" alt="NFT name" />
+                        </li>
+
+                        <li className={nft === '3' ? activeImage : inactiveImage} onClick={() => setNft('3')}>
+                            <Image src="/img/VACA3.svg" width="100" height="100" alt="NFT name" />
+                        </li>
+
+                        <li className={nft === '4' ? activeImage : inactiveImage} onClick={() => setNft('4')}>
+                            <Image src="/img/VACA4.svg" width="100" height="100" alt="NFT name" />
+                        </li>
+                    </ul>}
+                </div>
             </div>
 
-            <Arrows prev={prev} next={next} />
-            
-            <ul className="absolute bottom-0 right-20 items-end gap-2 hidden lg:flex">
-                <li className={nft === '1' ? activeImage : inactiveImage} onClick={() => setNft('1')}>
-                    <Image src="/img/VACA1.svg" width="120" height="120" alt="NFT name" />
-                </li>
-
-                <li className={nft === '2' ? activeImage : inactiveImage} onClick={() => setNft('2')}>
-                    <Image src="/img/VACA2.svg" width="120" height="120" alt="NFT name" />
-                </li>
-
-                <li className={nft === '3' ? activeImage : inactiveImage} onClick={() => setNft('3')}>
-                    <Image src="/img/VACA3.svg" width="120" height="120" alt="NFT name" />
-                </li>
-
-                <li className={nft === '4' ? activeImage : inactiveImage} onClick={() => setNft('4')}>
-                    <Image src="/img/VACA4.svg" width="120" height="120" alt="NFT name" />
-                </li>
-            </ul> 
         </Screen>
     );
 };

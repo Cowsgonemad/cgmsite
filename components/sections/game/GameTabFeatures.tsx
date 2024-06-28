@@ -21,7 +21,7 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
                     </p>
                 </div>
                 
-                <ul className="grid lg:grid-cols-3 gap-4 mt-8">
+                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-4 mt-8">
                     <li>
                         <FeatureButton label="Faction Selection" onClick={() => {}} />
                     </li>

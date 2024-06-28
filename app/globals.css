@@ -25,14 +25,20 @@ html {
   font-family: var(--font-outfit);
 }
 
-body::-webkit-scrollbar,
+/* body::-webkit-scrollbar, */
 .invisible-scroller::-webkit-scrollbar {
   display: none;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1280px) {
   #viewer {
     height: unset !important;
+  }
+}
+
+@media(max-width: 1280px) {
+  article {
+    opacity: 1 !important;
   }
 }
 
@@ -55,6 +61,12 @@ h3 {
 
 .bg-land {
   background-image: url('../public/img/land.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-cod {
+  background-image: url('../public/img/cod.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -92,7 +104,7 @@ h3 {
 }
 .bg-roadmap {
   background-image: url('../public/img/roadmap-bg.svg');
-  background-size: 105%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }

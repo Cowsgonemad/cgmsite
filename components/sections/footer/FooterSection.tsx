@@ -6,8 +6,8 @@ export const FooterSection = ({ progress }: { progress: number }) => {
     const containerStyle = { top: `${100 - progress}%` };
 
     return (
-        <footer id="footer" className="md:h-screen w-full md:fixed md:overflow-hidden bg-footer border-t-4 border-black flex flex-col pt-14" 
-        style={containerStyle}>
+        <footer id="footer" className="w-full bg-footer border-t-4 border-black flex flex-col pt-14" 
+        style={{}}>
 
             {/* <div className="bg-land h-28 2xl:h-52 shrink-0 hidden md:block"></div> */}
 
@@ -25,7 +25,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row lg:flex items-center md:items-end md:px-16 px-4 w-full justify-between mt-4">
+            <div className="flex flex-col md:flex-row lg:flex items-center md:items-end md:px-16 px-2 w-full justify-between mt-4">
 
                 <div className="md:w-1/2 lg:w-2/5 text-white order-2 md:order-1 mr-auto md:mr-0">
 

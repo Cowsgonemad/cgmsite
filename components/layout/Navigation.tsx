@@ -1,5 +1,4 @@
-import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, HomeIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, UbreIcon, InstagramIcon, DiscordIcon } from '../icons';
-import { SocialBar } from '../sections/footer';
+import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, InstagramIcon, DiscordIcon } from '../icons';
 import { NavigationLink } from './NavigationLink';
 
 export const Navigation = ({ 
@@ -20,7 +19,7 @@ export const Navigation = ({
             <h1 className="text-white font-screebie opacity-60 cursor-pointer" onClick={() => navigateTo(0)}>COWS GONE MAD</h1>
 
             <nav className="">
-                <ul className="flex justify-center gap-8">
+                <ul className="flex justify-center gap-2 md:gap-8">
 
                     <NavigationLink label="The Coin" navigateTo={() => navigateTo(1)}>
                         <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--white'} />
