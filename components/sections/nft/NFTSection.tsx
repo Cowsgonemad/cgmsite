@@ -36,7 +36,7 @@ export const NFTSection = ({
     return(
         <Screen id="the-nft" containerClasses="bg-[#272728]" containerStyle={{}}>
 
-            <div className="size-full relative pt-28 flex px-2">
+            <div className="size-full relative pt-28 flex px-6">
 
                 <div className="absolute size-full bg-print animate-bg-size top-0 left-0"></div>
                 

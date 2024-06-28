@@ -8,7 +8,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
     const waveStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
     
     return(
-        <Screen id="the-coin" containerClasses="bg-white" containerStyle={{}}>
+        <Screen id="the-coin" containerClasses="bg-[#3a3a3a]" containerStyle={{}}>
 
             <div className="h-full flex flex-col items-center justify-center relative pt-28">
 
@@ -17,7 +17,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                 <div className="w-full flex items-center justify-center transition duration-20 my-auto relative"
                 style={{}}>
 
-                    <div className="text-center w-full md:max-w-screen-sm 2xl:max-w-screen-lg px-2 mx-auto">
+                    <div className="text-center w-full md:max-w-screen-md lg:max-w-screen-lg px-6 mx-auto">
 
                         <div className="animate-soft-bounce flex justify-center">
                             <MooMooCoinLogo />
@@ -38,7 +38,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
                             </li>
                         </ul>
 
-                        <div className="relative h-72 mt-10 mb-4">
+                        <div className="relative md:h-screen-30 lg:h-screen-40 mt-10 mb-20 xl:mb-0">
 
                             <CoinTabCoin isActive={tab === 'coin'} />
                             <CoinTabUtil isActive={tab === 'util'} />
@@ -53,7 +53,7 @@ export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: 
 
                 <CoinTunnel />
 
-                <div className="w-full hidden sm:block md:-mb-12 2xl:-mb-0 relative">
+                <div className="w-full hidden sm:block relative">
                     <Waves classes="transition duration-20" style={{}} />
                 </div>
             </div>

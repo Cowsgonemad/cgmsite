@@ -37,17 +37,17 @@ export const TokenomicsChart = () => {
     const series = [10, 15, 5, 10, 10, 50];
 
     return(
-        <div className={`bg-white py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200  bg-opacity-100'} ${!expand && 'bg-opacity-60'}`}>
+        <div className={`py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200 bg-dark-blue'} ${!expand && 'bg-opacity-60'}`}>
 
             <ApexChart type="pie" options={options} series={series} height={190} width={400} />
 
-            <div className="absolute -bottom-2 right-4 opacity-70 hover:opacity-100 transition duration-20">
+            <div className="absolute top-8 right-5 opacity-70 hover:opacity-100 transition duration-20">
                 {!expand && <button onClick={() => setExpand(true)}>
-                    <ExpandIcon fillVar="--black" />
+                    <ExpandIcon fillVar="--accent" />
                 </button>}
                 
                 {expand && <button onClick={() => setExpand(false)}>
-                    <ContractIcon fillVar="--black" />
+                    <ContractIcon fillVar="--accent" />
                 </button>}
             </div>
         </div>

@@ -25,7 +25,7 @@ export const FooterSection = ({ progress }: { progress: number }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row lg:flex items-center md:items-end md:px-16 px-2 w-full justify-between mt-4">
+            <div className="flex flex-col md:flex-row lg:flex items-center md:items-end md:px-16 px-6 w-full justify-between mt-4">
 
                 <div className="md:w-1/2 lg:w-2/5 text-white order-2 md:order-1 mr-auto md:mr-0">
 

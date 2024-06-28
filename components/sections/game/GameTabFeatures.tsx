@@ -8,9 +8,9 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
 
             <div className="shrink-0 relative w-full lg:w-1/3">
                 {/* <Image className="block" src="/img/cover.jpg" height="500" width="500" alt="Cover Art"/> */}
-                <img className="block absolute top-0 left-0 size-full object-cover object-center scale-95" 
-                src="https://i.blogs.es/f7edf0/fortnite/1366_2000.jpeg" alt="Cover Art" />
-                <img className="block w-full h-full" src="/img/vertical-frame.svg" alt="image frame" />
+                <img className="block absolute top-0 left-0 size-full object-cover object-center scale-95 min-h-96" 
+                src="/img/bg-game.png" alt="Cover Art" />
+                <img className="block w-full h-full min-h-96" src="/img/vertical-frame.svg" alt="image frame" />
             </div>
 
             <div className="w-full lg:w-2/3 text-justify">
@@ -21,7 +21,7 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
                     </p>
                 </div>
                 
-                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-4 mt-8">
+                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-4 mt-8">
                     <li>
                         <FeatureButton label="Faction Selection" onClick={() => {}} />
                     </li>

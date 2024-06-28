@@ -7,6 +7,7 @@
     --black: 17 17 17;
     --pink: 232 114 192;
     --dark-green: 2 53 60;
+    --dark-blue: 27 63 94;
     --dark-green-light: 21 119 116;
     --green: 68 147 66;
     --accent: 63 208 201;
@@ -60,7 +61,7 @@ h3 {
 }
 
 .bg-land {
-  background-image: url('../public/img/land.jpg');
+  background-image: url('../public/img/bg-game.png');
   background-position: center;
   background-size: cover;
 }
@@ -197,11 +198,12 @@ nav li:hover .label {
 .apexcharts-legend {
   text-align: left;
   transform: translate(-14px, -10px);
-  background: rgba(0,0,0,0.05);
+  background: rgb(var(--dark-blue));
+  justify-content: center !important;
   border-radius: 10px;
 }
 .apexcharts-legend-text {
-  color: rgb(var(--black)) !important;
+  color: white !important;
   font-family: var(--font-outfit) !important;
   font-size: .9rem !important;
   font-weight: 200 !important;

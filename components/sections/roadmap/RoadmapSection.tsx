@@ -36,7 +36,7 @@ export const RoadmapSection = ({
     return(
         <Screen id="roadmap" containerClasses="bg-halftone" containerStyle={{}}>
 
-            <div className="size-full flex flex-col items-center justify-center relative pt-28 pb-14 px-2">
+            <div className="size-full flex flex-col items-center justify-center relative pt-28 pb-14 px-6">
 
                 <div className="absolute top-0 left-0 size-full bg-roadmap"></div>
 
@@ -53,7 +53,7 @@ export const RoadmapSection = ({
                     </button>
                 </div>
 
-                <div ref={scroller} className="invisible-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-scroll mt-8 mb-auto gap-8 relative">
+                <div ref={scroller} className="invisible-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-scroll mt-8 mb-auto gap-1/20 relative">
 
                     <RoadmapElement percentage={20}>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
