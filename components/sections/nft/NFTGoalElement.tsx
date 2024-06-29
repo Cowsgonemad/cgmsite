@@ -14,7 +14,7 @@ export const NFTGoalElement = ({
     const even = 'absolute top-1/10 px-1/10 pt-1/20';
 
     return(
-        <div className="2xl:w-1/4 xl:w-1/3 md:w-1/2 sm:w-full w-full shrink-0 relative p-2">
+        <div className="w-full sm:w-1/2 xl:w-1/3 2xl:w-1/4 shrink-0 relative p-2">
 
             {type === 'odd' ? <NFTGoalBg1 /> : <div className="translate-x-4 translate-y-16"><NFTGoalBg2 /></div>}
             

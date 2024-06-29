@@ -9,7 +9,7 @@ export const NFTExtraTab = ({ isActive }: { isActive: boolean }) => {
 
                 <SectionTitle firstLine="Lorem" secondLine="Ipsum" />
 
-                <div className="bg-black-blob mt-16 lg:px-3/20 lg:pt-16 pb-60 relative">
+                <div className="bg-black-blob mt-16 lg:px-3/20 lg:pt-16 pb-28 xl:pb-60 relative">
 
                     <div className="absolute w-[130%] -z-10 left-1/2 -top-24 -translate-x-1/2 hidden xl:block">
                         <img src="/img/extra-blob.svg" />

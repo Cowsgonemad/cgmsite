@@ -40,7 +40,7 @@ export const NFTSection = ({
 
                 <div className="absolute size-full bg-print animate-bg-size top-0 left-0"></div>
                 
-                <div className="size-full lg:max-w-[90%] flex justify-center mx-auto h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
+                <div className="size-full lg:max-w-[90%] flex justify-center mx-auto md:h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
                     <Arrows prev={prev} next={next} />
 
                     <NFTIllustrationsTab isActive={tab == 0} nft={nft} />

@@ -12,7 +12,7 @@ export const NFTIllustrationsTab = ({ isActive, nft }: { isActive: boolean, nft:
                 </div>
             </div>
 
-            <div className="flex flex-col lg:w-1/2 xl:my-auto lg:-translate-x-8 xl:pb-16 2xl:pb-32">
+            <div className="flex flex-col lg:w-1/2 md:my-auto lg:-translate-x-8 pb-28 lg:pb-16 2xl:pb-32">
             
                 <div className="text-white text-lg 2xl:text-xl text-justify font-extralight">
 
