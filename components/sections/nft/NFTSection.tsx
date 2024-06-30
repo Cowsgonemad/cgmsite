@@ -36,7 +36,7 @@ export const NFTSection = ({
 
             <div className="size-full relative pt-28 flex px-6">
 
-                <div className="absolute size-full bg-print animate-bg-size top-0 left-0 opacity-10"></div>
+                <div className="absolute size-full bg-coin animate-bg-size top-0 left-0 opacity-5"></div>
                 
                 <div className="size-full xl:max-w-[90%] flex justify-center mx-auto xl:h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
                     <Arrows prev={prev} next={next} />
