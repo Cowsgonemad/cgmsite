@@ -17,8 +17,8 @@ export const NFTSection = ({
 
     // const containerStyle = { left: `-${100 - progress}%` };
     // const contentStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
-    const activeImage = 'opacity-100 translate-y-0 transition duration-20 hover:opacity-100 cursor-pointer';
-    const inactiveImage = 'opacity-40 translate-y-12 transition duration-20 hover:opacity-100 cursor-pointer';
+    const activeImage = 'opacity-100 translate-y-0 transition duration-20 hover:opacity-100 w-20 lg:w-28 cursor-pointer';
+    const inactiveImage = 'lg:opacity-40 lg:translate-y-12 transition duration-20 hover:opacity-100 w-20 lg:w-28 cursor-pointer';
 
     const next = (): void => {
         const num = Number(tab);
@@ -46,21 +46,21 @@ export const NFTSection = ({
                     <NFTExtraTab isActive={tab === 2} />
 
                     {tab === 0 && 
-                    <ul className="absolute bottom-0 right-20 items-end gap-2 hidden lg:flex">
+                    <ul className="absolute bottom-0 lg:right-20 flex items-end gap-2">
                         <li className={nft === '1' ? activeImage : inactiveImage} onClick={() => setNft('1')}>
-                            <Image src="/img/VACA1.svg" width="100" height="100" alt="NFT name" />
+                            <img src="/img/VACA1.svg" className="block w-full" alt="NFT name" />
                         </li>
 
                         <li className={nft === '2' ? activeImage : inactiveImage} onClick={() => setNft('2')}>
-                            <Image src="/img/VACA2.svg" width="100" height="100" alt="NFT name" />
+                            <img src="/img/VACA2.svg" className="block w-full" alt="NFT name" />
                         </li>
 
                         <li className={nft === '3' ? activeImage : inactiveImage} onClick={() => setNft('3')}>
-                            <Image src="/img/VACA3.svg" width="100" height="100" alt="NFT name" />
+                            <img src="/img/VACA3.svg" className="block w-full" alt="NFT name" />
                         </li>
 
                         <li className={nft === '4' ? activeImage : inactiveImage} onClick={() => setNft('4')}>
-                            <Image src="/img/VACA4.svg" width="100" height="100" alt="NFT name" />
+                            <img src="/img/VACA4.svg" className="block w-full" alt="NFT name" />
                         </li>
                     </ul>}
                 </div>
