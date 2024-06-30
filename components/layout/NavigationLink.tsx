@@ -1,16 +1,23 @@
 export const NavigationLink = ({
-    children, label, navigateTo
+    isActive,
+    children, 
+    label, 
+    navigateTo
 }: {
+    isActive: boolean,
     children: React.ReactNode,
     label: string,
     navigateTo: () => void
 }) => {
 
+    const active = 'py-1 px-2 flex items-center rounded-md bg-dark-blue';
+    const inactive = 'py-1 px-2 flex items-center';
+
     return(
         <li className="relative">
-            <button title={label} className="p-1 flex items-center" onClick={() => navigateTo()}>
+            <button title={label} className={isActive ? active : inactive} onClick={() => navigateTo()}>
                 {children}
-                <span className="absolute md:static font-extrabold uppercase whitespace-nowrap text-xs text-white -z-10 ml-2 hidden md:block">
+                <span className="absolute md:static font-semibold uppercase whitespace-nowrap text-sm text-white ml-2 hidden md:block">
                     {label}
                 </span>
             </button>

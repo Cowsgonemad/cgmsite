@@ -10,22 +10,22 @@ export const MooMooRoadmap = () => {
             <div className="flex justify-between gap-8 overflow-x-auto">
                 <div className="w-1/3 sm:w-1/5 flex flex-col items-center shrink-0">
                     <strong className="font-extrabold text-xl text-dark-green rounded-full bg-[#7feae2] p-1 shrink-0 w-20 h-20 2xl:w-24 2xl:h-24 flex items-center justify-center">25%</strong>
-                    <h5 className="text-sm lg:text-md mt-2 text-white">ICO Announcement</h5>
+                    <h5 className="text-sm lg:text-md mt-2 text-black">ICO Announcement</h5>
                 </div>
 
                 <div className="w-1/3 sm:w-1/5 flex flex-col items-center shrink-0">
                     <strong className="font-extrabold text-xl text-dark-green rounded-full bg-[#1790a0] p-1 shrink-0 w-20 h-20 2xl:w-24 2xl:h-24 flex items-center justify-center">50%</strong>
-                    <h5 className="text-sm lg:text-md mt-2 text-white">Airdrop to Whitelist and Top Rarity NFT Holders</h5>
+                    <h5 className="text-sm lg:text-md mt-2 text-black">Airdrop to Whitelist and Top Rarity NFT Holders</h5>
                 </div>
 
                 <div className="w-1/3 sm:w-1/5 flex flex-col items-center shrink-0">
                     <strong className="font-extrabold text-xl text-accent rounded-full bg-[#1b3f5e] p-1 shrink-0 w-20 h-20 2xl:w-24 2xl:h-24 flex items-center justify-center">75%</strong>
-                    <h5 className="text-sm lg:text-md mt-2 text-white">Airdrop Raffles</h5>
+                    <h5 className="text-sm lg:text-md mt-2 text-black">Airdrop Raffles</h5>
                 </div>
 
                 <div className="w-1/3 sm:w-1/5 flex flex-col items-center shrink-0">
                     <strong className="font-extrabold text-xl text-accent rounded-full bg-[#112a3d] p-1 shrink-0 w-20 h-20 2xl:w-24 2xl:h-24 flex items-center justify-center">100%</strong>
-                    <h5 className="text-sm lg:text-md mt-2 text-white">Listing on Exchanges</h5>
+                    <h5 className="text-sm lg:text-md mt-2 text-black">Listing on Exchanges</h5>
                 </div>
             </div>
 

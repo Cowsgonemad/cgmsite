@@ -49,7 +49,7 @@ export const RoadmapSection = () => {
                     </button>
                 </div>
 
-                <div ref={scroller} className="invisible-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-scroll mt-8 mb-auto gap-1/20 relative">
+                <div ref={scroller} className="transparent-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-x-auto mt-8 mb-auto gap-1/20 relative pb-4">
 
                     <RoadmapElement percentage={20}>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>

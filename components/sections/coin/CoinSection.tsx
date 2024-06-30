@@ -8,11 +8,11 @@ export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
     // const waveStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
     
     return(
-        <Screen id="the-coin" containerClasses="bg-[#3a3a3a]">
+        <Screen id="the-coin" containerClasses="bg-halftone">
 
             <div className="h-full flex flex-col items-center justify-center relative pt-28">
 
-                <div className="absolute size-full bg-coin animate-bg-size top-0 left-0"></div>
+                <div className="absolute size-full bg-coin animate-bg-size top-0 left-0 opacity-5"></div>
 
                 <div className="w-full flex items-center justify-center transition duration-20 my-auto relative"
                 style={{}}>

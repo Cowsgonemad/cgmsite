@@ -14,54 +14,56 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed top-0 w-full z-50 bg-dark-green shadow-lg flex justify-between items-center px-4 h-14 border-b-4 border-black">
+        <div className="fixed top-0 w-full z-50 bg-dark-green shadow-lg flex justify-between items-center h-20 border-b-4 border-black">
 
-            <h1 className="text-white font-screebie opacity-60 cursor-pointer" onClick={() => navigateTo(0)}>COWS GONE MAD</h1>
+            <h1 className="text-white font-screebie opacity-60 cursor-pointer px-6" onClick={() => navigateTo(0)}>
+                COWS GONE MAD
+            </h1>
 
             <nav className="">
-                <ul className="flex justify-center gap-2 md:gap-8">
+                <ul className="flex justify-center gap-2 md:gap-8 px-6">
 
-                    <NavigationLink label="The Coin" navigateTo={() => navigateTo(1)}>
+                    <NavigationLink label="The Coin" isActive={currentScreen === 1} navigateTo={() => navigateTo(1)}>
                         <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="The Game" navigateTo={() => navigateTo(2)}>
+                    <NavigationLink label="The Game" isActive={currentScreen === 2} navigateTo={() => navigateTo(2)}>
                         <ControlIcon fillVar={currentScreen === 2 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="NFT" navigateTo={() => navigateTo(3)}>
+                    <NavigationLink label="NFT" isActive={currentScreen === 3} navigateTo={() => navigateTo(3)}>
                         <TokenIcon fillVar={currentScreen === 3 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="Roadmap" navigateTo={() => navigateTo(4)}>
+                    <NavigationLink label="Roadmap" isActive={currentScreen === 4} navigateTo={() => navigateTo(4)}>
                         <GoalIcon fillVar={currentScreen === 4 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="Subscribe" navigateTo={() => navigateTo(5)}>
+                    <NavigationLink label="Subscribe" isActive={currentScreen === 5} navigateTo={() => navigateTo(5)}>
                         <SendIcon fillVar={currentScreen === 5 ? '--accent' : '--white'} />
                     </NavigationLink>
 
                 </ul>
             </nav>
 
-            <ul className="opacity-50 gap-2 items-center justify-center hidden lg:flex">
+            <ul className="gap-2 items-center justify-center hidden lg:flex px-6">
                 <li className="flex">
-                    <a className="inline-block p-1">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <XIcon size={20} />
                     </a>
                 </li>
                 <li className="flex">
-                    <a className="inline-block p-1">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <TelegramIcon size={20} />
                     </a>
                 </li>
                 <li className="flex">
-                    <a className="inline-block p-1">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <InstagramIcon size={20} />
                     </a>
                 </li>
                 <li className="flex">
-                    <a className="inline-block p-1">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <DiscordIcon size={20} />
                     </a>
                 </li>

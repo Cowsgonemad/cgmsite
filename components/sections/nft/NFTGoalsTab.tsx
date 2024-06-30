@@ -7,6 +7,12 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
 
     const scroller = useRef<HTMLDivElement>(null);
 
+    const cwidth = scroller.current?.clientWidth;
+    const swidth = scroller.current?.scrollWidth;
+    const step = swidth! / 4;
+    const sdistance = swidth! - cwidth!;
+    const dots = Array.from({ length: Math.ceil(sdistance / step) + 1 }, (v,i) => i);
+
     const prev = () => {
 
         if (!scroller || !scroller.current) { return; }
@@ -23,6 +29,14 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
         const total = scroller.current.scrollWidth;
         scroller.current.scrollTo({
             left: scroller.current.scrollLeft + (total / 4),
+            behavior: 'smooth'
+        });
+    };
+
+    const jump = (p: number) => {
+        if (!scroller || !scroller.current) { return; }
+        scroller.current.scrollTo({
+            left: step * p,
             behavior: 'smooth'
         });
     };
@@ -44,6 +58,14 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
                         <img src="/img/nft-next.svg" className="w-12" alt="Next" />
                     </button>
                 </div>
+
+                {/* <div className="flex justify-center gap-2">
+                    {dots.map(d => 
+                        <button key={d} 
+                        className="inline-block rounded-full bg-dark-blue h-6 w-6 cursor-pointer"
+                        onClick={() => jump(d)}></button>
+                    )}
+                </div> */}
                 
                 <div ref={scroller} className="invisible-scroller w-full flex overflow-x-scroll overflow-y-hidden mt-16 pb-20">
 

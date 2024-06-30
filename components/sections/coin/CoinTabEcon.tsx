@@ -19,7 +19,7 @@ export const CoinTabEcon = ({ isActive }: { isActive: boolean }) => {
 
                         <CoinTabTitle text="Tokenomics" />
 
-                        <p className="text-white text-md font-light 2xl:font-extralight 2xl:text-xl text-center">
+                        <p className="text-black text-md font-light 2xl:text-xl text-center">
                         The total supply of <strong className="font-extrabold">MooMoo tokens</strong> is capped at 1 billion tokens. In order to manage scarcity and value, and provide liquidity for game operations and market activities, the tokens are distributed for various purposes.
                         </p>
                     </div>
