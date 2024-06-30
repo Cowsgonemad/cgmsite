@@ -15,13 +15,13 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
 
             <div className="w-full lg:w-2/3 text-justify">
 
-                <div className="bg-black bg-opacity-80 p-4 lg:p-12 text-white font-extralight 2xl:text-xl">
+                <div className="bg-black bg-opacity-80 p-4 lg:p-12 text-white font-extralight text-lg 2xl:text-2xl">
                     <p className="">
                     Set in a post-meteoric world where cows, humans, and wolves vie for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
                     </p>
                 </div>
                 
-                <ul className="grid grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-4 mt-8">
+                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-4 mt-8">
                     <li>
                         <FeatureButton label="Faction Selection" onClick={() => {}} />
                     </li>

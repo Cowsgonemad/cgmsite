@@ -14,7 +14,7 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed top-0 w-full z-50 bg-dark-green shadow-lg flex justify-between items-center h-20 border-b-4 border-black">
+        <div className="fixed top-0 w-full z-50 bg-footer shadow-lg flex justify-between items-center h-20 border-b-4 border-black">
 
             <h1 className="text-white font-screebie opacity-60 cursor-pointer px-6" onClick={() => navigateTo(0)}>
                 COWS GONE MAD

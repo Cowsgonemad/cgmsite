@@ -7,11 +7,11 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
 
     const scroller = useRef<HTMLDivElement>(null);
 
-    const cwidth = scroller.current?.clientWidth;
-    const swidth = scroller.current?.scrollWidth;
-    const step = swidth! / 4;
-    const sdistance = swidth! - cwidth!;
-    const dots = Array.from({ length: Math.ceil(sdistance / step) + 1 }, (v,i) => i);
+    // const cwidth = scroller.current?.clientWidth;
+    // const swidth = scroller.current?.scrollWidth;
+    // const step = swidth! / 4;
+    // const sdistance = swidth! - cwidth!;
+    // const dots = Array.from({ length: Math.ceil(sdistance / step) + 1 }, (v,i) => i);
 
     const prev = () => {
 
@@ -33,13 +33,13 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
         });
     };
 
-    const jump = (p: number) => {
-        if (!scroller || !scroller.current) { return; }
-        scroller.current.scrollTo({
-            left: step * p,
-            behavior: 'smooth'
-        });
-    };
+    // const jump = (p: number) => {
+    //     if (!scroller || !scroller.current) { return; }
+    //     scroller.current.scrollTo({
+    //         left: step * p,
+    //         behavior: 'smooth'
+    //     });
+    // };
 
     return(
         <NFTTab isActive={isActive}>
@@ -59,15 +59,15 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
                     </button>
                 </div>
 
-                {/* <div className="flex justify-center gap-2">
+                {/* <div className="flex justify-center gap-2 mt-4">
                     {dots.map(d => 
                         <button key={d} 
-                        className="inline-block rounded-full bg-dark-blue h-6 w-6 cursor-pointer"
+                        className={`inline-block rounded-full h-4 w-4 cursor-pointer ${active === d ? 'bg-accent' : 'bg-dark-blue' }`}
                         onClick={() => jump(d)}></button>
                     )}
                 </div> */}
                 
-                <div ref={scroller} className="invisible-scroller w-full flex overflow-x-scroll overflow-y-hidden mt-16 pb-20">
+                <div ref={scroller} className="w-full invisible-scroller flex overflow-x-scroll overflow-y-hidden mt-16 pb-20">
 
                     <NFTGoalElement type="odd" percentage={100}>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>

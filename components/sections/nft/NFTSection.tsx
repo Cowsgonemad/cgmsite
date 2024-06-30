@@ -32,13 +32,13 @@ export const NFTSection = ({
     };
     
     return(
-        <Screen id="the-nft" containerClasses="bg-[#272728]">
+        <Screen id="the-nft" containerClasses="bg-white">
 
             <div className="size-full relative pt-28 flex px-6">
 
-                <div className="absolute size-full bg-print animate-bg-size top-0 left-0"></div>
+                <div className="absolute size-full bg-print animate-bg-size top-0 left-0 opacity-10"></div>
                 
-                <div className="size-full lg:max-w-[90%] flex justify-center mx-auto md:h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
+                <div className="size-full xl:max-w-[90%] flex justify-center mx-auto xl:h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
                     <Arrows prev={prev} next={next} />
 
                     <NFTIllustrationsTab isActive={tab == 0} nft={nft} />

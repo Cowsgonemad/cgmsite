@@ -14,8 +14,7 @@ export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
 
                 <div className="absolute size-full bg-coin animate-bg-size top-0 left-0 opacity-5"></div>
 
-                <div className="w-full flex items-center justify-center transition duration-20 my-auto relative"
-                style={{}}>
+                <div className="w-full flex items-center justify-center transition duration-20 my-auto relative">
 
                     <div className="text-center w-full md:max-w-screen-md lg:max-w-screen-lg px-6 mx-auto">
 
@@ -38,7 +37,7 @@ export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
                             </li>
                         </ul>
 
-                        <div className="relative md:h-screen-30 lg:h-screen-40 mt-10 mb-20 xl:mb-0">
+                        <div className="relative xl:h-screen-40 mt-10 mb-20 xl:mb-0">
 
                             <CoinTabCoin isActive={tab === 'coin'} />
                             <CoinTabUtil isActive={tab === 'util'} />

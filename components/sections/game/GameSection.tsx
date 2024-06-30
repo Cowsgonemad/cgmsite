@@ -19,9 +19,9 @@ export const GameSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
                 
                 <div className="bg-black bg-opacity-80 size-full absolute right-0 top-0"></div>
 
-                <div className="transition duration-20 w-full flex items-center order-2 lg:order-1" style={{}}>
+                <div className="transition duration-20 w-full flex items-center order-2 lg:order-1">
 
-                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto lg:h-screen-60 relative">
+                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto xl:h-screen-60 relative">
                         <GameTabTrailer isActive={tab === 'trailer'} />
                         <GameTabGame isActive={tab === 'game'} />
                         <GameTabFeatures isActive={tab === 'feat'} />
