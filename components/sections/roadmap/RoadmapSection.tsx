@@ -3,13 +3,9 @@ import { Screen } from '../../layout';
 import { SectionTitle } from '@/components/ui';
 import { RoadmapElement } from './RoadmapElement';
 
-export const RoadmapSection = ({ 
-    progress
-}: { 
-    progress: number
-}) => {
+export const RoadmapSection = () => {
 
-    const containerStyle = { left: `${100 - progress}%` };
+    // const containerStyle = { left: `${100 - progress}%` };
 
     const scroller = useRef<HTMLDivElement>(null);
 
@@ -34,7 +30,7 @@ export const RoadmapSection = ({
     };
 
     return(
-        <Screen id="roadmap" containerClasses="bg-halftone" containerStyle={{}}>
+        <Screen id="roadmap" containerClasses="bg-halftone">
 
             <div className="size-full flex flex-col items-center justify-center relative pt-28 pb-14 px-6">
 

@@ -1,9 +1,9 @@
 import { SubscribeArrowIcon } from '../../icons';
 import { CGMLogo, FooterCow, MooMooLogo, RefLogo, SocialBar } from '.';
 
-export const FooterSection = ({ progress }: { progress: number }) => {
+export const FooterSection = () => {
 
-    const containerStyle = { top: `${100 - progress}%` };
+    // const containerStyle = { top: `${100 - progress}%` };
 
     return (
         <footer id="footer" className="w-full bg-footer border-t-4 border-black flex flex-col pt-14" 

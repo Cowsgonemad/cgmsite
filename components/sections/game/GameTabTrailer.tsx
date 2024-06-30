@@ -8,7 +8,7 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
 
             <div className="w-full lg:w-2/5 2xl:w-1/3 bg-black bg-opacity-80 p-4 lg:p-8 2xl:p-12">
 
-                <div className="w-1/2 2xl:w-auto mx-auto">
+                <div className="w-1/3 lg:w-1/2 2xl:w-auto mx-auto">
                     <Logo />
                 </div>
                 

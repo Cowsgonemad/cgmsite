@@ -21,7 +21,7 @@ export const HeroSection = ({
     };
 
     return(
-        <Screen id="hero" containerClasses="bg-cod h-screen" containerStyle={{}}>
+        <Screen id="hero" containerClasses="bg-cod h-screen">
 
             <button className="hidden md:block absolute top-1/2 -translate-y-1/2 left-10 animate-soft-bounce" 
             onClick={() => navigateTo(1)}>

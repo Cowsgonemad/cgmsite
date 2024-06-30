@@ -18,6 +18,8 @@ const config: Config = {
         'screen-30': '30vh',
         'screen-40': '40vh',
         'screen-50': '50vh',
+        'screen-60': '60vh',
+        'screen-70': '70vh',
         'screen-75': '75vh',
         'screen-4/5': '80vh',
       },
@@ -48,6 +50,7 @@ const config: Config = {
       scale: {
         '105': '1.05',
         '106': '1.06',
+        '120': '1.20',
         '130': '1.30',
         '140': '1.40',
         '160': '1.60',

@@ -41,7 +41,7 @@ export const TokenomicsChart = () => {
 
             <ApexChart type="pie" options={options} series={series} height={190} width={400} />
 
-            <div className="absolute top-8 right-5 opacity-70 hover:opacity-100 transition duration-20">
+            <div className="hidden lg:block absolute top-8 right-5 opacity-70 hover:opacity-100 transition duration-20">
                 {!expand && <button onClick={() => setExpand(true)}>
                     <ExpandIcon fillVar="--accent" />
                 </button>}

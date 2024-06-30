@@ -4,21 +4,19 @@ import { Arrows, SectionTitle } from '../../ui';
 import { NFTCollectionTitle, NFTExtraTab, NFTGoalsTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
 
 export const NFTSection = ({ 
-    progress, 
     nft,
     tab, 
     setNft,
     setTab 
 }: { 
-    progress: number, 
     nft: string, 
     tab: number,
     setNft: (n: string) => void,
     setTab: (n: number) => void
 }) => {
 
-    const containerStyle = { left: `-${100 - progress}%` };
-    const contentStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
+    // const containerStyle = { left: `-${100 - progress}%` };
+    // const contentStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
     const activeImage = 'opacity-100 translate-y-0 transition duration-20 hover:opacity-100 cursor-pointer';
     const inactiveImage = 'opacity-40 translate-y-12 transition duration-20 hover:opacity-100 cursor-pointer';
 
@@ -34,7 +32,7 @@ export const NFTSection = ({
     };
     
     return(
-        <Screen id="the-nft" containerClasses="bg-[#272728]" containerStyle={{}}>
+        <Screen id="the-nft" containerClasses="bg-[#272728]">
 
             <div className="size-full relative pt-28 flex px-6">
 

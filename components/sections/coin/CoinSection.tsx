@@ -1,14 +1,14 @@
 import { Screen } from '../../layout';
 import { CoinTabButton, CoinTabCoin, CoinTabEcon, CoinTabGoals, CoinTabUtil, CoinTunnel, MooMooCoinLogo, Waves } from '.';
 
-export const CoinSection = ({ progress, tab, setTab }: { progress: number, tab: string, setTab: (tab: string) => void }) => {
+export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string) => void }) => {
 
-    const containerStyle = { top: `${progress <= 0 ? 100 : 0}%` };
-    const contentStyle = { opacity: progress > 80 ? 100 : 0, transform: `translateY(-${100 - progress}px)` };
-    const waveStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
+    // const containerStyle = { top: `${progress <= 0 ? 100 : 0}%` };
+    // const contentStyle = { opacity: progress > 80 ? 100 : 0, transform: `translateY(-${100 - progress}px)` };
+    // const waveStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
     
     return(
-        <Screen id="the-coin" containerClasses="bg-[#3a3a3a]" containerStyle={{}}>
+        <Screen id="the-coin" containerClasses="bg-[#3a3a3a]">
 
             <div className="h-full flex flex-col items-center justify-center relative pt-28">
 
