@@ -52,6 +52,15 @@ html {
   background: rgba(0,0,0,0.4);
   border-radius: 10px;
 }
+@-moz-document url-prefix() {
+  .invisible-scroller {
+    scrollbar-width: none;
+  }
+  .transparent-scroller {
+    scrollbar-color: rgba(0,0,0,0.4) rgba(0,0,0,0.2);
+    scrollbar-width: thin;
+  }
+}
 
 @media(max-width: 1280px) {
   #viewer {
@@ -76,11 +85,11 @@ h3 {
   background: linear-gradient(180deg, rgb(var(--pink)), #000 80%);
 }
 
-.bg-cow {
+/* .bg-cow {
   background-image: url('../public/img/bgbig.jpg');
   background-position: center;
   background-size: cover;
-}
+} */
 
 .bg-land {
   background-image: url('../public/img/bg-game.png');
@@ -98,7 +107,7 @@ h3 {
   background-image: url('../public/img/halftone-2.jpg');
 }
 
-.bg-hero {
+/* .bg-hero {
   background-image: url('../public/img/hero.jpg');
   background-size: cover;
   background-position: top;
@@ -108,7 +117,7 @@ h3 {
   background-size: cover;
   background-position: top;
   mask-image: linear-gradient(to left, white 48%, transparent 52%);
-}
+} */
 
 .bg-footer {
   background-image: url('../public/img/bg-footer.svg');
