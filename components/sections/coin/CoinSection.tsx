@@ -37,7 +37,7 @@ export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
                             </li>
                         </ul>
 
-                        <div className="relative xl:h-screen-40 mt-10 mb-20 xl:mb-0">
+                        <div className="relative 2xl:h-screen-40 mt-10 mb-20 xl:mb-0">
 
                             <CoinTabCoin isActive={tab === 'coin'} />
                             <CoinTabUtil isActive={tab === 'util'} />

@@ -8,8 +8,8 @@ export const CoinTabUtil = ({ isActive }: { isActive: boolean }) => {
 
             <CoinTabTitle text="The Moo Moo Tokens" />
 
-            <p className="text-black text-lg font-light 2xl:text-2xl text-center">
-            <strong className="font-extrabold">The MooMoo token</strong> is the lifeblood of the <strong className="font-extrabold">Cows Gone Mad</strong> ecosystem, designed to facilitate seamless transactions, incentivise community engagement, and drive the project&apos;s overall growth and sustainability. Initially, its primary utility lies within the blockchain-based video game <strong className="font-extrabold">Cows Gone Mad: Battle for Pasture Prime</strong>, where it serves as the main currency for purchasing in-game items, unlocking exclusive content, and participating in special events.
+            <p className="text-black text-lg font-light 2xl:text-2xl text-center mb-8">
+            <strong className="font-extrabold">Moo Moo tokens</strong> serve as the cornerstone of the <strong className="font-extrabold">Cows Gone Mad</strong> ecosystem, providing multifaceted utility both in and out of the game. Players use <strong className="font-extrabold">Moo Moo tokens</strong> to purchase in-game items, upgrades, and exclusive content, enhancing their gameplay experience. The tokens also facilitate player-to-player trading, allowing users to buy, sell, and trade valuable assets on the marketplace. Additionally, <strong className="font-extrabold">Moo Moo tokens</strong> grant holders governance rights, enabling them to participate in key project decisions and future developments. By integrating these utilities, <strong className="font-extrabold">Moo Moo tokens</strong> drive engagement, foster a thriving community, and ensure long-term value within the ecosystem.
             </p>
         </CoinTab>
     );

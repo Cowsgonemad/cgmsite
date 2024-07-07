@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-export const FeatureButton = ({ label, onClick }: { label: string, onClick: () => void }) => {
+export const FeatureButton = ({ label, isActive, onClick }: { label: string, isActive: boolean, onClick: () => void }) => {
 
-    const [gradient, setGradient] = useState<'active' | 'inactive'>('inactive');
+    const gradient = isActive ? 'active' : 'inactive';
 
     return(
         <button className="relative flex items-center justify-center w-full h-20"
-        onClick={onClick} onMouseEnter={() => setGradient('active')} onMouseLeave={() => setGradient('inactive')}>
+        onClick={onClick}>
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 269 124.38" width="100%"  className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0" preserveAspectRatio="none">
                 <defs>

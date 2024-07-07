@@ -10,7 +10,7 @@ export const CoinTabGoals = ({ isActive }: { isActive: boolean }) => {
             <CoinTabTitle text="The Goals" />
 
             <p className="text-black text-lg font-light 2xl:text-2xl text-center">
-            Beyond the game, the MooMoo token supports broader goals, including funding the video game’s development and backing the <strong className="font-extrabold">MetaHealth Online Platform</strong>, aiming to revolutionize healthcare access with blockchain-based security and efficiency. 
+            Beyond the game, the <strong className="font-extrabold">Moo Moo token</strong> supports broader goals, including funding the video game’s development and backing the <strong className="font-extrabold">MetaHealth Online Platform</strong>, aiming to revolutionize healthcare access with blockchain-based security and efficiency. 
             </p>
 
             <MooMooRoadmap />

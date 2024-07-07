@@ -21,7 +21,7 @@ export const GameSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
 
                 <div className="transition duration-20 w-full flex items-center order-2 lg:order-1">
 
-                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto xl:h-screen-60 relative">
+                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto 2xl:h-screen-60 relative">
                         <GameTabTrailer isActive={tab === 'trailer'} />
                         <GameTabGame isActive={tab === 'game'} />
                         <GameTabFeatures isActive={tab === 'feat'} />

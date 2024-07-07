@@ -85,12 +85,6 @@ h3 {
   background: linear-gradient(180deg, rgb(var(--pink)), #000 80%);
 }
 
-/* .bg-cow {
-  background-image: url('../public/img/bgbig.jpg');
-  background-position: center;
-  background-size: cover;
-} */
-
 .bg-land {
   background-image: url('../public/img/bg-game.png');
   background-position: center;
@@ -106,18 +100,6 @@ h3 {
 .bg-halftone {
   background-image: url('../public/img/halftone-2.jpg');
 }
-
-/* .bg-hero {
-  background-image: url('../public/img/hero.jpg');
-  background-size: cover;
-  background-position: top;
-}
-.bg-hero-draft {
-  background-image: url('../public/img/hero-draft.jpg');
-  background-size: cover;
-  background-position: top;
-  mask-image: linear-gradient(to left, white 48%, transparent 52%);
-} */
 
 .bg-footer {
   background-image: url('../public/img/bg-footer.svg');
@@ -194,6 +176,9 @@ h3 {
 .title-drop-shadow {
   text-shadow: -5px 5px rgba(0,0,0,0.8);
 }
+.text-drop-shadow {
+  filter: drop-shadow(3px 3px 0px #000);
+}
 .outline-drop {
   text-shadow: -4px 4px rgba(0,0,0,0.8);
   -webkit-text-stroke-width: 2px;
@@ -203,27 +188,13 @@ h3 {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(var(--black));
 }
+.t-outline-1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(var(--black));
+}
 .no-outline {
   -webkit-text-stroke-width: 0;
 }
-
-/* .vertical {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-} */
-
-/* nav li .label {
-  transition: .2s;
-  opacity: 0;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 0);
-}
-
-nav li:hover .label {
-  transform: translate(-50%, 20px);
-  opacity: 1;
-} */
 
 .active-label {
   box-shadow: 16px 0 0px rgba(var(--black));

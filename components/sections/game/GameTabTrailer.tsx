@@ -6,7 +6,7 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
     return(
         <GameTab isActive={isActive}>
 
-            <div className="w-full lg:w-2/5 2xl:w-1/3 bg-black bg-opacity-80 p-4 lg:p-8 2xl:p-12">
+            <div className="w-full lg:w-2/5 2xl:w-1/3 bg-black bg-opacity-80 p-4 lg:p-8 2xl:p-8">
 
                 <div className="w-1/3 lg:w-1/2 2xl:w-auto mx-auto">
                     <Logo />
@@ -15,7 +15,7 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
                 <h5 className="font-extralight text-3xl text-accent my-4 text-center">The New Blockchain Adventure</h5>
 
                 <p className="text-white font-extralight text-justify text-lg 2xl:text-2xl">
-                Set in a post-meteoric world where cows, humans, and wolves vie for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
+                Set in a post-meteoric world where cows, humans, and wolves fight for dominance, the game offers a unique blend of resource management, strategic alliances, and survival tactics, all influenced by real-time player decisions that are recorded on the blockchain.
                 </p>
             </div>
 

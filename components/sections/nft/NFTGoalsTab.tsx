@@ -67,26 +67,22 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
                     )}
                 </div> */}
                 
-                <div ref={scroller} className="w-full invisible-scroller flex overflow-x-scroll overflow-y-hidden mt-16 pb-20">
+                <div ref={scroller} className="w-full invisible-scroller flex overflow-x-scroll overflow-y-hidden mt-16 xl:mt-8 pb-20">
 
                     <NFTGoalElement type="odd" percentage={100}>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>
+                        <p><strong className="block mb-2 font-extrabold">Design & Development.</strong> Finalize unique NFT designs and develop smart contracts.</p>
                     </NFTGoalElement>
 
                     <NFTGoalElement type="even" percentage={100}>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>
+                        <p><strong className="block mb-2 font-extrabold">Community Engagement.</strong> Launch marketing campaign and hold AMAs sneak peeks.</p>
                     </NFTGoalElement>
 
                     <NFTGoalElement type="odd" percentage={60}>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>
+                        <p><strong className="block mb-2 font-extrabold">Presale & Public Sale.</strong> Conduct whitelist presale and launch public sale.</p>
                     </NFTGoalElement>
 
                     <NFTGoalElement type="even" percentage={40}>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>
-                    </NFTGoalElement>
-
-                    <NFTGoalElement type="odd" percentage={30}>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit quia libero voluptas voluptatem pariatur, aut ducimus nam nisi.</p>
+                        <p><strong className="block mb-2 font-extrabold">Post-Launch.</strong> List on NFT marketplaces and implement royalties and fees.</p>
                     </NFTGoalElement>
 
                 </div>
