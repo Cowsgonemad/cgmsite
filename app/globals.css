@@ -14,6 +14,7 @@
     --yellow: 255 223 0;
     --dark-grey: 68 68 68;
     --white: 255 255 255;
+    --red: 197 100 100;
   }
 }
 
@@ -180,7 +181,7 @@ h3 {
   filter: drop-shadow(3px 3px 0px #000);
 }
 .outline-drop {
-  text-shadow: -4px 4px rgba(0,0,0,0.8);
+  text-shadow: -3px 3px rgba(0,0,0,0.8);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(var(--black));
 }
@@ -204,6 +205,11 @@ h3 {
   box-shadow: 3px 3px 0 rgb(var(--pink));
 }
 
+#apex-pie-chart svg,
+#apex-pie-chart svg foreignObject,
+#apex-pie-chart .apexcharts-canvas {
+  height: 240px !important;
+}
 .apexcharts-legend {
   text-align: left;
   transform: translate(-14px, -10px);
@@ -212,10 +218,7 @@ h3 {
   border-radius: 10px;
 }
 .apexcharts-legend-text {
-  color: white !important;
   font-family: var(--font-outfit) !important;
-  font-size: .9rem !important;
-  font-weight: 200 !important;
 }
 
 .link-list {

@@ -20,6 +20,7 @@ export * from './SendIcon';
 export * from './SubscribeArrowIcon';
 export * from './TelegramIcon';
 export * from './TikTokIcon';
+export * from './TimesIcon';
 export * from './TokenIcon';
 export * from './UbreIcon';
 export * from './XIcon';

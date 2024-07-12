@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { Providers } from "@/components/layout";
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -20,7 +22,7 @@ const jester = localFont({
 
 export const metadata: Metadata = {
   title: "Cows Gone Mad",
-  description: "Landing Page Prototype",
+  description: "Project Landing Page",
 };
 
 export default function RootLayout({
@@ -30,7 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${screebie.variable} ${outfit.variable} ${jester.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }

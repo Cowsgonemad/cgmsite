@@ -10,18 +10,20 @@ export const TokenomicsChart = () => {
     const [expand, setExpand] = useState(false);
 
     const options: ApexCharts.ApexOptions = {
-        labels: ['Founder\'s Share', 'Video Game', 'Operations', 'Holder\'s Airdrop', 'Marketing', 'Public Sale and ICO'],
+        labels: ['Locked for Liquidity and Burned', 'Founders and Team', 'Advisors', 'Development and Operations', 'Game Rewards', 'Ecosystem fund / Pre-sale allocation'],
         theme: {
             monochrome: {
                 enabled: true,
                 color: '#7feae2',
                 shadeTo: 'dark',
-                shadeIntensity: 0.65
+                shadeIntensity: .75
             }
+            
         },
+        // colors: ['#7feae2', '#fff', '#1790a0', '#02353c', '#112a3d', '#3fd0c9'],
         stroke: {
             width: 5,
-            colors: ['#02353c'],
+            colors: ['#1b3f5e'],
             lineCap: 'round'
         },
         dataLabels: {
@@ -31,15 +33,27 @@ export const TokenomicsChart = () => {
             y: {
                 formatter: (val) => `${val}%`
             }
+        },
+        legend: {
+            width: 180,
+            height: 210,
+            fontSize: '14px',
+            fontWeight: 200,
+            
+            labels: {
+                colors: 'white'
+            }
         }
     };
 
-    const series = [10, 15, 5, 10, 10, 50];
+    const series = [80, 5, 2, 3, 5, 5];
 
     return(
         <div className={`py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200 bg-dark-blue'} ${!expand && 'bg-opacity-60'}`}>
 
-            <ApexChart type="pie" options={options} series={series} height={190} width={400} />
+            <div id="apex-pie-chart">
+                <ApexChart type="pie" options={options} series={series} height="400" width="400" />
+            </div>
 
             <div className="hidden lg:block absolute top-8 right-5 opacity-70 hover:opacity-100 transition duration-20">
                 {!expand && <button onClick={() => setExpand(true)}>

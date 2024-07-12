@@ -12,8 +12,12 @@ const config: Config = {
         '1/5': '20%',
         '1/10': '10%',
         '3/10': '30%',
+        '12/25': '48%',
+        '49/100': '49%',
         '3/20': '15%',
         '1/20': '5%',
+        '1/25': '4%',
+        '1/50': '2%',
         '600vh': '600vh',
         'screen-30': '30vh',
         'screen-40': '40vh',
@@ -163,6 +167,9 @@ const config: Config = {
         'coin-float': 'coin-float 4s infinite',
         'coin-float-2': 'coin-float 4s infinite .5s',
         'coin-float-3': 'coin-float 4s infinite 1s'
+      },
+      listStyleImage: {
+        min: 'url("../public/img/remove.svg")'
       }
     },
   },

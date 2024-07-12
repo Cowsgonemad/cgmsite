@@ -49,19 +49,49 @@ export const RoadmapSection = () => {
                     </button>
                 </div>
 
-                <div ref={scroller} className="transparent-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-x-auto mt-8 mb-auto gap-1/20 relative pb-4 text-lg">
+                <div ref={scroller} className="transparent-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-x-auto mt-8 mb-auto gap-1/50 relative pb-4 text-lg">
 
-                    <RoadmapElement percentage={20}>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    <RoadmapElement title="Q3 2024" subtitle="JUL - AUG 2024">
+                        <ul className="list-image-min list-inside">
+                            <li>Build All Project Assets and Launch Community Telegram.</li>
+                            <li>Launch website.</li>
+                            <li>Launch Project Twitter (Revamped).</li>
+                            <li>Kick Off Project Marketing.</li>
+                        </ul>
                     </RoadmapElement>
-                    <RoadmapElement percentage={40}>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    <RoadmapElement title="Q3 - Q4 2024" subtitle="AUG - DEC 2024">
+                        <ul className="list-image-min list-inside">
+                            <li>KOL Partnerships.</li>
+                            <li>Token ICO (August 28, 2024).</li>
+                            <li>Launch Game Beta for Holders.</li>
+                        </ul>
                     </RoadmapElement>
-                    <RoadmapElement percentage={60}>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    <RoadmapElement title="Q4 2024" subtitle="OCT - DEC 2024">
+                        <ul className="list-image-min list-inside">
+                            <li>Announce and Reveal NFT Collection.</li>
+                            <li>First CEX Listing for Token.</li>
+                            <li>Begin Marketing for NFT Launch.</li>
+                            <li>Token Holder Snapshot for NFT Airdrop.</li>
+                            <li>Launch NFT Collection.</li>
+                        </ul>
                     </RoadmapElement>
-                    <RoadmapElement percentage={100}>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda voluptas quod at. Quo nemo rerum magni, mollitia dolorum rem sit possimus.</p>
+                    <RoadmapElement title="Q1 2025" subtitle="JAN - MAR 2025">
+                        <ul className="list-image-min list-inside">
+                            <li>Begin Development on Full Game Launch.</li>
+                            <li>Provide Community with Step-by-Step Updates on Game Completion.</li>
+                        </ul>
+                    </RoadmapElement>
+                    <RoadmapElement title="Q2 - Q3 2025" subtitle="APR - SEP 2025">
+                        <ul className="list-image-min list-inside">
+                            <li>Launch Full Game.</li>
+                            <li>Begin Development on Meta Health Platform.</li>
+                        </ul>
+                    </RoadmapElement>
+                    <RoadmapElement title="Q4 2025" subtitle="OCT - DEC 2025">
+                        <ul className="list-image-min list-inside">
+                            <li>Host First Patient on Meta Health Platform.</li>
+                            <li>Public Launch of Meta Health Platform.</li>
+                        </ul>
                     </RoadmapElement>
 
                 </div>

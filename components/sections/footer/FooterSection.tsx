@@ -1,15 +1,9 @@
-import { SubscribeArrowIcon } from '../../icons';
-import { CGMLogo, FooterCow, MooMooLogo, RefLogo, SocialBar } from '.';
+import { CGMLogo, EmailForm, FooterCow, MooMooLogo, RefLogo, SocialBar } from '.';
 
 export const FooterSection = () => {
 
-    // const containerStyle = { top: `${100 - progress}%` };
-
     return (
-        <footer id="footer" className="w-full bg-footer border-t-4 border-black flex flex-col pt-14" 
-        style={{}}>
-
-            {/* <div className="bg-land h-28 2xl:h-52 shrink-0 hidden md:block"></div> */}
+        <footer id="footer" className="w-full bg-footer border-t-4 border-black flex flex-col pt-14">
 
             <div className="flex w-full max-w-screen-md justify-center items-center mx-auto md:mt-auto gap-4 lg:gap-8 mb-4 pt-8 md:pt-0">
                 <div className="w-1/6">
@@ -21,7 +15,7 @@ export const FooterSection = () => {
                 </div>
 
                 <div className="w-1/5">
-                    <RefLogo />
+                    <img className="opacity-20" src="/img/BOPP-WHITE.png" alt="Battle Of Pasture Prime Logo White" />
                 </div>
             </div>
 
@@ -55,25 +49,7 @@ export const FooterSection = () => {
                         The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (MooMoo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
                     </p>
 
-                    <div className="relative">
-
-                        <label htmlFor="subscribe" className="absolute font-extrabold text-accent -top-6 right-8">
-                            Subscribe
-                        </label>
-
-                        <div className="absolute -top-2 -left-2 -z-10 w-6 h-4 border-t border-l border-t-accent border-l-accent"></div>
-                        <div className="absolute -bottom-2 -left-2 -z-10 w-6 h-4 border-b border-l border-b-accent border-l-accent"></div>
-                        <div className="absolute -top-2 -right-2 -z-10 w-6 h-4 border-t border-r border-t-accent border-r-accent"></div>
-                        <div className="absolute -bottom-2 -right-2 -z-10 w-6 h-4 border-b border-r border-b-accent border-r-accent"></div>
-                        
-                        <input type="text" id="subscribe"
-                        className="w-full pl-8 pr-24 py-3 bg-accent bg-opacity-20 text-white text-sm border border-accent transition duration-20"
-                        placeholder="Your email" />
-
-                        <button className="absolute right-4 top-3">
-                            <SubscribeArrowIcon />
-                        </button>
-                    </div>
+                    <EmailForm />
 
                     <SocialBar />
                 </div>

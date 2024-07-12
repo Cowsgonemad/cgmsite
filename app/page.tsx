@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { createContext, useCallback, useEffect, useState } from 'react';
 
 import { Navigation } from '@/components/layout';
 import { HeroSection } from '@/components/sections/hero';
@@ -9,6 +9,7 @@ import { GameSection } from '@/components/sections/game';
 import { NFTSection } from '@/components/sections/nft';
 import { RoadmapSection } from '@/components/sections/roadmap';
 import { FooterSection } from '@/components/sections/footer';
+import { Alerts } from '@/components/ui';
 
 let timeout: any;
 
@@ -24,15 +25,24 @@ const navigateTo = (screen: number) => {
   element?.scrollIntoView({ behavior: 'smooth' });
 }
 
+export const AlertContext = createContext<{
+  alerts: {message: string, type: 'success' | 'error'}[],
+  setAlerts: (alerts: {message: string, type: 'success' | 'error'}[]) => void
+}>({
+  alerts: [],
+  setAlerts: ([]) => {}
+});
+
 export default function Home() {
+
+  const [alerts, setAlerts] = useState<{message: string, type: 'success' | 'error'}[]>([]);
+  const value = { alerts, setAlerts };
 
   const [currentScreen, setCurrentScreen] = useState(0);
   const [coinTab, setCoinTab] = useState('coin');
   const [gameTab, setGameTab] = useState('trailer');
   const [nftTab, setNftTab] = useState(0);
   const [nft, setNft] = useState('1');
-
-  const viewer = useRef<HTMLElement>(null);
 
   const navigatePrevious = useCallback(() => {
     if (currentScreen > 0) navigateTo(currentScreen - 1);
@@ -48,9 +58,7 @@ export default function Home() {
 
     const handleScroll = () => {
 
-      console.log('handle scroll');
       const scrollTop = document.documentElement.scrollTop;
-
       let acc = 0;
 
       for (let i = 0; i < ids.length; i ++) {
@@ -69,9 +77,12 @@ export default function Home() {
     handleScroll();
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      event.preventDefault();
-      if (event.key === 'ArrowUp') navigatePrevious();
-      else if (event.key === 'ArrowDown') navigateNext();
+      if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+        event.preventDefault();
+
+        if (event.key === 'ArrowUp') navigatePrevious();
+        else if (event.key === 'ArrowDown') navigateNext();
+      }
     }
 
     window.addEventListener('scroll', debouncedScroll);
@@ -86,7 +97,7 @@ export default function Home() {
 
   return (
 
-    <>
+    <AlertContext.Provider value={value}>
 
       <Navigation 
       navigateTo={(screen) => navigateTo(screen)} 
@@ -94,22 +105,17 @@ export default function Home() {
       navigateNext={navigateNext}
       currentScreen={currentScreen} />
     
-      <main id="viewer" ref={viewer}>
-
+      <main id="viewer">
         <HeroSection navigateTo={(screen) => navigateTo(screen)} />
-
         <CoinSection tab={coinTab} setTab={(tab) => setCoinTab(tab)} />
-
         <GameSection tab={gameTab} setTab={(tab) => setGameTab(tab)} />
-
         <NFTSection nft={nft} setNft={(n) => setNft(n)} tab={nftTab} setTab={(n) => setNftTab(n)} />
-
         <RoadmapSection />
-
         <FooterSection />
-
       </main>
 
-    </>
+      <Alerts />
+
+    </ AlertContext.Provider>
   );
 }
