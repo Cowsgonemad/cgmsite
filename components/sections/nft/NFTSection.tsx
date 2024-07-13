@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Screen } from '../../layout';
 import { Arrows, SectionTitle } from '../../ui';
-import { NFTCollectionTitle, NFTExtraTab, NFTGoalsTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
+import { NFTCollectionTitle, NFTExtraTab, NFTFeaturesTab, NFTGoalsTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
 
 export const NFTSection = ({ 
     nft,
@@ -22,12 +22,12 @@ export const NFTSection = ({
 
     const next = (): void => {
         const num = Number(tab);
-        if (num >= 2) setTab(0);
+        if (num >= 3) setTab(0);
         else setTab((num + 1));
     };
     const prev = (): void => {
         const num = Number(tab);
-        if (num <= 0) setTab(2);
+        if (num <= 0) setTab(3);
         else setTab((num - 1));
     };
     
@@ -42,8 +42,9 @@ export const NFTSection = ({
                     <Arrows prev={prev} next={next} />
 
                     <NFTIllustrationsTab isActive={tab == 0} nft={nft} />
-                    <NFTGoalsTab isActive={tab == 1} />
-                    <NFTExtraTab isActive={tab === 2} />
+                    <NFTFeaturesTab isActive={tab == 1} />
+                    <NFTGoalsTab isActive={tab == 2} />
+                    <NFTExtraTab isActive={tab === 3} />
 
                     {tab === 0 && 
                     <ul className="absolute bottom-0 lg:right-20 flex items-end gap-2">

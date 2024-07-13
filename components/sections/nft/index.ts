@@ -1,5 +1,6 @@
 export * from './NFTCollectionTitle';
 export * from './NFTExtraTab';
+export * from './NFTFeaturesTab';
 export * from './NFTGoalBg1';
 export * from './NFTGoalBg2';
 export * from './NFTGoalElement';
