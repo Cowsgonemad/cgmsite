@@ -16,7 +16,7 @@ const screebie = localFont({
 });
 
 const jester = localFont({
-  src: 'fonts/jester.ttf',
+  src: 'fonts/Jester.ttf',
   variable: '--font-jester'
 });
 
