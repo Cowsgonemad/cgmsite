@@ -49,7 +49,7 @@ export const Navigation = ({
                 </ul>
             </nav>
 
-            <ul className="gap-2 items-center justify-center hidden lg:flex px-6">
+            <ul className="gap-2 items-center justify-center hidden xl:flex px-6">
                 <li className="flex">
                     <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <XIcon size={20} />

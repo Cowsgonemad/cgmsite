@@ -17,7 +17,7 @@ export const NavigationLink = ({
         <li className="relative">
             <button title={label} className={isActive ? active : inactive} onClick={() => navigateTo()}>
                 {children}
-                <span className="absolute md:static font-semibold uppercase whitespace-nowrap text-sm text-white ml-2 hidden md:block">
+                <span className="absolute lg:static font-semibold uppercase whitespace-nowrap text-sm text-white ml-2 hidden lg:block">
                     {label}
                 </span>
             </button>
