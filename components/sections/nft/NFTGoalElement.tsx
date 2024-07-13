@@ -23,7 +23,7 @@ export const NFTGoalElement = ({
                     <b className={`text-5xl lg:text-6xl font-screebie tracking-wider font-normal t-outline ${percentage > 80 ? 'text-pink' : 'text-accent'}`}>{percentage}%</b>
                 </div>
 
-                <div className="px-3/20 mt-1/10 text-center text-black text-lg xl:text-2xl font-extralight">
+                <div className="px-3/20 mt-1/10 text-center text-black text-lg xl:text-2xl font-light">
                     {children}
                 </div>
             </div>

@@ -1,15 +1,11 @@
-import { ArrowDownIcon, ArrowUpIcon, CoinIcon, ControlIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, InstagramIcon, DiscordIcon, HomeIcon } from '../icons';
+import { CoinIcon, ControlIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, InstagramIcon, DiscordIcon, HomeIcon, TeamIcon } from '../icons';
 import { NavigationLink } from './NavigationLink';
 
 export const Navigation = ({ 
     navigateTo, 
-    navigatePrevious,
-    navigateNext,
     currentScreen 
 }: { 
     navigateTo: (screen: number) => void, 
-    navigatePrevious: () => void,
-    navigateNext: () => void,
     currentScreen: number 
 }) => {
 
@@ -42,8 +38,12 @@ export const Navigation = ({
                         <GoalIcon fillVar={currentScreen === 4 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="Subscribe" isActive={currentScreen === 5} navigateTo={() => navigateTo(5)}>
-                        <SendIcon fillVar={currentScreen === 5 ? '--accent' : '--white'} />
+                    <NavigationLink label="Team" isActive={currentScreen === 5} navigateTo={() => navigateTo(5)}>
+                        <TeamIcon fillVar={currentScreen === 5 ? '--accent' : '--white'} />
+                    </NavigationLink>
+
+                    <NavigationLink label="Subscribe" isActive={currentScreen === 6} navigateTo={() => navigateTo(6)}>
+                        <SendIcon fillVar={currentScreen === 6 ? '--accent' : '--white'} />
                     </NavigationLink>
 
                 </ul>

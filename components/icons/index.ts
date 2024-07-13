@@ -18,6 +18,7 @@ export * from './RoadIcon';
 export * from './SavingsIcon';
 export * from './SendIcon';
 export * from './SubscribeArrowIcon';
+export * from './TeamIcon';
 export * from './TelegramIcon';
 export * from './TikTokIcon';
 export * from './TimesIcon';

@@ -5,7 +5,7 @@ export const NFTExtraTab = ({ isActive }: { isActive: boolean }) => {
 
     return(
         <NFTTab isActive={isActive}>
-            <div className="text-black text-lg 2xl:text-2xl text-center font-extralight my-auto xl:mb-0 lg:mb-auto">
+            <div className="text-black text-lg 2xl:text-2xl text-center font-light lg:font-extralight my-auto xl:mb-0 lg:mb-auto">
 
                 <SectionTitle firstLine="BACKGROUND" secondLine="And Legacy" />
 

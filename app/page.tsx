@@ -11,10 +11,11 @@ import { RoadmapSection } from '@/components/sections/roadmap';
 import { FooterSection } from '@/components/sections/footer';
 import { Alerts } from '@/components/ui';
 import { AlertContext } from '@/context';
+import { TeamSection } from '@/components/sections/team/TeamSection';
 
 let timeout: any;
 
-const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'footer'];
+const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'team', 'footer'];
 
 const debounce = (fn: () => void) => {
   if (!!timeout) clearTimeout(timeout);
@@ -94,8 +95,6 @@ export default function Home() {
 
       <Navigation 
       navigateTo={(screen) => navigateTo(screen)} 
-      navigatePrevious={navigatePrevious}
-      navigateNext={navigateNext}
       currentScreen={currentScreen} />
     
       <main id="viewer">
@@ -104,6 +103,7 @@ export default function Home() {
         <GameSection tab={gameTab} setTab={(tab) => setGameTab(tab)} />
         <NFTSection nft={nft} setNft={(n) => setNft(n)} tab={nftTab} setTab={(n) => setNftTab(n)} />
         <RoadmapSection />
+        <TeamSection />
         <FooterSection />
       </main>
 

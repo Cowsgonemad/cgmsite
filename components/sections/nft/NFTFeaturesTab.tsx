@@ -4,15 +4,15 @@ import { NFTTab } from "./NFTTab";
 export const NFTFeaturesTab = ({ isActive }: { isActive: boolean }) => {
     return(
         <NFTTab isActive={isActive}>
-            <div className="text-black text-lg 2xl:text-xl text-center font-light my-auto xl:mb-0 lg:mb-auto">
+            <div className="text-black text-lg 2xl:text-2xl text-center font-light my-auto xl:mb-0 lg:mb-auto">
 
                 <SectionTitle firstLine="KEY" secondLine="Features" />
 
                 <div className="my-16 relative">
 
-                    <ul className="grid grid-cols-2 gap-8 pb-16">
+                    <ul className="grid md:grid-cols-2 gap-8 pb-16">
                         <li className="border-2 border-dashed border-neutral-300 rounded-5xl bg-white bg-opacity-50 p-8">
-                            <h5 className="font-extrabold text-2xl mb-1">Total Supply: 10,000 NFTs</h5>
+                            <h5 className="font-extrabold text-2xl mb-1">Total Supply of 10,000 NFTs</h5>
                             <p>There will be no more future mints and, in case the selling goals are not achieved, the remaining supply will be burned to  guarantee and enable secondary market opportunities for the holders.</p>
                         </li>
                         <li className="border-2 border-dashed border-neutral-300 rounded-5xl bg-white bg-opacity-50 p-8">
