@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import { Navigation } from '@/components/layout';
 import { HeroSection } from '@/components/sections/hero';
@@ -10,6 +10,7 @@ import { NFTSection } from '@/components/sections/nft';
 import { RoadmapSection } from '@/components/sections/roadmap';
 import { FooterSection } from '@/components/sections/footer';
 import { Alerts } from '@/components/ui';
+import { AlertContext } from '@/context';
 
 let timeout: any;
 
@@ -25,17 +26,9 @@ const navigateTo = (screen: number) => {
   element?.scrollIntoView({ behavior: 'smooth' });
 }
 
-export const AlertContext = createContext<{
-  alerts: {message: string, type: 'success' | 'error'}[],
-  setAlerts: (alerts: {message: string, type: 'success' | 'error'}[]) => void
-}>({
-  alerts: [],
-  setAlerts: ([]) => {}
-});
-
 export default function Home() {
 
-  const [alerts, setAlerts] = useState<{message: string, type: 'success' | 'error'}[]>([]);
+  const [alerts, setAlerts] = useState<{id: number, message: string, type: 'success' | 'error'}[]>([]);
   const value = { alerts, setAlerts };
 
   const [currentScreen, setCurrentScreen] = useState(0);

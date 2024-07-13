@@ -2,13 +2,14 @@ import axios from 'axios';
 import { SubscribeArrowIcon } from "@/components/icons";
 import { ChangeEvent, FormEvent, useContext, useState } from "react";
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
-import { AlertContext } from '@/app/page';
+import { AlertContext } from "@/context";
 import { Spinner } from '@/components/ui';
 
 export const EmailForm = () => {
 
     const { alerts, setAlerts } = useContext(AlertContext);
     const { executeRecaptcha } = useGoogleReCaptcha();
+
     const [email, setEmail] = useState('');
     const [loading, setLoading] = useState(false);
 
@@ -33,7 +34,7 @@ export const EmailForm = () => {
 
         try {
 
-            const response = await axios.post(process.env.URL_FORM_POST as string, { email, gRecaptchaToken }, {
+            const response = await axios.post(process.env.NEXT_PUBLIC_URL_FORM_POST as string, { email, gRecaptchaToken }, {
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
@@ -41,14 +42,14 @@ export const EmailForm = () => {
                 }
             );
 
-            setAlerts([...alerts, { message: response.data.message, type: 'success' }]);
+            setAlerts([...alerts, { id: new Date().getTime(), message: response.data.message, type: 'success' }]);
             setLoading(false);
 
         } catch (error) {
             console.log(error);
 
-            if ((error as any).response.status === 409) setAlerts([...alerts, { message: 'Email is already registered.', type: 'error' }]);
-            else setAlerts([...alerts, { message: (error as any).response.data.errorMessage, type: 'error' }]);
+            if ((error as any).response.status === 409) setAlerts([...alerts, { id: new Date().getTime(), message: 'Email is already registered.', type: 'error' }]);
+            else setAlerts([...alerts, { id: new Date().getTime(), message: (error as any).response.data.errorMessage, type: 'error' }]);
 
             setLoading(false);
         }
