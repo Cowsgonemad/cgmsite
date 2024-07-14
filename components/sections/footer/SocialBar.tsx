@@ -4,8 +4,12 @@ export const SocialBar = () => {
 
     return(
         <ul className="opacity-50 flex gap-6 mt-3 mb-6 justify-center">
+            <li className="mr-auto">
+                <a href="/docs/Cows Gone Mad Whitepaper 2024.pdf" download={true} 
+                className="inline-block p-1 text-sm font-bold uppercase text-accent">whitepaper</a>
+            </li>
             <li>
-                <a className="inline-block p-1">
+                <a className="inline-block p-1" href="https://x.com/cowsgonemad">
                     <XIcon />
                 </a>
             </li>
@@ -14,7 +18,7 @@ export const SocialBar = () => {
                     <TelegramIcon />
                 </a>
             </li>
-            <li>
+            {/* <li>
                 <a className="inline-block p-1">
                     <UbreIcon />
                 </a>
@@ -28,7 +32,7 @@ export const SocialBar = () => {
                 <a className="inline-block p-1">
                     <DiscordIcon />
                 </a>
-            </li>
+            </li> */}
         </ul>
     );
 };

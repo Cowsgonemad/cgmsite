@@ -51,7 +51,7 @@ export const Navigation = ({
 
             <ul className="gap-2 items-center justify-center hidden xl:flex px-6">
                 <li className="flex">
-                    <a className="inline-block p-1 bg-dark-blue rounded-md">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://x.com/cowsgonemad">
                         <XIcon size={20} />
                     </a>
                 </li>
@@ -60,7 +60,11 @@ export const Navigation = ({
                         <TelegramIcon size={20} />
                     </a>
                 </li>
-                <li className="flex">
+                <li>
+                    <a href="/docs/Cows Gone Mad Whitepaper 2024.pdf" download={true} 
+                    className="inline-block p-1 bg-dark-blue rounded-md text-sm font-bold uppercase text-accent">whitepaper</a>
+                </li>
+                {/* <li className="flex">
                     <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <InstagramIcon size={20} />
                     </a>
@@ -69,7 +73,7 @@ export const Navigation = ({
                     <a className="inline-block p-1 bg-dark-blue rounded-md">
                         <DiscordIcon size={20} />
                     </a>
-                </li>
+                </li> */}
             </ul>
         </div>
     );
