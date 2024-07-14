@@ -6,9 +6,6 @@ export const TunnelLight = () => {
                     <feFlood floodColor="#fff" result="bg"/>
                     <feBlend in="SourceGraphic" in2="bg"/>
                 </filter>
-                <mask id="mask" x="-0.57" y="-5629.44" width="136.36" height="32766" maskUnits="userSpaceOnUse">
-                    <g filter="url(#luminosity-noclip)" />
-                </mask>
                 <linearGradient id="linear-gradient" x1="67.6" y1="-1858.4" x2="67.6" y2="-2595.5" gradientUnits="userSpaceOnUse">
                     <stop offset="0.17" stopColor="#cfcfcf"/>
                     <stop offset="0.19" stopColor="#c8c8c8"/>
@@ -22,11 +19,6 @@ export const TunnelLight = () => {
                     <feFlood floodColor="#fff" result="bg"/>
                     <feBlend in="SourceGraphic" in2="bg"/>
                 </filter>
-                <mask id="mask-2" x="-0.57" y="-2603.61" width="136.36" height="3568.18" maskUnits="userSpaceOnUse">
-                    <g mask="url(#mask)" filter="url(#luminosity-noclip-2)">
-                        <path className="cls-2" fill="fill:url(#linear-gradient)" style={{ mixBlendMode: 'multiply' }} d="M135.35-2602.08-.57-2603.61,0-1734.78H0a74,74,0,0,0,20,50.53c26.59,28.08,69.58,28.22,96,.31a73.09,73.09,0,0,0,19.73-50.84h0Z"/>
-                    </g>
-                </mask>
                 <linearGradient id="Degradado_sin_nombre_18" x1="67.89" y1="764.28" x2="67.89" y2="8.32" gradientUnits="userSpaceOnUse">
                     <stop offset="0.17" stopColor="#2ba9a8"/>
                     <stop offset="0.35" stopColor="#31b4b2"/>
@@ -38,7 +30,7 @@ export const TunnelLight = () => {
             <g id="Capa_2" data-name="Capa 2">
                 <g id="Capa_1-2" data-name="Capa 1">
                     <g opacity="0.64">
-                        <g mask="url(#mask-2)">
+                        <g>
                             <path fill="url(#Degradado_sin_nombre_18)" d="M135.78,0H0L5.12,929.7h0C5.23,948,6.79,929.44,20,943.42c26.59,28.08,69.58,28.22,96,.32,13.27-14,12.81,13.29,12.7-5.13h0Z"/>
                         </g>
                     </g>

@@ -1,11 +1,10 @@
 import { Screen } from '../../layout';
 import { CoinTabButton, CoinTabCoin, CoinTabEcon, CoinTabGoals, CoinTabUtil, CoinTunnel, MooMooCoinLogo, Waves } from '.';
+import { useState } from 'react';
 
-export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string) => void }) => {
+export const CoinSection = () => {
 
-    // const containerStyle = { top: `${progress <= 0 ? 100 : 0}%` };
-    // const contentStyle = { opacity: progress > 80 ? 100 : 0, transform: `translateY(-${100 - progress}px)` };
-    // const waveStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
+    const [coinTab, setCoinTab] = useState('coin');
     
     return(
         <Screen id="the-coin" containerClasses="bg-halftone">
@@ -24,25 +23,25 @@ export const CoinSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
 
                         <ul className="flex justify-center flex-wrap gap-2 lg:gap-4 mt-8">
                             <li>
-                                <CoinTabButton label="The Coin" isActive={tab === 'coin'} onClick={() => setTab('coin')}></CoinTabButton>
+                                <CoinTabButton label="The Coin" isActive={coinTab === 'coin'} onClick={() => setCoinTab('coin')}></CoinTabButton>
                             </li>
                             <li>
-                                <CoinTabButton label="Utility" isActive={tab === 'util'} onClick={() => setTab('util')}></CoinTabButton>
+                                <CoinTabButton label="Utility" isActive={coinTab === 'util'} onClick={() => setCoinTab('util')}></CoinTabButton>
                             </li>
                             <li>
-                                <CoinTabButton label="Tokenomics" isActive={tab === 'econ'} onClick={() => setTab('econ')}></CoinTabButton>
+                                <CoinTabButton label="Tokenomics" isActive={coinTab === 'econ'} onClick={() => setCoinTab('econ')}></CoinTabButton>
                             </li>
                             <li>
-                                <CoinTabButton label="Goals" isActive={tab === 'goals'} onClick={() => setTab('goals')}></CoinTabButton>
+                                <CoinTabButton label="Goals" isActive={coinTab === 'goals'} onClick={() => setCoinTab('goals')}></CoinTabButton>
                             </li>
                         </ul>
 
                         <div className="relative 2xl:h-screen-40 mt-10 mb-20 xl:mb-0">
 
-                            <CoinTabCoin isActive={tab === 'coin'} />
-                            <CoinTabUtil isActive={tab === 'util'} />
-                            <CoinTabEcon isActive={tab === 'econ'} />
-                            <CoinTabGoals isActive={tab === 'goals'} />
+                            <CoinTabCoin isActive={coinTab === 'coin'} />
+                            <CoinTabUtil isActive={coinTab === 'util'} />
+                            <CoinTabEcon isActive={coinTab === 'econ'} />
+                            <CoinTabGoals isActive={coinTab === 'goals'} />
 
                         </div>
 

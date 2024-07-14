@@ -19,8 +19,10 @@ export const GameTabGame = ({ isActive }: { isActive: boolean }) => {
         //     </div>
         // </GameTab>
         <GameTab isActive={isActive}>
-            <div className="w-full text-justify bg-black bg-opacity-80 p-4 lg:p-8 text-white font-extralight text-lg 2xl:text-2xl lg:mt-12">
-                {/* <h3 className="text-white mb-4 text-5xl tracking-wider">The Battle Of Pasture Prime</h3> */}
+            <div className="w-full bg-black bg-opacity-80 p-4 lg:p-8 text-white font-extralight text-lg 2xl:text-2xl lg:mt-12 text-center md:text-justify">
+                
+                <img className="inline-block w-52 lg:w-72 md:float-left mr-4" src="/img/BOPP-PNG.png" alt="Initial Cow Illustration" />
+
                 <h5 className="font-extralight text-3xl text-accent mb-4">The New Blockchain Adventure</h5>
                 <p className="">Join the fight today and becoming the reigning King of the pasture in the battle between Cows, Wolves and humans on the Solana Blockchain.</p>
                 <p className="mt-4">

@@ -33,10 +33,6 @@ export default function Home() {
   const value = { alerts, setAlerts };
 
   const [currentScreen, setCurrentScreen] = useState(0);
-  const [coinTab, setCoinTab] = useState('coin');
-  const [gameTab, setGameTab] = useState('trailer');
-  const [nftTab, setNftTab] = useState(0);
-  const [nft, setNft] = useState('1');
 
   const navigatePrevious = useCallback(() => {
     if (currentScreen > 0) navigateTo(currentScreen - 1);
@@ -99,9 +95,9 @@ export default function Home() {
     
       <main id="viewer">
         <HeroSection navigateTo={(screen) => navigateTo(screen)} />
-        <CoinSection tab={coinTab} setTab={(tab) => setCoinTab(tab)} />
-        <GameSection tab={gameTab} setTab={(tab) => setGameTab(tab)} />
-        <NFTSection nft={nft} setNft={(n) => setNft(n)} tab={nftTab} setTab={(n) => setNftTab(n)} />
+        <CoinSection />
+        <GameSection />
+        <NFTSection />
         <RoadmapSection />
         <TeamSection />
         <FooterSection />

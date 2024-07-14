@@ -2,33 +2,25 @@ import Image from 'next/image';
 import { Screen } from '../../layout';
 import { Arrows, SectionTitle } from '../../ui';
 import { NFTCollectionTitle, NFTExtraTab, NFTFeaturesTab, NFTGoalsTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
+import { useState } from 'react';
 
-export const NFTSection = ({ 
-    nft,
-    tab, 
-    setNft,
-    setTab 
-}: { 
-    nft: string, 
-    tab: number,
-    setNft: (n: string) => void,
-    setTab: (n: number) => void
-}) => {
+export const NFTSection = () => {
 
-    // const containerStyle = { left: `-${100 - progress}%` };
-    // const contentStyle = { opacity: progress * 1 / 100, transform: `translateY(${100 - progress}px)` };
+    const [nftTab, setNftTab] = useState(0);
+    const [nft, setNft] = useState('1');
+
     const activeImage = 'opacity-100 translate-y-0 transition duration-20 hover:opacity-100 w-20 lg:w-28 cursor-pointer';
     const inactiveImage = 'lg:opacity-40 lg:translate-y-12 transition duration-20 hover:opacity-100 w-20 lg:w-28 cursor-pointer';
 
     const next = (): void => {
-        const num = Number(tab);
-        if (num >= 3) setTab(0);
-        else setTab((num + 1));
+        const num = Number(nftTab);
+        if (num >= 3) setNftTab(0);
+        else setNftTab((num + 1));
     };
     const prev = (): void => {
-        const num = Number(tab);
-        if (num <= 0) setTab(3);
-        else setTab((num - 1));
+        const num = Number(nftTab);
+        if (num <= 0) setNftTab(3);
+        else setNftTab((num - 1));
     };
     
     return(
@@ -41,12 +33,12 @@ export const NFTSection = ({
                 <div className="size-full xl:max-w-[99%] 2xl:max-w-[90%] flex justify-center mx-auto 2xl:h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
                     <Arrows prev={prev} next={next} />
 
-                    <NFTIllustrationsTab isActive={tab == 0} nft={nft} />
-                    <NFTFeaturesTab isActive={tab == 1} />
-                    <NFTGoalsTab isActive={tab == 2} />
-                    <NFTExtraTab isActive={tab === 3} />
+                    <NFTIllustrationsTab isActive={nftTab == 0} nft={nft} />
+                    <NFTFeaturesTab isActive={nftTab == 1} />
+                    <NFTGoalsTab isActive={nftTab == 2} />
+                    <NFTExtraTab isActive={nftTab === 3} />
 
-                    {tab === 0 && 
+                    {nftTab === 0 && 
                     <ul className="absolute bottom-0 lg:right-20 flex items-end gap-2">
                         <li className={nft === '1' ? activeImage : inactiveImage} onClick={() => setNft('1')}>
                             <img src="/img/VACA1.svg" className="block w-full" alt="NFT name" />

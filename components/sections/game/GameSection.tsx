@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Screen } from '../../layout';
 import { Waves } from '../coin';
 import { GameTabFeatures } from './GameTabFeatures';
@@ -5,10 +6,9 @@ import { GameTabGame } from './GameTabGame';
 import { GameTabTrailer } from './GameTabTrailer';
 import { TabButton } from './TabButton';
 
-export const GameSection = ({ tab, setTab }: { tab: string, setTab: (tab: string) => void }) => {
+export const GameSection = () => {
 
-    // const containerStyle = { top: `${100 - progress}%` };
-    // const contentStyle = { transform: `translateX(-${100 - progress}px)` };
+    const [gameTab, setGameTab] = useState('trailer');
 
     return(
         <Screen id="the-game" containerClasses="bg-land border-t-0">
@@ -22,17 +22,17 @@ export const GameSection = ({ tab, setTab }: { tab: string, setTab: (tab: string
                 <div className="transition duration-20 w-full flex items-center order-2 lg:order-1">
 
                     <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto 2xl:h-screen-60 relative">
-                        <GameTabTrailer isActive={tab === 'trailer'} />
-                        <GameTabGame isActive={tab === 'game'} />
-                        <GameTabFeatures isActive={tab === 'feat'} />
+                        <GameTabTrailer isActive={gameTab === 'trailer'} />
+                        <GameTabGame isActive={gameTab === 'game'} />
+                        <GameTabFeatures isActive={gameTab === 'feat'} />
                     </div>  
                 </div>
 
                 <div className="flex xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full order-1 lg:order-2 overflow-x-auto lg:overflow-x-hidden invisible-scroller">
                     <div className="flex gap-4 ml-auto">
-                        <TabButton label="Trailer" active={tab === 'trailer'} onClick={() => setTab('trailer')} />
-                        <TabButton label="The Game" active={tab === 'game'} onClick={() => setTab('game')} />
-                        <TabButton label="Features" active={tab === 'feat'} onClick={() => setTab('feat')} />
+                        <TabButton label="Trailer" active={gameTab === 'trailer'} onClick={() => setGameTab('trailer')} />
+                        <TabButton label="The Game" active={gameTab === 'game'} onClick={() => setGameTab('game')} />
+                        <TabButton label="Features" active={gameTab === 'feat'} onClick={() => setGameTab('feat')} />
                     </div>
                 </div>
             </div>
