@@ -56,12 +56,12 @@ export const Navigation = ({
                     </a>
                 </li>
                 <li className="flex">
-                    <a className="inline-block p-1 bg-dark-blue rounded-md">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://t.me/MooMoo_Portal">
                         <TelegramIcon size={20} />
                     </a>
                 </li>
                 <li>
-                    <a href="/docs/Cows Gone Mad Whitepaper 2024.pdf" download={true} 
+                    <a href="/docs/v1.0 Cows Gone Mad Whitepaper 2024.pdf" download={true} 
                     className="inline-block p-1 bg-dark-blue rounded-md text-sm font-bold uppercase text-accent">whitepaper</a>
                 </li>
                 {/* <li className="flex">

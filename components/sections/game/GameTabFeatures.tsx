@@ -70,11 +70,11 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
         // </GameTab>
         <GameTab isActive={isActive}>
 
-            <div className="w-full text-justify lg:mt-12">
+            <div className="w-full text-justify">
                 
-                <div className="bg-black bg-opacity-80 p-4 lg:p-8 text-white font-extralight mb-4 text-center md:text-justify">
+                <div className="bg-black bg-opacity-80 p-4 lg:p-8 text-white font-extralight mb-4 text-center">
 
-                    <img className="inline-block w-52 lg:w-72 md:float-left mr-4 pb-4" src="/img/BOPP-PNG.png" alt="Initial Cow Illustration" />
+                    <img className="inline-block w-52 lg:w-72 pb-4" src="/img/BOPP-PNG.png" alt="Initial Cow Illustration" />
 
                     <p className="text-lg 2xl:text-2xl">
                     Through a wide variety of features, options, customisations and opportunities become part of an ever expanding ecosystem today. With the chance to compete in tournaments with token prizes and earn limited rewards for completing tasks and missions and much more!
@@ -104,7 +104,7 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
                     </div>
                 </div>
                 
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-1 2xl:gap-4 mt-4">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-1 2xl:gap-4 mt-4">
                     <li>
                         <FeatureButton isActive={feat === 'faction'} label="Faction Selection" onClick={() => {setFeat('faction')}} />
                     </li>
