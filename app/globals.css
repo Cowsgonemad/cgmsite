@@ -92,9 +92,9 @@ h3 {
   background-size: cover;
 }
 
-.bg-cod {
-  background-image: url('../public/img/cod.jpg');
-  background-position: center;
+.bg-hero {
+  background-image: url('../public/img/hero.png');
+  background-position: bottom;
   background-size: cover;
 }
 
