@@ -9,25 +9,12 @@ export const HeroSection = ({
     return(
         <Screen id="hero" containerClasses="bg-hero h-screen">
 
-            <button className="hidden md:block absolute top-1/2 -translate-y-1/2 left-10 animate-soft-bounce" 
+            <button className="hidden md:block absolute right-10 bottom-10 animate-bounce bg-black rounded-full p-3" 
             onClick={() => navigateTo(1)}>
-                <img src="/img/btn-black.svg" className="w-72" />
-                <h3 className="absolute text-4xl font-outfit uppercase font-extrabold top-1/2 -translate-y-1/2 w-full text-center text-white -mt-4">The <span className="text-accent">Coin</span></h3>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                    <path d="m21.71 8.41-2.83-2.82a1 1 0 0 0-1.42 0L12 11.05 6.54 5.59a1 1 0 0 0-1.42 0L2.29 8.42a1 1 0 0 0 0 1.41l8.29 8.29a2 2 0 0 0 2.84 0l8.29-8.3a1 1 0 0 0 .29-.71 1 1 0 0 0-.29-.7Z" fill="rgb(var(--acent))" />
+                </svg>
             </button>
-
-            <button className="hidden md:block absolute top-1/2 -translate-y-1/2 right-10 animate-soft-bounce" 
-            onClick={() => navigateTo(2)}>
-                <img src="/img/btn-white.svg" className="w-72" />
-                <h3 className="absolute text-4xl font-outfit uppercase font-extrabold top-1/2 -translate-y-1/2 w-full text-center mt-4">The <span className="text-accent">Game</span></h3>
-            </button>
-
-            {/* <button className="block md:hidden absolute left-1/2 -translate-x-1/2 bottom-10 opacity-flicker" 
-            onClick={() => navigateTo(1)}>
-                <img src="/img/btn-black.svg" className="w-72" />
-                <h3 className="absolute text-2xl font-outfit uppercase font-extrabold top-1/2 -translate-y-1/2 w-full text-center text-accent -mt-4">
-                    Discover
-                </h3>
-            </button> */}
 
         </Screen>
     );

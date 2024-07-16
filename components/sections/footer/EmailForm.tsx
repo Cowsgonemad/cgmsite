@@ -71,6 +71,8 @@ export const EmailForm = () => {
             className="w-full pl-8 pr-24 py-3 bg-accent bg-opacity-10 text-white text-base border border-accent transition duration-20 font-light"
             placeholder="Your email" value={email} onChange={handleChange} minLength={3} maxLength={320} required />
 
+            <small className="block text-sm text-dark-green-light text-center p-1">This site is protected by reCAPTCHA and the Google <br/> <a className="text-white opacity-50" href="https://policies.google.com/privacy">Privacy Policy</a> and <a className="text-white opacity-50" href="https://policies.google.com/terms">Terms of Service</a> apply.</small>
+
             {!loading && <button className="absolute right-4 top-3"><SubscribeArrowIcon /></button>}
             {loading && <div className="absolute right-10 top-3"><Spinner /></div>}
         </form>

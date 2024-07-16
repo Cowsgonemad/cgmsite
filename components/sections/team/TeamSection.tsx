@@ -11,14 +11,14 @@ export const TeamSection = () => {
                 
                 <SectionTitle classes="text-center" firstLine="FOUNDER'S" secondLine="Team" />
 
-                <ul className="mt-8 mb-28 text-lg 2xl:text-2xl font-light">
+                <ul className="mt-8 mb-28 text-lg 2xl:text-xl font-light">
                     <li className="flex flex-col md:flex-row gap-4 items-start mb-4 bg-dark-green bg-opacity-30 rounded-5xl p-6">
                         <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/Ricardo Persaud Sin Fondo.png" alt="Dr. Ricardo Persaud Portrait"/>
                         <div>
                             <h5 className="text-2xl font-extrabold leading-tight">Dr. Ricardo Persaud</h5>
                             <a className="text-lg font-normal text-dark-grey inline-block mb-2" href="https://ricardopersaud.com">ricardopersaud.com</a>
                             <p>
-                            Renowned Doctor with 17 years ENT experience in the management of acute and chronic ENT conditions, performing over 8000 surgeries. Practicing in the UAE.
+                            Renowned Doctor with 20 years ENT experience in the management of acute and chronic ENT conditions, performing over 10,000 surgical procedures. Chief Author of 8 books, Educator and Mentor. Practicing in Sharjah, UAE.
                             </p>
                         </div>
                     </li>
@@ -28,7 +28,7 @@ export const TeamSection = () => {
                             <h5 className="text-2xl font-extrabold leading-tight">Dr. Sherief Elsayed</h5>
                             <a className="text-lg font-normal text-dark-grey inline-block mb-2" href="https://spinesurgeondubai.com">spinesurgeondubai.com</a>
                             <p>
-                            Multi-award winning Spinal Surgeon and a prominent researcher and medical educator, having taught over 11,000 medical students to date. He is currently practicing in the UAE.
+                            Multi-award winning Spinal Surgeon and a prominent entrepreneur, researcher and Educator, having taught over 11,000 medical students to date. He is currently practicing in Dubai, UAE.
                             </p>
                         </div>
                     </li>

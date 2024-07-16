@@ -9,12 +9,12 @@ export const SocialBar = () => {
                 className="inline-block p-1 text-sm font-bold uppercase text-accent">whitepaper</a>
             </li>
             <li>
-                <a className="inline-block p-1" href="https://x.com/cowsgonemad">
+                <a className="inline-block p-1" href="https://x.com/cowsgonemad" target="_blank">
                     <XIcon />
                 </a>
             </li>
             <li>
-                <a className="inline-block p-1" href="https://t.me/MooMoo_Portal">
+                <a className="inline-block p-1" href="https://t.me/MooMoo_Portal" target="_blank">
                     <TelegramIcon />
                 </a>
             </li>

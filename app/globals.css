@@ -235,6 +235,10 @@ h3 {
   border-bottom: 1px dashed rgb(var(--dark-green-light));
 }
 
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
 @keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;

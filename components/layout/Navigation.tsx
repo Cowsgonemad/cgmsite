@@ -51,12 +51,12 @@ export const Navigation = ({
 
             <ul className="gap-2 items-center justify-center hidden xl:flex px-6">
                 <li className="flex">
-                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://x.com/cowsgonemad">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://x.com/cowsgonemad" target="_blank">
                         <XIcon size={20} />
                     </a>
                 </li>
                 <li className="flex">
-                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://t.me/MooMoo_Portal">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://t.me/MooMoo_Portal" target="_blank">
                         <TelegramIcon size={20} />
                     </a>
                 </li>
