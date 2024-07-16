@@ -23,7 +23,7 @@ export const FooterSection = () => {
 
                 <div className="md:w-1/2 lg:w-2/5 text-white order-2 md:order-1 mr-auto md:mr-0">
 
-                    <ul className="link-list pl-4">
+                    <ul className="link-list pl-4 hidden">
                         <li className="mb-4">
                             <a href="">MooMoo Papers</a>
                         </li>
@@ -32,7 +32,7 @@ export const FooterSection = () => {
                         </li>
                     </ul>
 
-                    <p className="text-dark-green-light 2xl:mt-16 mt-4 text-sm mb-4">
+                    <p className="text-dark-green-light 2xl:mt-16 mt-4 text-sm mb-4 hidden">
                         <a href="">TERMS OF SERVICE</a>
                         <span className="inline-block rounded-full w-1 h-1 bg-dark-green-light my-1 mx-2"></span>
                         <a href="">PRIVACY POLICY</a>
