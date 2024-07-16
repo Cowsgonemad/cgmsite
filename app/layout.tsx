@@ -22,7 +22,7 @@ const jester = localFont({
 
 export const metadata: Metadata = {
   title: "Cows Gone Mad",
-  description: "Project Landing Page",
+  description: "Leveraging Medical Advancements Through Blockchain Gaming | Powered by $Moo",
 };
 
 export default function RootLayout({
