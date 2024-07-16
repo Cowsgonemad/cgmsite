@@ -170,6 +170,10 @@ const config: Config = {
       },
       listStyleImage: {
         min: 'url("../public/img/remove.svg")'
+      },
+      gridTemplateColumns: {
+        'cows-min': 'repeat(8, 70px)',
+        'cows-max': 'repeat(8, 100px)'
       }
     },
   },

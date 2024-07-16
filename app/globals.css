@@ -185,6 +185,9 @@ h3 {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(var(--black));
 }
+.cow-drop {
+  box-shadow: -8px 0 0 rgba(0, 0, 0, 0.6);
+}
 .t-outline {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(var(--black));
