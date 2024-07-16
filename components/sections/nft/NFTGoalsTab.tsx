@@ -67,7 +67,7 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
                     )}
                 </div> */}
                 
-                <div ref={scroller} className="w-full invisible-scroller flex overflow-x-scroll overflow-y-hidden mt-16 xl:mt-8 pb-20">
+                <div ref={scroller} className="w-full invisible-scroller flex overflow-x-scroll overflow-y-hidden mt-16 xl:mt-8 pb-20 text-justify">
 
                     <NFTGoalElement type="odd" percentage={25}>
                         <p><strong className="block mb-2 font-extrabold">Design & Development.</strong> Finalize unique NFT designs and develop smart contracts.</p>

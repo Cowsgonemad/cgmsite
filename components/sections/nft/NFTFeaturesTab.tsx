@@ -4,7 +4,7 @@ import { NFTTab } from "./NFTTab";
 export const NFTFeaturesTab = ({ isActive }: { isActive: boolean }) => {
     return(
         <NFTTab isActive={isActive}>
-            <div className="text-black text-lg 2xl:text-2xl text-center font-light my-auto xl:mb-0 lg:mb-auto">
+            <div className="text-black text-lg 2xl:text-2xl text-justify font-light my-auto xl:mb-0 lg:mb-auto">
 
                 <SectionTitle firstLine="KEY" secondLine="Features" />
 

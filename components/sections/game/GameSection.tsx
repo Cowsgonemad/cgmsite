@@ -29,7 +29,7 @@ export const GameSection = () => {
                 </div>
 
                 <div className="flex xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full order-1 lg:order-2 overflow-x-auto lg:overflow-x-hidden invisible-scroller">
-                    <div className="flex gap-4 ml-auto">
+                    <div className="flex gap-4 mr-auto ml-auto lg:mr-0">
                         <TabButton label="Trailer" active={gameTab === 'trailer'} onClick={() => setGameTab('trailer')} />
                         <TabButton label="The Game" active={gameTab === 'game'} onClick={() => setGameTab('game')} />
                         <TabButton label="Features" active={gameTab === 'feat'} onClick={() => setGameTab('feat')} />

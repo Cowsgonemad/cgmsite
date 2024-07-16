@@ -26,7 +26,7 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
                 </video> */}
 
                 <div className="size-full flex items-center justify-center flex-col text-white font-screebie tracking-wider p-8 bg-black">
-                    <p className="text-4xl xl:text-5xl">Coming Soon</p>
+                    <p className="text-4xl xl:text-5xl">Trailer Coming Soon</p>
                 </div>
 
                 <div className="absolute bottom-6 right-0 hidden lg:block">

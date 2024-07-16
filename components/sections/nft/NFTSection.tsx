@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import { Screen } from '../../layout';
-import { Arrows, SectionTitle } from '../../ui';
-import { NFTCollectionTitle, NFTExtraTab, NFTFeaturesTab, NFTGoalsTab, NFTIllustrationsTab, NFTTab, TextBlob } from '.';
+import { Arrows } from '../../ui';
+import { NFTExtraTab, NFTFeaturesTab, NFTGoalsTab, NFTIllustrationsTab } from '.';
 import { useState } from 'react';
 
 export const NFTSection = () => {

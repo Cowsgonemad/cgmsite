@@ -25,7 +25,7 @@ export const FooterSection = () => {
 
                     <ul className="link-list pl-4">
                         <li className="mb-4">
-                            <a href="">Moo Moo Papers</a>
+                            <a href="">MooMoo Papers</a>
                         </li>
                         <li className="mb-4">
                             <a href="">Legal</a>

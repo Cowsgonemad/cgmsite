@@ -10,19 +10,22 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed top-0 w-full z-50 bg-footer shadow-lg flex justify-between items-center h-20 border-b-4 border-black">
+        <div className="fixed top-0 w-full z-50 bg-footer shadow-lg flex justify-center xl:justify-between items-center h-20 border-b-4 border-black">
 
             <h1 className="text-white font-screebie cursor-pointer px-6 tracking-wider text-2xl font-thin text-drop-shadow leading-none hidden xl:block" onClick={() => navigateTo(0)}>
                 COWS GONE MAD
             </h1>
-            <h2 className="cursor-pointer px-6 block xl:hidden" onClick={() => navigateTo(0)}>
-                <HomeIcon fillVar="--white" />
-            </h2>
 
             <nav className="">
-                <ul className="flex justify-center gap-2 md:gap-8 px-6">
+                <ul className="flex justify-center gap-1 md:gap-8 px-4">
 
-                    <NavigationLink label="The Coin" isActive={currentScreen === 1} navigateTo={() => navigateTo(1)}>
+                    <li className="block xl:hidden">
+                        <button title="Home" className="py-1 px-2 flex items-center" onClick={() => navigateTo(0)}>
+                            <HomeIcon fillVar="--white" />
+                        </button>
+                    </li>
+
+                    <NavigationLink label="The Token" isActive={currentScreen === 1} navigateTo={() => navigateTo(1)}>
                         <CoinIcon fillVar={currentScreen === 1 ? '--accent' : '--white'} />
                     </NavigationLink>
 

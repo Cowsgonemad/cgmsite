@@ -23,7 +23,7 @@ export const CoinSection = () => {
 
                         <ul className="flex justify-center flex-wrap gap-2 lg:gap-4 mt-8">
                             <li>
-                                <CoinTabButton label="The Coin" isActive={coinTab === 'coin'} onClick={() => setCoinTab('coin')}></CoinTabButton>
+                                <CoinTabButton label="The Token" isActive={coinTab === 'coin'} onClick={() => setCoinTab('coin')}></CoinTabButton>
                             </li>
                             <li>
                                 <CoinTabButton label="Utility" isActive={coinTab === 'util'} onClick={() => setCoinTab('util')}></CoinTabButton>

@@ -76,13 +76,13 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
 
                     <img className="inline-block w-52 lg:w-72 pb-4" src="/img/BOPP-PNG.png" alt="Initial Cow Illustration" />
 
-                    <p className="text-lg 2xl:text-2xl">
+                    <p className="text-lg 2xl:text-2xl text-justify">
                     Through a wide variety of features, options, customisations and opportunities become part of an ever expanding ecosystem today. With the chance to compete in tournaments with token prizes and earn limited rewards for completing tasks and missions and much more!
                     </p>
 
                     <hr className="opacity-10 my-4" />
 
-                    <div className="text-lg">
+                    <div className="text-lg text-justify">
                         {feat === 'faction' && <p>
                             Players can choose from a variety of unique factions, each with its own distinct abilities, strengths, and lore. This initial choice impacts gameplay style and strategy, offering diverse paths to victory and enriching the overall gaming experience.
                         </p>}
