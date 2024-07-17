@@ -10,7 +10,7 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
             <div className="w-full lg:w-2/5 2xl:w-1/3 bg-black bg-opacity-80 p-4 lg:p-8 2xl:p-8">
 
                 <div className="w-2/3 2xl:w-auto mx-auto mb-4">
-                    <img src="/img/BOPP-PNG.png" alt="Battle Of Pasture Prime Logo" />
+                    <img src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Battle Of Pasture Prime Logo" />
                 </div>
 
                 <p className="text-white font-extralight text-justify text-lg 2xl:text-2xl">
