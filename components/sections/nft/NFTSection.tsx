@@ -29,7 +29,7 @@ export const NFTSection = () => {
 
                 <div className="absolute size-full bg-coin animate-bg-size top-0 left-0 opacity-5"></div>
                 
-                <div className="size-full xl:max-w-[99%] 2xl:max-w-[90%] flex justify-center mx-auto 2xl:h-screen-4/5 xl:mt-auto transition duration-20 relative" style={{}}>
+                <div className="size-full xl:max-w-[99%] 2xl:max-w-[90%] flex justify-center mx-auto 2xl:h-[800px] xl:mt-auto transition duration-20 relative" style={{}}>
                     <Arrows prev={prev} next={next} />
 
                     <NFTIllustrationsTab isActive={nftTab == 0} nft={nft} />
@@ -41,10 +41,6 @@ export const NFTSection = () => {
 
             {nftTab === 0 && 
             <div className="absolute left-0 bottom-0 w-full max-w-full overflow-x-auto invisible-scroller text-center">
-                {/* <button className="col-span-2 text-center" onClick={prev}>
-                    <img src="/img/nft-prev.svg" className="w-10 inline-block" alt="Previous" />
-                </button> */}
-
                 <ul className="inline-grid grid-cols-cows-min lg:grid-cols-cows-max gap-3 align-middle">
                     {Array.from(Array(9).keys()).map(n => 
                         n !== 0 && <li key={n} className={nft === n ? activeImage : inactiveImage} onClick={() => setNft(n)}>
@@ -53,10 +49,6 @@ export const NFTSection = () => {
                         </li>
                     )}
                 </ul>
-
-                {/* <button className="col-span-2 text-center" onClick={next}>
-                    <img src="/img/nft-next.svg" className="w-10 inline-block" alt="Next" />
-                </button> */}
             </div>}
 
         </Screen>

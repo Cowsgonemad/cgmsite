@@ -5,51 +5,18 @@ import { RoadmapElement } from './RoadmapElement';
 
 export const RoadmapSection = () => {
 
-    // const containerStyle = { left: `${100 - progress}%` };
-
-    const scroller = useRef<HTMLDivElement>(null);
-
-    const prev = () => {
-        console.log('click');
-        if (!scroller || !scroller.current) { return; }
-        const total = scroller.current.scrollWidth;
-        scroller.current.scrollTo({
-            left: scroller.current.scrollLeft - (total / 4),
-            behavior: 'smooth'
-        });
-    };
-
-    const next = () => {
-        console.log('click');
-        if (!scroller || !scroller.current) { return; }
-        const total = scroller.current.scrollWidth;
-        scroller.current.scrollTo({
-            left: scroller.current.scrollLeft + (total / 4),
-            behavior: 'smooth'
-        });
-    };
-
     return(
         <Screen id="roadmap" containerClasses="bg-halftone">
 
-            <div className="size-full flex flex-col items-center justify-center relative pt-28 pb-14 px-6">
+            <div className="min-h-screen w-full flex flex-col items-center justify-center relative pt-28 pb-14 px-6">
 
                 <div className="absolute top-0 left-0 size-full bg-roadmap"></div>
 
                 <div className="flex mt-auto items-center justify-center gap-8 relative">
-
-                    <button className="active:opacity-50" onClick={prev}>
-                        <img src="/img/nft-prev.svg" className="w-12" alt="Previous" />
-                    </button>
-                    
                     <SectionTitle classes="text-center mt-auto" firstLine="Road" secondLine="MAP" />
-
-                    <button className="active:opacity-50" onClick={next}>
-                        <img src="/img/nft-next.svg" className="w-12" alt="Next" />
-                    </button>
                 </div>
 
-                <div ref={scroller} className="transparent-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-x-auto mt-8 mb-auto gap-1/50 relative pb-4 text-lg">
+                <div className="transparent-scroller w-full lg:max-w-2xl 2xl:max-w-4xl flex overflow-x-auto mt-8 mb-auto gap-1/50 relative pb-4 text-lg">
 
                     <RoadmapElement title="Q3 2024" subtitle="JUL - AUG 2024">
                         <ul className="list-disc list-outside pl-6">

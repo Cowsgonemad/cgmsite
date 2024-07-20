@@ -36,7 +36,7 @@ export const CoinSection = () => {
                             </li>
                         </ul>
 
-                        <div className="relative 2xl:h-screen-40 mt-10 mb-20 xl:mb-0">
+                        <div className="relative 2xl:h-screen-40 mt-10 mb-16 2xl:mb-28">
 
                             <CoinTabCoin isActive={coinTab === 'coin'} />
                             <CoinTabUtil isActive={coinTab === 'util'} />

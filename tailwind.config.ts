@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '480px'
+      },
       spacing: {
         '1/5': '20%',
         '1/10': '10%',
@@ -26,6 +29,7 @@ const config: Config = {
         'screen-70': '70vh',
         'screen-75': '75vh',
         'screen-4/5': '80vh',
+        'screen-90': '90vh'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

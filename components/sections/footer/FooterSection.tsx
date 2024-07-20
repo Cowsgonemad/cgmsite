@@ -15,7 +15,7 @@ export const FooterSection = () => {
                 </div>
 
                 <div className="w-1/5">
-                    <img className="opacity-20" src="/img/BOPP-WHITE.png" alt="Battle Of Pasture Prime Logo White" />
+                    <img src="/img/CGM-BFTPP-FOOTER.png" alt="Battle For Pasture Prime Logo White" />
                 </div>
             </div>
 

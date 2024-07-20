@@ -11,7 +11,6 @@ export const TunnelCoin = () => {
                     <stop offset="0.87" stopColor="#ade152"/>
                 </linearGradient>
             </defs>
-            <title>Recurso 17</title>
             <g>
                 <g id="Capa_2" data-name="Capa 2">
                     <g id="Capa_1-2" data-name="Capa 1">

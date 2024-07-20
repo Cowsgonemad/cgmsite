@@ -1,6 +1,6 @@
 export const TunnelLight = () => {
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 135.78 964.58" width="120px" opacity="0.5">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 135.78 964.58" width="120px" opacity="0.5" style={{maxHeight: '100%'}}>
             <defs>
                 <filter id="luminosity-noclip" x="-0.57" y="-5629.44" width="136.36" height="32766" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                     <feFlood floodColor="#fff" result="bg"/>
@@ -26,7 +26,6 @@ export const TunnelLight = () => {
                     <stop offset="1" stopColor="#3fcdc6"/>
                 </linearGradient>
             </defs>
-            <title>Recurso 18</title>
             <g id="Capa_2" data-name="Capa 2">
                 <g id="Capa_1-2" data-name="Capa 1">
                     <g opacity="0.64">

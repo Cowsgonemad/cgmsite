@@ -18,7 +18,6 @@ export const TunnelBase = () => {
                     <stop offset="1" stopColor="#229899"/>
                 </linearGradient>
             </defs>
-            <title>Recurso 19</title>
             <g id="Capa_2" data-name="Capa 2">
                 <g id="Capa_1-2" data-name="Capa 1">
                     <ellipse fill="url(#Degradado_sin_nombre_8)" cx="61.58" cy="70.6" rx="35.55" ry="61.58" transform="translate(-9.35 131.8) rotate(-89.69)"/>

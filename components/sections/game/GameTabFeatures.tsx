@@ -74,7 +74,7 @@ export const GameTabFeatures = ({ isActive }: { isActive: boolean }) => {
                 
                 <div className="bg-black bg-opacity-80 p-4 lg:p-8 text-white font-extralight mb-4 text-center">
 
-                    <img className="inline-block w-52 lg:w-72 pb-4" src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Initial Cow Illustration" />
+                    <img className="inline-block w-52 lg:w-72 pb-4" src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Cows Gone Mad: Battle For Pasture Prime Logo" />
 
                     <p className="text-lg 2xl:text-2xl text-justify">
                     Through a wide variety of features, options, customisations and opportunities become part of an ever expanding ecosystem today. With the chance to compete in tournaments with token prizes and earn limited rewards for completing tasks and missions and much more!

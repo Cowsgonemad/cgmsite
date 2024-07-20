@@ -41,8 +41,9 @@ export const TokenomicsChart = () => {
             fontWeight: 200,
             
             labels: {
-                colors: 'white'
-            }
+                colors: 'white',
+            },
+            formatter: ((name, opt) => `${name} ${opt.w.globals.series[opt.seriesIndex]}%`)
         }
     };
 

@@ -21,7 +21,7 @@ export const GameTabGame = ({ isActive }: { isActive: boolean }) => {
         <GameTab isActive={isActive}>
             <div className="w-full bg-black bg-opacity-80 p-4 lg:p-8 text-white font-extralight text-lg 2xl:text-2xl text-center">
                 
-                <img className="inline-block w-52 lg:w-72 pb-4" src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Initial Cow Illustration" />
+                <img className="inline-block w-52 lg:w-72 pb-4" src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Cows Gone Mad: Battle For Pasture Prime Logo" />
 
                 <h5 className="font-extralight text-3xl text-accent mb-4">The New Blockchain Adventure</h5>
 

@@ -16,12 +16,10 @@ export const GameSection = () => {
             <div className="size-full flex flex-col items-center justify-center gap-8 relative pt-16 lg:pt-36 pb-14 px-6">
 
                 <Waves style={{}} classes="absolute top-0 left-0 rotate-180 w-full z-10" />
-                
                 <div className="bg-black bg-opacity-80 size-full absolute right-0 top-0"></div>
 
                 <div className="transition duration-20 w-full flex items-center order-2 lg:order-1">
-
-                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto 2xl:h-screen-60 relative">
+                    <div className="xl:max-w-screen-2xl lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-sm w-full mx-auto 2xl:h-[600px] relative">
                         <GameTabTrailer isActive={gameTab === 'trailer'} />
                         <GameTabGame isActive={gameTab === 'game'} />
                         <GameTabFeatures isActive={gameTab === 'feat'} />
