@@ -8,7 +8,7 @@ export const RoadmapSection = () => {
     return(
         <Screen id="roadmap" containerClasses="bg-halftone">
 
-            <div className="min-h-screen w-full flex flex-col items-center justify-center relative pt-28 pb-14 px-6">
+            <div className="min-h-screen w-full flex flex-col items-center justify-center relative pt-28 pb-28 px-6">
 
                 <div className="absolute top-0 left-0 size-full bg-roadmap"></div>
 
