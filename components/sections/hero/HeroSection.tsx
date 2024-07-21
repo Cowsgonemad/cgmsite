@@ -9,7 +9,7 @@ export const HeroSection = ({
     return(
         <Screen id="hero" containerClasses="bg-hero h-screen flex items-end justify-center">
 
-            <img className="w-full max-w-[340px] md:max-w-[450px] lg:max-w-[600px] glow" 
+            <img className="w-full max-w-[340px] md:max-w-[450px] xl:max-w-[600px] glow mb-8" 
             src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Cows Gone Mad: Battle For Pasture Prime Logo" />
 
             <button className="hidden md:block absolute right-10 bottom-10 animate-bounce bg-dark-blue rounded-full p-3" 
