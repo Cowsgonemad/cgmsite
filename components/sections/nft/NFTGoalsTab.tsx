@@ -45,7 +45,7 @@ export const NFTGoalsTab = ({ isActive }: { isActive: boolean }) => {
                 </div>
                 
                 <div ref={scroller} 
-                className="transparent-scroller rotated-scroller smaller-scroller overflow-x-scroll overflow-y-hidden mt-16 xl:mt-8 pb-4 pt-20 text-justify">
+                className="transparent-scroller rotated-scroller smaller-scroller overflow-x-scroll overflow-y-hidden mt-16 xl:mt-8 pb-4 pt-36 text-justify">
                     
                         <div className="flex">
                             <NFTGoalElement type="odd" percentage={25}>
