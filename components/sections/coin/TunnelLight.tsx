@@ -1,6 +1,6 @@
 export const TunnelLight = () => {
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 135.78 964.58" width="120px" opacity="0.5" style={{maxHeight: '100%'}}>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 135.78 964.58" width="120px" height="100%" opacity="0.5" preserveAspectRatio="none">
             <defs>
                 <filter id="luminosity-noclip" x="-0.57" y="-5629.44" width="136.36" height="32766" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                     <feFlood floodColor="#fff" result="bg"/>
