@@ -64,7 +64,7 @@ export const Navigation = ({
                     </a>
                 </li>
                 <li>
-                    <a href="/docs/v1.1.3 Cows Gone Mad Whitepaper 2024.pdf" download={true} 
+                    <a href="/docs/v1.3.6 Cows Gone Mad Whitepaper 2024.pdf" download={true} 
                     className="inline-block p-1 bg-dark-blue rounded-md text-sm font-bold uppercase text-accent">whitepaper</a>
                 </li>
                 {/* <li className="flex">

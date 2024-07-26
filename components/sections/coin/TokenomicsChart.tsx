@@ -10,7 +10,7 @@ export const TokenomicsChart = () => {
     const [expand, setExpand] = useState(false);
 
     const options: ApexCharts.ApexOptions = {
-        labels: ['Locked for Liquidity and Burned', 'Founders and Team', 'Advisors', 'Development and Operations', 'Game Rewards', 'Ecosystem fund / Pre-sale allocation'],
+        labels: ['Locked for Liquidity and Burned', 'Founders & Team', 'Advisors & Marketing', 'Dev. & Operations', 'Video Game Dev., Continuous Improvement & Rewards', 'Development of the MetaHealth Platform'],
         theme: {
             monochrome: {
                 enabled: true,
@@ -35,8 +35,8 @@ export const TokenomicsChart = () => {
             }
         },
         legend: {
-            width: 180,
-            height: 210,
+            width: 220,
+            height: 220,
             fontSize: '14px',
             fontWeight: 200,
             
@@ -53,7 +53,7 @@ export const TokenomicsChart = () => {
         <div className={`py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200 bg-dark-blue'} ${!expand && 'bg-opacity-60'}`}>
 
             <div id="apex-pie-chart">
-                <ApexChart type="pie" options={options} series={series} height="400" width="400" />
+                <ApexChart type="pie" options={options} series={series} height="160px" width="400px" />
             </div>
 
             <div className="hidden lg:block absolute top-8 right-5 opacity-70 hover:opacity-100 transition duration-20">
