@@ -12,6 +12,7 @@ import { FooterSection } from '@/components/sections/footer';
 import { Alerts } from '@/components/ui';
 import { AlertContext } from '@/context';
 import { TeamSection } from '@/components/sections/team/TeamSection';
+import { MetaHealthSection } from '@/components/sections/metahealth';
 
 let timeout: any;
 
@@ -100,6 +101,7 @@ export default function Home() {
         <NFTSection />
         <RoadmapSection />
         <TeamSection />
+        <MetaHealthSection />
         <FooterSection />
       </main>
 
