@@ -10,6 +10,7 @@ export * from './ExpandIcon';
 export * from './FacebookIcon';
 export * from './GamePadIcon';
 export * from './GoalIcon';
+export * from './HealthIcon';
 export * from './HealthMetricsIcon';
 export * from './InstagramIcon';
 export * from './HomeIcon';

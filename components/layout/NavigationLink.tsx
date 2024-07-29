@@ -10,8 +10,8 @@ export const NavigationLink = ({
     navigateTo: () => void
 }) => {
 
-    const active = 'py-1 px-2 flex items-center rounded-md bg-dark-blue';
-    const inactive = 'py-1 px-2 flex items-center';
+    const active = 'py-1 px-1 sm:px-2 flex items-center rounded-md bg-dark-blue';
+    const inactive = 'py-1 px-1 sm:px-2 flex items-center';
 
     return(
         <li className="relative">

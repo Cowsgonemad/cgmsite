@@ -1,4 +1,4 @@
-import { CoinIcon, ControlIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, InstagramIcon, DiscordIcon, HomeIcon, TeamIcon } from '../icons';
+import { CoinIcon, ControlIcon, GoalIcon, SendIcon, TokenIcon, XIcon, TelegramIcon, InstagramIcon, DiscordIcon, HomeIcon, TeamIcon, HealthIcon } from '../icons';
 import { NavigationLink } from './NavigationLink';
 
 export const Navigation = ({ 
@@ -10,17 +10,17 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed top-0 w-full z-50 bg-footer shadow-lg flex justify-center xl:justify-between items-center h-20 border-b-4 border-black">
+        <div className="fixed top-0 w-full z-50 bg-footer shadow-lg flex justify-center 2xl:justify-between items-center h-20 border-b-4 border-black">
 
-            <h1 className="text-white font-screebie cursor-pointer px-6 tracking-wider text-2xl font-thin text-drop-shadow leading-none hidden xl:block" onClick={() => navigateTo(0)}>
+            <h1 className="text-white font-screebie cursor-pointer px-6 tracking-wider text-2xl font-thin text-drop-shadow leading-none hidden 2xl:block" onClick={() => navigateTo(0)}>
                 COWS GONE MAD
             </h1>
 
             <nav className="">
                 <ul className="flex justify-center gap-1 md:gap-8 px-4">
 
-                    <li className="block xl:hidden">
-                        <button title="Home" className="py-1 px-2 flex items-center" onClick={() => navigateTo(0)}>
+                    <li className="block 2xl:hidden">
+                        <button title="Home" className="py-1 px-1 sm:px-2 flex items-center" onClick={() => navigateTo(0)}>
                             <HomeIcon fillVar="--white" />
                         </button>
                     </li>
@@ -45,8 +45,12 @@ export const Navigation = ({
                         <TeamIcon fillVar={currentScreen === 5 ? '--accent' : '--white'} />
                     </NavigationLink>
 
-                    <NavigationLink label="Subscribe" isActive={currentScreen === 6} navigateTo={() => navigateTo(6)}>
-                        <SendIcon fillVar={currentScreen === 6 ? '--accent' : '--white'} />
+                    <NavigationLink label="Goal" isActive={currentScreen === 6} navigateTo={() => navigateTo(6)}>
+                        <HealthIcon fillVar={currentScreen === 6 ? '--accent' : '--white'} />
+                    </NavigationLink>
+
+                    <NavigationLink label="Subscribe" isActive={currentScreen === 7} navigateTo={() => navigateTo(7)}>
+                        <SendIcon fillVar={currentScreen === 7 ? '--accent' : '--white'} />
                     </NavigationLink>
 
                 </ul>

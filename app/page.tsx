@@ -16,7 +16,7 @@ import { MetaHealthSection } from '@/components/sections/metahealth';
 
 let timeout: any;
 
-const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'team', 'footer'];
+const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'team', 'meta-health', 'footer'];
 
 const debounce = (fn: () => void) => {
   if (!!timeout) clearTimeout(timeout);
@@ -60,6 +60,11 @@ export default function Home() {
         acc += el.clientHeight;
         if (scrollTop < acc) {
           setCurrentScreen(i);
+          break;
+        }
+
+        if (document.documentElement.scrollHeight - scrollTop === document.documentElement.clientHeight) {
+          setCurrentScreen(ids.length - 1);
           break;
         }
       }
