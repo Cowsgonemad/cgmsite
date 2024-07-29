@@ -17,7 +17,7 @@ export const MetaHealthSection = () => {
                     <h4 className="text-2xl xl:text-4xl font-light text-dark-blue">MetaHealth Platform in Web3 Space</h4>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-10">
+                <div className="grid lg:grid-cols-2 gap-10 xl:gap-14">
 
                     <div className="relative">
 
