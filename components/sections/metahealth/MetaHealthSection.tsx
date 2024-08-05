@@ -37,7 +37,7 @@ export const MetaHealthSection = () => {
                         <div className={tab === 0 ? active : inactive}>
                             <div className="text-lg 2xl:text-2xl font-light text-justify">
                                 <p className="mb-4">Our vision is to develop a novel healthcare platform (MetaHealth) utilizing thirdspace concepts and technology. 
-                                MetaHealth will not only advance healthcare access for patients worldwide, but also allow professionals to gain exposure to a wider global community. The mechanism will involve developing a smart phone app for the metahealth platform.</p>
+                                MetaHealth will not only advance healthcare access for patients worldwide, but also allow professionals to gain exposure to a wider global community. The mechanism will involve developing a smart phone app for the MetaHealth platform.</p>
 
                                 <p>The possibility of MetaHealth as a future direction for CowsGoneMad ecosystem, outlined in the WP, further underscores our commitment to creating a long lasting and positive impact on both digital and healthcare landscapes.</p>
                             </div>
@@ -49,7 +49,7 @@ export const MetaHealthSection = () => {
                                     <span>Verified Specialists with proven records</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-accent transition duration-20">
-                                    <span>Services and Healdth Specialists Directory</span>
+                                    <span>Services and Health Specialists Directory</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-dark-blue transition duration-20">
                                     <span>Blockchain-Secured Medical Records</span>
