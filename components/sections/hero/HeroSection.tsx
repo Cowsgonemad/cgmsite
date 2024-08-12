@@ -7,7 +7,9 @@ export const HeroSection = ({
 }) => {
 
     return(
-        <Screen id="hero" containerClasses="bg-hero h-screen flex items-end justify-center">
+        <Screen id="hero" containerClasses="bg-hero h-screen flex flex-col items-center justify-between">
+
+            <img className="block w-20 lg:w-36 h-auto mt-24 ml-6 mr-auto" src="/img/cgm-logo.png" alt="Cows Gone Mad Logo" />
 
             <img className="w-full max-w-[340px] md:max-w-[450px] xl:max-w-[600px] glow mb-8" 
             src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Cows Gone Mad: Battle For Pasture Prime Logo" />

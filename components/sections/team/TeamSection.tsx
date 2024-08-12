@@ -9,8 +9,11 @@ export const TeamSection = () => {
 
             <div className="w-full max-w-screen-xl mx-auto px-6 pt-28">
                 
-                <SectionTitle classes="text-center" firstLine="FOUNDER'S" secondLine="Team" />
-
+                <div className="flex flex-col items-center gap-8">
+                    <img className="block w-56 h-auto" src="/img/cgm-logo.png" alt="Cows Gone Mad Logo" />
+                    <SectionTitle classes="text-center" firstLine="FOUNDER'S" secondLine="Team" />
+                </div>  
+                
                 <ul className="mt-8 mb-28 text-lg 2xl:text-xl font-light text-justify">
                     <li className="flex flex-col md:flex-row gap-4 items-start mb-4 bg-dark-green bg-opacity-30 rounded-5xl p-6">
                         <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/Ricardo Persaud Sin Fondo.png" alt="Dr. Ricardo Persaud Portrait"/>
