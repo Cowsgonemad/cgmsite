@@ -45,7 +45,7 @@ export const FooterSection = () => {
                 </div>
 
                 <div className="md:w-1/2 lg:w-2/5 2xl:pl-40 order-1 md:order-3 mb-4 md:mb-0">
-                    <p className="text-white text-justify w-full text-md opacity-40 font-extralight mb-8">
+                    <p className="text-white text-justify w-full text-md font-extralight mb-8">
                         The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (MooMoo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
                     </p>
 
@@ -57,7 +57,7 @@ export const FooterSection = () => {
             </div>
 
             <div className="w-full bg-dark-green-light mt-auto md:mt-0">
-                <div className="max-w-screen-lg opacity-40 py-2 text-center mx-auto">
+                <div className="max-w-screen-lg py-2 text-center mx-auto">
                     <p className="text-white font-extralight text-sm">Cows Gone Mad &copy; All rights Reserved</p>
                 </div>
             </div>
