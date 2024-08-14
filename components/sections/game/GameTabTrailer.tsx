@@ -20,22 +20,10 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
 
             <div className="w-full lg:w-3/5 2xl:w-2/3 relative flex items-center justify-center p-6 overflow-hidden">
 
-                {/* <video width="100%" height="100%" controls className="scale-95 object-cover">
-                    <source src="/video/sample.mp4" />
-                    Your browser does not support the video tag.
-                </video> */}
-
-                <div className="size-full flex items-center justify-center flex-col text-white font-screebie tracking-wider p-8 bg-black">
-                    <p className="text-4xl xl:text-5xl">Trailer <br/>Coming Soon</p>
-                </div>
-
-                <div className="absolute bottom-6 right-0 hidden lg:block">
-                    <FooterCow />
-                </div>
-
-                <div className="absolute top-6 left-0 rotate-180 hidden lg:block">
-                    <FooterCow />
-                </div>
+                <iframe className="size-full min-h-80"
+                src="https://www.youtube.com/embed/wtgkbi7NYUM?si=yKv232Kfw8H296F4" 
+                title="YouTube video player" allowFullScreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
                 <img className="absolute top-0 left-0 size-full -z-10" src="/img/horizontal-frame.svg" alt="video frame" />
             </div>
