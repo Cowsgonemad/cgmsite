@@ -21,9 +21,8 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
             <div className="w-full lg:w-3/5 2xl:w-2/3 relative flex items-center justify-center p-6 overflow-hidden">
 
                 <iframe className="size-full min-h-80"
-                src="https://www.youtube.com/embed/wtgkbi7NYUM?si=yKv232Kfw8H296F4" 
-                title="Cows Gone Mad Concept Trailer" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                src="https://www.youtube.com/embed/lWP2gPo_8FQ?si=kuelZTJilo2nrgQ7" 
+                title="Cows Gone Mad Concept Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
                 <img className="absolute top-0 left-0 size-full -z-10" src="/img/horizontal-frame.svg" alt="video frame" />
             </div>
