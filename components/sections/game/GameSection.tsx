@@ -12,7 +12,7 @@ export const GameSection = () => {
     return(
         <Screen id="the-game" containerClasses="">
 
-            <div className="flex items-center mx-auto flex-col pt-20 pb-12 px-6 bg-black relative">
+            <div className="flex items-center mx-auto flex-col pt-20 pb-12 px-6 bg-dark-print animate-bg-size relative">
 
                 <div className="w-80 xl:w-96 relative">
                     <img src="/img/CGM-BFTPP-EDITABLE-PNG.png" alt="Battle For Pasture Prime Logo" />

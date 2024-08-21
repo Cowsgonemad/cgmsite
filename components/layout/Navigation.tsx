@@ -10,7 +10,7 @@ export const Navigation = ({
 }) => {
 
     return (
-        <div className="fixed top-0 w-full z-50 bg-footer shadow-lg flex justify-center 2xl:justify-between items-center h-20 border-b-4 border-black">
+        <div className="fixed top-0 w-full z-40 bg-footer shadow-lg flex justify-center 2xl:justify-between items-center h-20 border-b-4 border-black">
 
             <h1 className="text-white font-screebie cursor-pointer px-6 tracking-wider text-2xl font-thin text-drop-shadow leading-none hidden 2xl:block" onClick={() => navigateTo(0)}>
                 COWS GONE MAD

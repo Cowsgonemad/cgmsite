@@ -1,7 +1,10 @@
+export * from './AngleLeftIcon';
+export * from './AngleRightIcon';
 export * from './ArrowDownIcon';
 export * from './ArrowUpIcon';
 export * from './ChevronLeftIcon';
 export * from './ChevronRightIcon';
+export * from './CloseIcon';
 export * from './CoinIcon';
 export * from './ContractIcon';
 export * from './ControlIcon'
@@ -26,3 +29,5 @@ export * from './TimesIcon';
 export * from './TokenIcon';
 export * from './UbreIcon';
 export * from './XIcon';
+export * from './ZoomInIcon';
+export * from './ZoomOutIcon';

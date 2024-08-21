@@ -13,6 +13,7 @@ import { Alerts } from '@/components/ui';
 import { AlertContext } from '@/context';
 import { TeamSection } from '@/components/sections/team/TeamSection';
 import { MetaHealthSection } from '@/components/sections/metahealth';
+import { TutorialSection } from '@/components/sections/tutorial';
 
 let timeout: any;
 
@@ -102,6 +103,7 @@ export default function Home() {
       <main id="viewer">
         <HeroSection navigateTo={(screen) => navigateTo(screen)} />
         <CoinSection />
+        <TutorialSection />
         <GameSection />
         <NFTSection />
         <RoadmapSection />

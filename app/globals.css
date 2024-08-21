@@ -130,6 +130,12 @@ h3 {
   background-position: center;
   transition: .2s;
 }
+.bg-dark-print {
+  background-image: url('../public/img/bg-print.svg');
+  background-size: 100%;
+  background-position: center;
+  transition: .2s;
+}
 .bg-halftone {
   background-image: url('../public/img/halftone-2.jpg');
 }

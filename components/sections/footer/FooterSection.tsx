@@ -23,6 +23,25 @@ export const FooterSection = () => {
 
                 <div className="md:w-1/2 lg:w-2/5 text-white order-2 md:order-1 mr-auto md:mr-0">
 
+                    <h5 className="mb-4">MooMoo Press</h5>
+                    <ul className="link-list pl-6 mb-8">
+                        <li className="mb-4">
+                            <a href="https://www.streetinsider.com/Press+Releases/Dubai-based+Doctors+Unveil+a+Novel+Web+3+Ecosystem+-+Cows+Gone+Mad+-+Powered+by+MooMoo+%28%24MOO%29+Token+on+the+Solana+Blockchain/23581683.html">Street Insider</a>
+                        </li>
+                        <li className="mb-4">
+                            <a href="https://apnews.com/press-release/marketersmedia/medical-technology-animals-virtual-and-augmented-reality-042106b2ba5a596d3993051355c898bf">AP News</a>
+                        </li>
+                        <li className="mb-4">
+                            <a href="https://pr.newsmax.com/article/Dubai-based-Doctors-Unveil-a-Novel-Web-3-Ecosystem-Cows-Gone-Mad-Powered-by-MooMoo-dollarMOO-Token-on-the-Solana-Blockchain?storyId=66b7b1431534160008c75e28">Newsmax</a>
+                        </li>
+                        <li className="mb-4">
+                            <a href="https://www.digitaljournal.com/pr/news/vehement-media/dubai-based-doctors-unveil-novel-web-1973117530.html">Digital Journal</a>
+                        </li>
+                        <li className="mb-4">
+                            <a href="https://www.benzinga.com/content/40302370/dubai-based-doctors-unveil-a-novel-web-3-ecosystem-cows-gone-mad-powered-by-moomoo-moo-token-on-the">Benzinga</a>
+                        </li>
+                    </ul>
+
                     <ul className="link-list pl-4 hidden">
                         <li className="mb-4">
                             <a href="">MooMoo Papers</a>
