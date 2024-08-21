@@ -10,7 +10,7 @@ export const TokenomicsChart = () => {
     const [expand, setExpand] = useState(false);
 
     const options: ApexCharts.ApexOptions = {
-        labels: ['Locked for Liquidity and Burned', 'Founders & Team', 'Advisors & Marketing', 'Dev. & Operations', 'Video Game Dev., Continuous Improvement & Rewards', 'Development of the MetaHealth Platform'],
+        labels: ['Locked for Liquidity and Burned', 'Founders & Team', 'Advisors & Marketing', 'Dev. & Operations', 'Video Game Dev.', 'Development of the MetaHealth Platform', 'Private Sale'],
         theme: {
             monochrome: {
                 enabled: true,
@@ -47,7 +47,7 @@ export const TokenomicsChart = () => {
         }
     };
 
-    const series = [80, 5, 2, 3, 5, 5];
+    const series = [70, 5, 2, 3, 5, 5, 10];
 
     return(
         <div className={`py-4 rounded-lg relative transition duration-20 origin-bottom-left ${expand && 'scale-200 bg-dark-blue'} ${!expand && 'bg-opacity-60'}`}>
