@@ -10,7 +10,7 @@ export const TokenomicsChart = () => {
     const [expand, setExpand] = useState(false);
 
     const options: ApexCharts.ApexOptions = {
-        labels: ['Locked for Liquidity and Burned', 'Founders & Team', 'Advisors & Marketing', 'Dev. & Operations', 'Video Game Dev.', 'Development of the MetaHealth Platform', 'Private Sale'],
+        labels: ['Locked for Liquidity and Burned', 'Founders & Team', 'Advisors & Marketing', 'Dev. & Operations', 'Video Game Dev.', 'Development of the MetaHealth Platform', 'Private Pre-Sale'],
         theme: {
             monochrome: {
                 enabled: true,

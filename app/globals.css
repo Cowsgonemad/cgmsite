@@ -71,11 +71,12 @@ html {
 }
 .white-scroller::-webkit-scrollbar {
   height: 14px;
-  background: rgba(0,0,0,0.2);
+  background: rgb(var(--black));
 }
 .white-scroller::-webkit-scrollbar-thumb {
-  background: white;
-  border: 1px solid rgba(0,0,0,0.3);
+  background: rgb(var(--accent));
+  border-radius: 30px;
+  border: 2px solid rgb(var(--black));
 }
 @-moz-document url-prefix() {
   .invisible-scroller {
