@@ -103,7 +103,7 @@ export default function Home() {
       <main id="viewer">
         <HeroSection navigateTo={(screen) => navigateTo(screen)} />
         <CoinSection />
-        <TutorialSection />
+        {/* <TutorialSection /> */}
         <GameSection />
         <NFTSection />
         <RoadmapSection />
