@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
-import { AngleLeftIcon, AngleRightIcon } from "../icons";
+import { useRef, useState, TouchEvent } from "react";
 import Image from "next/image";
+import useSwipe from "@/hooks/useSwipe";
 
 export const Carousel = ({
     list
@@ -11,6 +11,11 @@ export const Carousel = ({
     const [state, setState] = useState({
         active: 0,
         left: 0
+    });
+
+    const swipeHandlers = useSwipe({ 
+        onSwipedLeft: () => next(), 
+        onSwipedRight: () => prev()
     });
 
     const div = useRef<HTMLDivElement>(null);
@@ -36,9 +41,9 @@ export const Carousel = ({
     }
 
     return(
-        <div className="bg-black relative">
+        <div className="relative">
 
-            <div ref={div} className="relative flex" style={{ left: -state.left, transition: '.2s' }}>
+            <div ref={div} {...swipeHandlers} className="relative flex" style={{ left: -state.left, transition: '.2s' }}>
                 
                 {list.map(el => 
                     <div key={el.src} className="w-full max-w-full h-screen-70 shrink-0 flex items-center justify-center py-6">
@@ -48,14 +53,14 @@ export const Carousel = ({
 
             </div>
 
-            <div className="py-6 px-12">
+            <div className="p-6">
 
-                <ul className="flex justify-center gap-3 flex-wrap">
+                <ul className="flex justify-center gap-3 flex-wrap mb-2">
                     {
                         list.map((el, i) =>
                             <li key={el.src}>
                                 <button onClick={() => navigate(i)}>
-                                    <span className="block h-2 w-2 rounded-full bg-white" style={{ opacity: state.active !== i ? 0.2 : 1 }}></span>
+                                    <span className="block h-2 w-2 rounded-full bg-black" style={{ opacity: state.active !== i ? 0.2 : 1 }}></span>
                                 </button>
                             </li>
                         )
@@ -63,13 +68,13 @@ export const Carousel = ({
                 </ul>
             </div>
 
-            <button className="absolute h-full flex items-end p-6 top-0 left-0"
+            {/* <button className="absolute h-full flex items-end p-6 top-0 left-0"
             style={{ opacity: state.active > 0 ? 1 : 0.2 }} 
             onClick={prev}><AngleLeftIcon /></button>
 
             <button className="absolute h-full flex items-end p-6 top-0 right-0"
             style={{ opacity: state.active < list.length - 1 ? 1 : 0.2 }} 
-            onClick={next}><AngleRightIcon /></button>
+            onClick={next}><AngleRightIcon /></button> */}
 
         </div>
     );

@@ -18,9 +18,11 @@ export const TutorialSection = () => {
     ];
 
     return(
-        <Screen id="tutorial" containerClasses="">
+        <Screen id="tutorial" containerClasses="relative bg-halftone">
 
-            <div className="hidden lg:block w-full max-w-full overflow-x-auto white-scroller">
+            <div className="absolute size-full bg-coin animate-bg-size top-0 left-0 opacity-5"></div>
+
+            <div className="hidden lg:block w-full max-w-full overflow-x-auto white-scroller relative">
                 <div className="table-row">
                     <div className="table-cell border-b-4 border-black">
                         <img loading="lazy" className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-1.jpg" alt="" />
@@ -34,7 +36,7 @@ export const TutorialSection = () => {
                 </div>
             </div>
 
-            <div className="block lg:hidden">
+            <div className="block lg:hidden relative">
                 <Carousel list={list} />
             </div>
     

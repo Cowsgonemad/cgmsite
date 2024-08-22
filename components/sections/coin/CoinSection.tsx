@@ -1,10 +1,25 @@
 import { Screen } from '../../layout';
 import { CoinTabButton, CoinTabCoin, CoinTabEcon, CoinTabGoals, CoinTabUtil, CoinTunnel, MooMooCoinLogo, Waves } from '.';
 import { useState } from 'react';
+import { Carousel } from '@/components/ui';
 
 export const CoinSection = () => {
 
     const [coinTab, setCoinTab] = useState('coin');
+
+    const list = [
+        {src: '/img/info/1.jpg', alt: 'Step 1'},
+        {src: '/img/info/2.jpg', alt: 'Step 2'},
+        {src: '/img/info/3.jpg', alt: 'Step 3'},
+        {src: '/img/info/4.jpg', alt: 'Step 4'},
+        {src: '/img/info/5.jpg', alt: 'Step 5'},
+        {src: '/img/info/6.jpg', alt: 'Step 6'},
+        {src: '/img/info/7.jpg', alt: 'Step 7'},
+        {src: '/img/info/8.jpg', alt: 'Step 8'},
+        {src: '/img/info/9.jpg', alt: 'Step 9'},
+        {src: '/img/info/10.jpg', alt: 'Step 10'},
+        {src: '/img/info/11.jpg', alt: 'Step 11'}
+    ];
     
     return(
         <Screen id="the-coin" containerClasses="bg-halftone">
