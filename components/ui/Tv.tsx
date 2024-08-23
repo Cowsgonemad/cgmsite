@@ -48,7 +48,7 @@ export const Tv = ({
     
         <div className="relative">
 
-            <div ref={div} {...swipeHandlers} className="w-full bg-black rounded-3xl p-8" style={{ left: -state.left, transition: '.2s' }}>
+            <div ref={div} {...swipeHandlers} className="w-full bg-black rounded-3xl p-4 lg:p-8" style={{ left: -state.left, transition: '.2s' }}>
                 
                 {state.src && <iframe className="size-full min-h-72 md:min-h-96 xl:h-[600px] rounded-3xl"
                 src={state.src} title={state.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}
