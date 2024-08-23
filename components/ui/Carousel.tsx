@@ -1,5 +1,4 @@
-import { useRef, useState, TouchEvent } from "react";
-import Image from "next/image";
+import { useRef, useState } from "react";
 import useSwipe from "@/hooks/useSwipe";
 
 export const Carousel = ({

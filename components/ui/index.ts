@@ -5,3 +5,4 @@ export * from './Carousel';
 export * from './Logo';
 export * from './SectionTitle';
 export * from './Spinner';
+export * from './Tv';
