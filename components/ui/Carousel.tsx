@@ -46,7 +46,7 @@ export const Carousel = ({
                 
                 {list.map(el => 
                     <div key={el.src} className="w-full max-w-full h-screen-70 shrink-0 flex items-center justify-center py-6">
-                        <img loading="lazy" className="max-w-full max-h-full" src={el.src} alt={el.alt} />
+                        <img  className="max-w-full max-h-full" src={el.src} alt={el.alt} />
                     </div>
                 )}
 

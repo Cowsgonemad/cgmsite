@@ -25,13 +25,13 @@ export const TutorialSection = () => {
             <div className="hidden lg:block w-full max-w-full overflow-x-auto white-scroller relative">
                 <div className="table-row">
                     <div className="table-cell border-b-4 border-black">
-                        <img loading="lazy" className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-1.jpg" alt="" />
+                        <img  className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-1.jpg" alt="" />
                     </div>
                     <div className="table-cell border-b-4 border-black">
-                        <img loading="lazy" className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-2.jpg" alt="" />
+                        <img  className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-2.jpg" alt="" />
                     </div>
                     <div className="table-cell border-b-4 border-black">
-                        <img loading="lazy" className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-3.jpg" alt="" />
+                        <img  className="h-[80vh] w-auto max-w-[unset]" src="/img/INFO-WEB-3.jpg" alt="" />
                     </div>
                 </div>
             </div>

@@ -75,8 +75,8 @@ export const MetaHealthSection = () => {
                     
                     <div className="flex justify-center">
                         <div className="relative z-10 whitespace-nowrap">
-                            <img loading="lazy" className="max-w-[50vw] md:max-w-[250px] lg:max-w-[280px] xl:max-w-[350px] inline-block" src="/img/phone-sherief.png" alt="MetaHealth app directory" />
-                            <img loading="lazy" className="max-w-[50vw] md:max-w-[250px] lg:max-w-[280px] xl:max-w-[350px] inline-block -ml-20" src="/img/phone-ricardo.png" alt="MetaHealth app online consultation" />
+                            <img  className="max-w-[50vw] md:max-w-[250px] lg:max-w-[280px] xl:max-w-[350px] inline-block" src="/img/phone-sherief.png" alt="MetaHealth app directory" />
+                            <img  className="max-w-[50vw] md:max-w-[250px] lg:max-w-[280px] xl:max-w-[350px] inline-block -ml-20" src="/img/phone-ricardo.png" alt="MetaHealth app online consultation" />
                         </div>
                     </div>
                 </div>
