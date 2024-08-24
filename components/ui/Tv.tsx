@@ -46,7 +46,7 @@ export const Tv = ({
 
     return(
     
-        <div className="relative">
+        <div className="relative w-full">
 
             <div ref={div} {...swipeHandlers} className="w-full bg-black rounded-3xl p-4 lg:p-8" style={{ left: -state.left, transition: '.2s' }}>
                 
