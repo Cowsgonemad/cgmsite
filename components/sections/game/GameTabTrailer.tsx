@@ -10,7 +10,6 @@ export const GameTabTrailer = ({ isActive }: { isActive: boolean }) => {
 
     return(
         <GameTab isActive={isActive}>
-
             <Tv list={list} />
         </GameTab>
     );
