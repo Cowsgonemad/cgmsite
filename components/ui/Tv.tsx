@@ -8,10 +8,8 @@ export const Tv = ({
     list: {src: string, title: string}[]
 }) => {
 
-    const [state, setState] = useState<{active: number, src: string, title: string, left: number}>({
+    const [state, setState] = useState<{active: number, left: number}>({
         active: 0,
-        src: list[0]?.src,
-        title: list[0]?.title,
         left: 0
     });
 
@@ -38,8 +36,6 @@ export const Tv = ({
 
         setState({
             active: index,
-            src: list[index].src,
-            title: list[index].title,
             left: div.current.clientWidth * index
         });
     }
@@ -49,9 +45,12 @@ export const Tv = ({
         <div className="relative w-full">
 
             <div ref={div} {...swipeHandlers} className="w-full bg-black rounded-3xl p-4 lg:p-8" style={{ left: -state.left, transition: '.2s' }}>
+
                 
-                {state.src && <iframe className="size-full min-h-72 md:min-h-96 xl:h-[600px] rounded-3xl"
-                src={state.src} title={state.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}
+                {state.active === 0 && <iframe className="size-full min-h-72 md:min-h-96 xl:h-[600px] rounded-3xl" src={list[0].src} title={list[0].title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}
+
+                {state.active === 1 && <iframe className="size-full min-h-72 md:min-h-96 xl:h-[600px] rounded-3xl" src={list[1].src} title={list[1].title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>}
+                
 
                 <div className="mt-6 flex justify-between gap-4">
 
