@@ -29,7 +29,7 @@ export const RoadmapSection = () => {
                     <RoadmapElement title="Q3 - Q4 2024" subtitle="AUG - DEC 2024">
                         <ul className="list-disc list-outside pl-6">
                             <li>KOL Partnerships.</li>
-                            <li>Token ICO (August 28, 2024).</li>
+                            <li>Token ICO (September 10th, 2024).</li>
                             <li>Launch Game Beta for Holders.</li>
                         </ul>
                     </RoadmapElement>
