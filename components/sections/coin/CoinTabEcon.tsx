@@ -7,13 +7,14 @@ export const CoinTabEcon = ({ isActive }: { isActive: boolean }) => {
     return(
         <CoinTab isActive={isActive}>
 
-            <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
 
                 <div className="order-2 md:order-1">
                     <TokenomicsChart />
+                    {/* <Chart width={220} /> */}
                 </div>
                 
-                <div className="order-1 md:order-2 border-dashed border-l-white lg:pl-8 lg:border-l-2">
+                <div className="order-1 md:order-2 border-dashed border-l-white lg:pl-8 lg:border-l-2 flex flex-col justify-center">
 
                     <CoinTabTitle text="Tokenomics" />
 
