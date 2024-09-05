@@ -85,7 +85,7 @@ export const TokenomicsChart = () => {
 
             <div className={expand ? 'text-white' : ''}>
                 <ul className="font-light text-sm mt-2">
-                    {data.map((d, i) => <li className={`inline-block mr-4 cursor-pointer ${active === d.id ? 'opacity-100' : 'opacity-70'}`} 
+                    {data.map((d, i) => <li key={d.id} className={`inline-block mr-4 cursor-pointer ${active === d.id ? 'opacity-100' : 'opacity-70'}`} 
                     onClick={() => setActive(d.id)}>
                         <span style={{background: colors[i]}}
                         className={`inline-block h-3 w-3 rounded-full mr-1`}></span>{`${d.label} ${d.value}%`}
