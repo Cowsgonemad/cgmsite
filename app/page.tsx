@@ -9,7 +9,7 @@ import { GameSection } from '@/components/sections/game';
 import { NFTSection } from '@/components/sections/nft';
 import { RoadmapSection } from '@/components/sections/roadmap';
 import { FooterSection } from '@/components/sections/footer';
-import { Alerts } from '@/components/ui';
+import { Alerts, Popup } from '@/components/ui';
 import { AlertContext } from '@/context';
 import { TeamSection } from '@/components/sections/team/TeamSection';
 import { MetaHealthSection } from '@/components/sections/metahealth';
@@ -111,6 +111,8 @@ export default function Home() {
         <MetaHealthSection />
         <FooterSection />
       </main>
+
+      <Popup />
 
       <Alerts />
 

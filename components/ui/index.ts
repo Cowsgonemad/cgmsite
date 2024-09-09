@@ -3,6 +3,7 @@ export * from './Arrows';
 export * from './Blobs';
 export * from './Carousel';
 export * from './Logo';
+export * from './Popup';
 export * from './SectionTitle';
 export * from './Spinner';
 export * from './Tv';
