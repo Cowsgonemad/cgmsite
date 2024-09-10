@@ -1,4 +1,4 @@
-import { CGMLogo, EmailForm, FooterCow, MooMooLogo, RefLogo, SocialBar } from '.';
+import { CGMLogo, EmailForm, FooterCow, MooMooLogo, SocialBar } from '.';
 
 export const FooterSection = () => {
 

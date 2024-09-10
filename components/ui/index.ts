@@ -2,6 +2,7 @@ export * from './Alerts';
 export * from './Arrows';
 export * from './Blobs';
 export * from './Carousel';
+export * from './Copy';
 export * from './Logo';
 export * from './Popup';
 export * from './SectionTitle';

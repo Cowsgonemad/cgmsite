@@ -7,7 +7,7 @@ export const Alerts = () => {
     const { alerts, setAlerts } = useContext(AlertContext);
 
     return(
-        <div className="fixed top-24 right-4 flex flex-col gap-2 w-full max-w-80">
+        <div className="fixed top-24 right-4 flex flex-col gap-2 w-full max-w-80 z-50">
             {alerts.map(alert => 
                 <div key={alert.id} className="w-full bg-black text-slate-300 text-sm font-light p-4 flex gap-2 justify-between items-start rounded">
 
