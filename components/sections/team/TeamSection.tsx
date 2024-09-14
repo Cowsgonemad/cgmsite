@@ -31,7 +31,7 @@ export const TeamSection = () => {
                             <h5 className="text-2xl font-extrabold leading-tight">Dr. Sherief Elsayed, FRCS.</h5>
                             <a className="text-lg font-normal text-dark-blue inline-block mb-2" href="https://spinesurgeondubai.com">spinesurgeondubai.com</a>
                             <p>
-                            Multi-award winning Spinal Surgeon and a prominent entrepreneur, researcher and Educator, having taught over 11,000 medical students to date. Consultant Spinal Surgeon, Neurospinal Hospital, Dubai, UAE.
+                            Multi-award winning Spinal Surgeon and a prominent entrepreneur, researcher and Educator, having taught over 11,000 medical students to date. Consultant Spinal Surgeon, Dubai, UAE.
                             </p>
                         </div>
                     </li>
