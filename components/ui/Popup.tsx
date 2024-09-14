@@ -28,22 +28,26 @@ export const Popup = () => {
 
                 <div onClick={(e) => e.stopPropagation()} 
                 style={{ transform: show ? 'translateY(0)' : 'translateY(100px)' }}
-                className="bg-white rounded-lg p-6 relative transition duration-20 w-full max-w-prose ">
+                className="rounded-lg relative transition duration-20 w-full max-w-[450px]">
 
-                    <button title="Dismiss" className="absolute right-2 prose:-right-14 top-2 prose:top-0 rounded-full" 
-                    onClick={handleDismiss}><CloseIcon fill={'black'} /></button>
+                    <button title="Dismiss" 
+                    className="absolute right-2 prose:-right-14 top-2 prose:top-0 rounded-full bg-black p-1 cursor-pointer z-20" 
+                    onClick={handleDismiss}><CloseIcon fill={'white'} /></button>
 
-                    <div className="h-screen-60 relative">
-                        <img className="block size-full object-contain" src="/img/CGM-S-10.jpg" alt="MooMoo Pre-sale Announcement" />
+                    <div className="relative">
+                        <video className="rounded-lg" autoPlay muted loop>
+                            <source src="/videos/live.mp4" type="video/mp4"></source>
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     
-                    <div className="bg-dark-blue text-white p-4">
+                    <div className="bg-dark-blue text-white p-4 mt-2 rounded-lg">
 
-                        <h4 className="font-bold text-xl">Official Public Pre-Sale Wallet Address</h4>
+                        <h4 className="font-bold text-xl">Official Public Sale Wallet Address</h4>
 
                         <div className="flex justify-between gap-2 font-light my-2">
-                            <p className="break-all">5NrFg1r3ikzvvGkQuzKnpEea86yqdQPXXV8RzJGNpE4f</p>
-                            <Copy text="5NrFg1r3ikzvvGkQuzKnpEea86yqdQPXXV8RzJGNpE4f" />
+                            <p className="break-all text-sm">JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd</p>
+                            <Copy text="JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd" />
                         </div>
 
                         <p>Beware of Scammers.</p>

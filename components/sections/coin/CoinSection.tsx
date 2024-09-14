@@ -2,6 +2,7 @@ import { Screen } from '../../layout';
 import { CoinTabButton, CoinTabCoin, CoinTabEcon, CoinTabGoals, CoinTabUtil, CoinTunnel, MooMooCoinLogo, Waves } from '.';
 import { useState } from 'react';
 import { Carousel } from '@/components/ui';
+import { DexScreenerLogo } from '@/components/icons/DexScreenerLogo';
 
 export const CoinSection = () => {
 
@@ -35,6 +36,12 @@ export const CoinSection = () => {
                         <div className="animate-soft-bounce flex justify-center">
                             <MooMooCoinLogo />
                         </div>
+
+                        <p className="mt-8 text-center">
+                            <span className="bg-black text-white inline-block py-1 px-4 font-light text-sm rounded-full">
+                                See on <a href="https://dexscreener.com/solana/JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd" target="_blank" title="See on Dexscreener" className="ml-2"><DexScreenerLogo /> <span className="underline">Dexscreener</span></a>
+                            </span>
+                        </p>
 
                         <ul className="flex justify-center flex-wrap gap-2 lg:gap-4 mt-8">
                             <li>
