@@ -1,8 +1,7 @@
 import { Screen } from '../../layout';
 import { CoinTabButton, CoinTabCoin, CoinTabEcon, CoinTabGoals, CoinTabUtil, CoinTunnel, MooMooCoinLogo, Waves } from '.';
 import { useState } from 'react';
-import { Carousel } from '@/components/ui';
-import { DexScreenerLogo } from '@/components/icons/DexScreenerLogo';
+import { DexScreenerLogo, DextoolsLogo } from '@/components/icons';
 
 export const CoinSection = () => {
 
@@ -37,9 +36,13 @@ export const CoinSection = () => {
                             <MooMooCoinLogo />
                         </div>
 
-                        <p className="mt-8 text-center">
-                            <span className="bg-black text-white inline-block py-1 px-4 font-light text-sm rounded-full">
+                        <p className="mt-8 text-center flex flex-wrap justify-center gap-2">
+                            <span className="bg-black text-white inline-block py-1 px-4 font-light text-sm rounded-full min-w-48">
                                 See on <a href="https://dexscreener.com/solana/JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd" target="_blank" title="See on Dexscreener" className="ml-2"><DexScreenerLogo /> <span className="underline">Dexscreener</span></a>
+                            </span>
+
+                            <span className="bg-black text-white inline-block py-1 px-4 font-light text-sm rounded-full min-w-48">
+                                See on <a href="https://www.dextools.io/app/en/solana/pair-explorer/3hA61x61bks9Y81wnX54KwBPTbRuHGLBQPX6Z8A7Fh71?t=1726517903094" target="_blank" title="See on Dextools" className="ml-2"><DextoolsLogo /> <span className="underline">Dextools</span></a>
                             </span>
                         </p>
 

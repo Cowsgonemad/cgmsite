@@ -8,6 +8,8 @@ export * from './CloseIcon';
 export * from './CoinIcon';
 export * from './ContractIcon';
 export * from './ControlIcon'
+export * from './DexScreenerLogo';
+export * from './DextoolsLogo';
 export * from './DiscordIcon';
 export * from './ExpandIcon';
 export * from './FacebookIcon';
