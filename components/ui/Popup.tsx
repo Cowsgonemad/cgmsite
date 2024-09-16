@@ -43,7 +43,7 @@ export const Popup = () => {
                     
                     <div className="bg-dark-blue text-white p-4 mt-2 rounded-lg">
 
-                        <h4 className="font-bold text-xl">Official Public Sale Wallet Address</h4>
+                        <h4 className="font-bold text-xl">Official Contract Address of $Moo</h4>
 
                         <div className="flex justify-between gap-2 font-light my-2">
                             <p className="break-all text-sm">JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd</p>
