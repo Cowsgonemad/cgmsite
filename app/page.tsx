@@ -14,18 +14,19 @@ import { AlertContext } from '@/context';
 import { TeamSection } from '@/components/sections/team/TeamSection';
 import { MetaHealthSection } from '@/components/sections/metahealth';
 import { TutorialSection } from '@/components/sections/tutorial';
+import { ChartSection } from '@/components/sections/chart';
 
 let timeout: any;
 
-const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'team', 'meta-health', 'footer'];
+const ids = ['hero', 'the-coin', 'the-game', 'the-nft', 'roadmap', 'team', 'meta-health', 'chart', 'footer'];
 
 const debounce = (fn: () => void) => {
   if (!!timeout) clearTimeout(timeout);
   timeout = setTimeout(fn, 80);
 };
 
-const navigateTo = (screen: number) => {
-  const element = document.querySelector<HTMLElement>(`#${ids[screen]}`);
+const navigateTo = (screen: string) => {
+  const element = document.querySelector<HTMLElement>(`#${screen}`);
   element?.scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -34,14 +35,20 @@ export default function Home() {
   const [alerts, setAlerts] = useState<{id: number, message: string, type: 'success' | 'error'}[]>([]);
   const value = { alerts, setAlerts };
 
-  const [currentScreen, setCurrentScreen] = useState(0);
+  const [currentScreen, setCurrentScreen] = useState('hero');
 
   const navigatePrevious = useCallback(() => {
-    if (currentScreen > 0) navigateTo(currentScreen - 1);
+    if (currentScreen !== ids[0]) {
+      const index = ids.findIndex(ids => ids === currentScreen);
+      navigateTo(ids[index - 1]);
+    }
   }, [currentScreen]);
 
   const navigateNext = useCallback(() => {
-    if (currentScreen < ids.length - 1) navigateTo(currentScreen + 1);
+    if (currentScreen !== ids[ids.length - 1]) {
+      const index = ids.findIndex(ids => ids === currentScreen);
+      navigateTo(ids[index + 1]);
+    }
   }, [currentScreen]);
 
   useEffect(() => {
@@ -60,12 +67,12 @@ export default function Home() {
 
         acc += el.clientHeight;
         if (scrollTop < acc) {
-          setCurrentScreen(i);
+          setCurrentScreen(ids[i]);
           break;
         }
 
         if (document.documentElement.scrollHeight - scrollTop === document.documentElement.clientHeight) {
-          setCurrentScreen(ids.length - 1);
+          setCurrentScreen(ids[ids.length - 1]);
           break;
         }
       }
@@ -109,6 +116,7 @@ export default function Home() {
         <RoadmapSection />
         <TeamSection />
         <MetaHealthSection />
+        <ChartSection />
         <FooterSection />
       </main>
 
