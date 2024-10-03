@@ -5,6 +5,7 @@ export * from './ArrowUpIcon';
 export * from './ChevronLeftIcon';
 export * from './ChevronRightIcon';
 export * from './CloseIcon';
+export * from './CoinGeckoLogo';
 export * from './CoinIcon';
 export * from './ContractIcon';
 export * from './ControlIcon'
