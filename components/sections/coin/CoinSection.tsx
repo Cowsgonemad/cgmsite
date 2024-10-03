@@ -38,15 +38,15 @@ export const CoinSection = () => {
 
                         <p className="mt-8 text-center flex flex-wrap justify-center gap-2">
                             <span className="bg-black text-white py-1 px-3 font-light text-sm rounded-full min-w-48 inline-flex items-center justify-center">
-                                See on <a href="https://dexscreener.com/solana/JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd" target="_blank" title="See on Dexscreener" className="ml-2"><DexScreenerLogo /> <span className="underline inline-flex items-center justify-center">Dexscreener</span></a>
+                                See on <a href="https://dexscreener.com/solana/JJ4QpqUYzs9LUPrF6uJKQbkA4ofSnvkwQ3RBcVLFSjd" target="_blank" title="See on Dexscreener" className="ml-2  inline-flex items-center justify-center"><DexScreenerLogo /> <span className="underline">Dexscreener</span></a>
                             </span>
 
                             <span className="bg-black text-white py-1 px-3 font-light text-sm rounded-full min-w-48 inline-flex items-center justify-center">
-                                See on <a href="https://www.dextools.io/app/en/solana/pair-explorer/3hA61x61bks9Y81wnX54KwBPTbRuHGLBQPX6Z8A7Fh71?t=1726517903094" target="_blank" title="See on Dextools" className="ml-2"><DextoolsLogo /> <span className="underline inline-flex items-center justify-center">Dextools</span></a>
+                                See on <a href="https://www.dextools.io/app/en/solana/pair-explorer/3hA61x61bks9Y81wnX54KwBPTbRuHGLBQPX6Z8A7Fh71?t=1726517903094" target="_blank" title="See on Dextools" className="ml-2 inline-flex items-center justify-center"><DextoolsLogo /> <span className="underline">Dextools</span></a>
                             </span>
 
                             <span className="bg-black text-white py-1 px-3 font-light text-sm rounded-full min-w-48 inline-flex items-center justify-center">
-                                See on <a href="https://www.coingecko.com/en/coins/moomoo-token" target="_blank" title="See on Dextools" className="ml-2"><CoinGeckoLogo /> <span className="underline inline-flex items-center justify-center">CoinGecko</span></a>
+                                See on <a href="https://www.coingecko.com/en/coins/moomoo-token" target="_blank" title="See on Dextools" className="ml-2 inline-flex items-center justify-center"><CoinGeckoLogo /> <span className="underline">CoinGecko</span></a>
                             </span>
                         </p>
 
