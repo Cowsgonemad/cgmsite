@@ -14,7 +14,7 @@ export const SocialBar = () => {
                 </a>
             </li>
             <li>
-                <a className="inline-block p-1" href="https://t.me/MooMoo_Portal" target="_blank">
+                <a className="inline-block p-1" href="https://t.me/CGMArmy" target="_blank">
                     <TelegramIcon />
                 </a>
             </li>

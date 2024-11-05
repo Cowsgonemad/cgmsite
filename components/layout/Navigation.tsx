@@ -63,7 +63,7 @@ export const Navigation = ({
                     </a>
                 </li>
                 <li className="flex">
-                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://t.me/MooMoo_Portal" target="_blank">
+                    <a className="inline-block p-1 bg-dark-blue rounded-md" href="https://t.me/CGMArmy" target="_blank">
                         <TelegramIcon size={20} />
                     </a>
                 </li>
