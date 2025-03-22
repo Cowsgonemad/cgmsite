@@ -5,7 +5,7 @@ export const SocialBar = () => {
     return(
         <ul className="opacity-50 flex gap-6 mt-3 mb-6 justify-center">
             <li className="mr-auto">
-                <a href="/docs/v1.6.6%20Cows%20Gone%20Mad%20Whitepaper%202024.pdf" download={true} 
+                <a href="/docs/v1.6.6_Cows_Gone_Mad_Whitepaper_2024.pdf" download={true} 
                 className="inline-block p-1 text-sm font-bold uppercase text-accent">whitepaper</a>
             </li>
             <li>

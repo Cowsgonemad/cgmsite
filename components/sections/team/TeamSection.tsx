@@ -16,7 +16,7 @@ export const TeamSection = () => {
                 
                 <ul className="mt-8 mb-28 text-lg 2xl:text-xl font-light text-justify">
                     <li className="flex flex-col md:flex-row gap-4 items-start mb-4 bg-dark-green bg-opacity-30 rounded-5xl p-6">
-                        <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/Ricardo Persaud Sin Fondo.png" alt="Dr. Ricardo Persaud Portrait"/>
+                        <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/RicardoPersaud.png" alt="Dr. Ricardo Persaud Portrait"/>
                         <div>
                             <h5 className="text-2xl font-extrabold leading-tight">Dr. Ricardo Persaud, FRCS.</h5>
                             <a className="text-lg font-normal text-dark-blue inline-block mb-2" href="https://ricardopersaud.com">ricardopersaud.com</a>
@@ -26,7 +26,7 @@ export const TeamSection = () => {
                         </div>
                     </li>
                     <li className="flex flex-col md:flex-row gap-4 items-start mb-4 bg-dark-green bg-opacity-30 rounded-5xl p-6">
-                        <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/Sherief Elsayed Sin Fondo.png" alt="Dr. Sherief Elsayed Portrait"/>
+                        <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/SheriefElsayed.png" alt="Dr. Sherief Elsayed Portrait"/>
                         <div>
                             <h5 className="text-2xl font-extrabold leading-tight">Dr. Sherief Elsayed, FRCS.</h5>
                             <a className="text-lg font-normal text-dark-blue inline-block mb-2" href="https://spinesurgeondubai.com">spinesurgeondubai.com</a>
@@ -36,7 +36,7 @@ export const TeamSection = () => {
                         </div>
                     </li>
                     <li className="flex flex-col md:flex-row gap-4 items-start mb-4 bg-dark-green bg-opacity-30 rounded-5xl p-6">
-                        <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/Gilberto Roman Sin Fondo.png" alt="Eng. Gilberto Roman Sin Fondo Portrait"/>
+                        <img className="w-24 h-24 lg:w-32 lg:h-32 object-cover object-top bg-white rounded-full block shrink-0 border-4 border-dark-blue" src="/img/GilbertoRoman.png" alt="Eng. Gilberto Roman Portrait"/>
                         <div>
                             <h5 className="text-2xl font-extrabold leading-tight">Eng. Gilberto Roman</h5>
                             <a className="text-lg font-normal text-dark-blue inline-block mb-2" href="https://linkedin.com/in/gilbertoroman">linkedin.com/in/gilbertoroman</a>
