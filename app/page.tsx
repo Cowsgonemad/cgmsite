@@ -103,7 +103,7 @@ export default function Home() {
 
     <AlertContext.Provider value={value}>
 
-      {/* <Navigation 
+      <Navigation 
       navigateTo={(screen) => navigateTo(screen)} 
       currentScreen={currentScreen} />
     
@@ -122,9 +122,9 @@ export default function Home() {
 
       <Popup />
 
-      <Alerts /> */}
+      <Alerts />
 
-      <img src="/img/IMG_2010.jpg" />
+      {/* <img src="/img/IMG_2010.jpg" /> */}
 
     </ AlertContext.Provider>
   );
