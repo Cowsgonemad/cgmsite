@@ -27,10 +27,6 @@ html {
   font-family: var(--font-outfit);
 }
 
-body {
-  background: #222;
-}
-
 /* body::-webkit-scrollbar, */
 .invisible-scroller::-webkit-scrollbar {
   display: none;
