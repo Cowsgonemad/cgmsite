@@ -23,7 +23,7 @@ export const FooterSection = () => {
 
                 <div className="md:w-1/2 lg:w-2/5 text-white order-2 md:order-1 mr-auto md:mr-0">
 
-                    <h5 className="mb-4">MooMoo Press</h5>
+                    <h5 className="mb-4">Moo Press</h5>
                     <ul className="link-list pl-6 mb-8">
                         <li className="mb-4">
                             <a href="https://www.streetinsider.com/Press+Releases/Dubai-based+Doctors+Unveil+a+Novel+Web+3+Ecosystem+-+Cows+Gone+Mad+-+Powered+by+MooMoo+%28%24MOO%29+Token+on+the+Solana+Blockchain/23581683.html">Street Insider</a>
@@ -44,7 +44,7 @@ export const FooterSection = () => {
 
                     <ul className="link-list pl-4 hidden">
                         <li className="mb-4">
-                            <a href="">MooMoo Papers</a>
+                            <a href="">Moo Papers</a>
                         </li>
                         <li className="mb-4">
                             <a href="">Legal</a>
@@ -65,7 +65,7 @@ export const FooterSection = () => {
 
                 <div className="md:w-1/2 lg:w-2/5 2xl:pl-40 order-1 md:order-3 mb-4 md:mb-0">
                     <p className="text-white text-justify w-full text-md font-extralight mb-8">
-                        The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (MooMoo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
+                        The Cows Gone Mad ecosystem is an innovative project integrating an NFT collection, a utility token (Moo), a blockchain-based video game, and ultimately, the MetaHealth online platform.
                     </p>
 
                     <EmailForm />

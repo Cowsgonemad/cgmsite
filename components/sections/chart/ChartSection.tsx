@@ -9,7 +9,7 @@ export const ChartSection = () => {
             <div className="absolute size-full bg-coin animate-bg-size top-0 left-0 opacity-5 -z-10"></div>
 
             <div className="pt-28 px-6 text-center mb-16">
-                <SectionTitle firstLine="MooMoo" secondLine="Analytics" />
+                <SectionTitle firstLine="Moo" secondLine="Analytics" />
             </div>
 
             <div className="px-6 pb-28 w-full max-w-screen-xl mx-auto">

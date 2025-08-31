@@ -39,7 +39,7 @@ export const NFTFeaturesTab = ({ isActive }: { isActive: boolean }) => {
             Total Supply: 10,000 NFTs. 
             
             1,994 Whitelist spots, commemorating the year 1,994 when the link between Mad Cow Disease and its human equivalent was confirmed, underscoring the educational theme of the project.
-            To earn a Whitelist spot, members must have and hold a given number of $MooMoo tokens.
+            To earn a Whitelist spot, members must have and hold a given number of $Moo tokens.
             Immediately after the Whitelist pre-sale is completed, a Public-Sale will be released for the remaining NFTs to complete the collection.
             Limited airdrops of NFT’s to top-bracket token holders.
             There will be no more future mints and, in case the selling goals are not achieved, the remaining supply will be burned to guarantee and enable secondary market opportunities for the holders.
