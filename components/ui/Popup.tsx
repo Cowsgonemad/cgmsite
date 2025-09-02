@@ -34,8 +34,8 @@ export const Popup = () => {
                     className="absolute right-2 prose:-right-14 top-2 prose:top-0 rounded-full bg-black p-1 cursor-pointer z-20" 
                     onClick={handleDismiss}><CloseIcon fill={'white'} /></button>
 
-                    <div className="relative">
-                        <video className="rounded-lg" autoPlay muted loop>
+                    <div className="relative bg-dark-blue">
+                        <video className="rounded-lg opacity-0" autoPlay muted loop>
                             <source src="/videos/live.mp4" type="video/mp4"></source>
                             Your browser does not support the video tag.
                         </video>
