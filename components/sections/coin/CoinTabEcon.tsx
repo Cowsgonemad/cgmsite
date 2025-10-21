@@ -19,7 +19,7 @@ export const CoinTabEcon = ({ isActive }: { isActive: boolean }) => {
                     <CoinTabTitle text="Tokenomics" />
 
                     <p className="text-black text-lg font-light 2xl:text-2xl text-justify">
-                    The total supply of <strong className="font-extrabold">Moo tokens</strong> is capped at 1 billion tokens. In order to manage scarcity and value, and provide liquidity for game operations and market activities, the tokens are distributed for various purposes.
+                        The <strong className="font-extrabold">Moo token</strong> supply is purposefully capped at 1 billion, ensuring every token counts and scarcity drives true demand. This structure fuels meaningful activity across the entire <strong className="font-extrabold">Cows Gone Mad</strong> universe. By carefully allocating <strong className="font-extrabold">Moo tokens</strong> for game liquidity, community rewards, strategic development, and ongoing marketplace action, our distribution keeps both gameplay and the ecosystem dynamic, fair, and thriving—today and for the future.
                     </p>
                 </div>
 

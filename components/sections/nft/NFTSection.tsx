@@ -40,7 +40,7 @@ export const NFTSection = () => {
             </div>
 
             {nftTab === 0 && 
-            <div className="absolute left-0 bottom-0 w-full max-w-full overflow-x-auto invisible-scroller text-center">
+            <div className="absolute left-0 bottom-0 w-full max-w-full overflow-x-auto overflow-y-hidden invisible-scroller text-center">
                 <ul className="inline-grid grid-cols-cows-min lg:grid-cols-cows-max gap-3 align-middle">
                     {Array.from(Array(9).keys()).map(n => 
                         n !== 0 && <li key={n} className={nft === n ? activeImage : inactiveImage} onClick={() => setNft(n)}>

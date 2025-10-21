@@ -21,8 +21,9 @@ const jester = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cows Gone Mad",
-  description: "Leveraging Medical Advancements Through Blockchain Gaming | Powered by $Moo",
+  title: "Cows Gone Mad: Earn, Buy & Trade Moo Token | Solana NFT Game Marketplace",
+  description: "Discover Cows Gone Mad, the Play-to-Earn NFT game built on Solana. Buy and trade Moo tokens for in-game rewards, exclusive NFTs, and real money opportunities. Join a trusted Solana marketplace for secure crypto transactions,  gaming assets, and passive income with blockchain technology.",
+  keywords: ['buy Moo token', 'earn money Solana game', 'play-to-earn NFT', 'Solana NFT marketplace', 'crypto gaming investment', 'buy Solana gaming token', 'make money with NFTs', 'secure crypto wallet Solana', 'passive income blockchain', 'trade gaming tokens for money', 'real money play-to-earn games', 'best Solana token to buy', 'NFT game reward system']
 };
 
 export default function RootLayout({

@@ -36,38 +36,38 @@ export const MetaHealthSection = () => {
 
                         <div className={tab === 0 ? active : inactive}>
                             <div className="text-lg 2xl:text-2xl font-light text-justify">
-                                <p className="mb-4">Our vision is to develop a novel healthcare platform (MetaHealth) utilizing thirdspace concepts and technology. 
-                                MetaHealth will not only advance healthcare access for patients worldwide, but also allow professionals to gain exposure to a wider global community. The mechanism will involve developing a smart phone app for the MetaHealth platform.</p>
 
-                                <p>The possibility of MetaHealth as a future direction for CowsGoneMad ecosystem, outlined in the WP, further underscores our commitment to creating a long lasting and positive impact on both digital and healthcare landscapes.</p>
+                                <p className="mb-4">Our goal is bold: to create MetaHealth, a pioneering healthcare platform powered by Web3. By fusing decentralized technology with real-world care, MetaHealth opens new pathways for both patients and professionals—bringing secure, borderless access to healthcare services while connecting experts to a wider global audience.</p>
+
+                                <p>This vision goes beyond a single app. MetaHealth is set to become a core pillar of the Cows Gone Mad ecosystem, advancing digital health, enabling meaningful interactions, and supporting the well-being of our entire community. Everything we build, from the whitepaper to platform features, reflects a commitment to lasting, positive change across both digital and healthcare worlds.</p>
                             </div>
                         </div>
 
                         <div className={tab === 1 ? active : inactive}> 
                             <ul className="text-lg 2xl:text-2xl flex flex-col gap-4 font-light text-center">
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-dark-blue transition duration-20">
-                                    <span>Verified Specialists with proven records</span>
+                                    <span>Trusted health specialists, each verified with real credentials</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-accent transition duration-20">
-                                    <span>Services and Health Specialists Directory</span>
+                                    <span>Easy access to a global directory of services and medical experts</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-dark-blue transition duration-20">
-                                    <span>Blockchain-Secured Medical Records</span>
+                                    <span>Tamper-proof medical records secured using blockchain technology</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-accent transition duration-20">
-                                    <span>Digital Wallet and Payment Gateways</span>
+                                    <span>Seamless payments and digital wallet integration for healthcare</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-dark-blue transition duration-20">
-                                    <span>Map of Services and Near-By Specialists</span>
+                                    <span>Interactive map to find nearby professionals and health services</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-accent transition duration-20">
-                                    <span>Discounts, Offers and Exclusive Promotions</span>
+                                    <span>Special offers, loyalty rewards, and members-only discounts</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-dark-blue transition duration-20">
-                                    <span>Review and Rating System</span>
+                                    <span>Transparent review and rating system for all providers</span>
                                 </li>
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-accent transition duration-20">
-                                    <span>Priority-Pass Appointment Scheduling</span>
+                                    <span>Priority appointment bookings for faster, hassle-free access</span>
                                 </li>
                             </ul>
                         </div>

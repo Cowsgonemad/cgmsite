@@ -30,12 +30,12 @@ export const NFTIllustrationsTab = ({ isActive, nft }: { isActive: boolean, nft:
                     
                     <div className="bg-black-blob lg:px-1/10 lg:pt-1/20 lg:pb-20 2xl:px-0 2xl:pt-20 relative pb-2">
 
-                        <div className="absolute w-[170%] -z-10 2xl:-left-60 -top-32 hidden 2xl:block">
+                        <div className="absolute w-[175%] -z-10 2xl:-left-64 -top-32 hidden 2xl:block">
                             <TextBlob />
                         </div>
                         
                         <p>
-                        Dive into the whimsical world of the Moo NFT collection, where each unique NFT captures the vibrant and chaotic essence of <strong className="font-extrabold">Cows Gone Mad.</strong> These one-of-a-kind digital collectibles, meticulously crafted on the <strong className="font-extrabold">Solana blockchain</strong>, showcase a variety of quirky, battle-ready cows, each with distinct traits and backstories. Owning a Moo NFT not only grants you a piece of this imaginative universe but also unlocks exclusive in-game benefits and privileges. Immerse yourself in the adventure, flaunt your rare collectibles, and become a pivotal part of the <strong className="font-extrabold">Cows Gone Mad</strong> saga.
+                            Step into the playful realm of the <strong className="font-extrabold">Moo NFT collection</strong>, where every digital cow bursts with personality and attitude. Each NFT in <strong className="font-extrabold">Cows Gone Mad</strong> transforms the chaos of the game's universe into a one-of-a-kind collectible—quirky, battle-ready, and brought to life on the <strong className="font-extrabold">Solana blockchain</strong>. Every cow tells its own story, loaded with unique traits and unexpected twists. Holding a <strong className="font-extrabold">Moo NFT</strong> means more than ownership—it's your ticket to unlocking in-game bonuses, exclusive features, and a front-row seat in the <strong className="font-extrabold">Cows Gone Mad</strong> adventure. Flaunt your rare cow, explore new privileges, and help shape the next chapter of the saga—all while being part of a community that celebrates creativity and fun at every turn.
                         </p>
 
                         <img className="block lg:hidden w-3/5 md:w-1/3 mx-auto mt-8 border-4 border-black rounded-3xl" src={`/img/c${nft}.gif`} alt="NFT selected illustration" />

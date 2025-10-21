@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'xs': '480px'
+        'xs': '480px',
+        '2xl': '1600px'
       },
       spacing: {
         '1/5': '20%',
