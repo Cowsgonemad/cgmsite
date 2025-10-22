@@ -44,7 +44,7 @@ export const MetaHealthSection = () => {
                         </div>
 
                         <div className={tab === 1 ? active : inactive}> 
-                            <ul className="text-lg 2xl:text-2xl flex flex-col gap-4 font-light text-center">
+                            <ul className="text-lg flex flex-col gap-4 font-light text-center">
                                 <li className="py-3 px-8 rounded-full text-white font-extralight bg-dark-blue transition duration-20">
                                     <span>Trusted health specialists, each verified with real credentials</span>
                                 </li>
