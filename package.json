@@ -6,29 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "deploy:v1": "firebase hosting:channel:deploy temp",
     "deploy:v2": "firebase hosting:channel:deploy hero-split",
     "deploy:v3": "firebase hosting:channel:deploy final"
   },
   "dependencies": {
-    "@nivo/core": "^0.87.0",
-    "@nivo/pie": "^0.87.0",
+    "@nivo/core": "^0.99.0",
+    "@nivo/pie": "^0.99.0",
     "axios": "^1.7.2",
-    "next": "14.2.3",
-    "react": "^18",
+    "next": "16.0.8",
+    "react": "19.2.1",
     "react-apexcharts": "^1.4.1",
-    "react-dom": "^18",
+    "react-dom": "19.2.1",
     "react-google-recaptcha-v3": "^1.10.1"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3"
   }
 }
